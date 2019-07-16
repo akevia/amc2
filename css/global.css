@@ -4,6 +4,10 @@ html {
   margin: 0;
 }
 
+body {
+  position: relative;
+}
+
 .flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,12 +27,59 @@ html {
 }
 
 .row-container {
-  color: white;
   padding: 0px 85px;
   height: 100vh;
-  background-color: blue;
 }
 
-.row-container:nth-child(odd) {
+.row-container:nth-child(even) {
   background-color: #c4c4c4;
+}
+
+.row-container .colmn {
+  width: 50%;
+}
+
+.row-container .colmn .content {
+  width: 100%;
+}
+
+.form-contact {
+  width: 75%;
+}
+
+.form-contact .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form-contact .form-row:last-child {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.form-contact .form-row input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #4080ff;
+}
+
+.form-contact .form-row input.i-50 {
+  width: 48%;
+}
+
+.form-contact .form-row textarea {
+  width: 100%;
+  border: 1px solid #4080ff;
+}
+
+.form-contact .form-row input[type="submit"] {
+  width: auto;
+  color: white;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }

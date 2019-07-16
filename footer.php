@@ -14,9 +14,11 @@
     </ul>
 
     <form action="" class="flexbox horizontal-center">
-        <!-- <label>Suscríbete</label> -->
+        <label>Suscríbete</label>
         <input type="text" placeholder="E-mail">
-        <input type="submit" value=">">
+        <button type="submit" class="flexbox vertical-middle horizontal-center">
+            <img src="<?php echo get_template_directory_uri().'/img/arrow.png' ?>" alt="">
+        </button>
     </form>
     </footer>
     <!-- Scripts  -->
