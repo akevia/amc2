@@ -1,0 +1,49 @@
+footer {
+  padding: 20px 85px;
+  color: #949a9e;
+}
+
+footer a.footer-logo-link img {
+  margin: 0 15px;
+}
+
+footer a.footer-logo-link.size-1 img {
+  height: 60px;
+}
+
+footer a.footer-logo-link.size-2 img {
+  height: 40px;
+}
+
+footer .footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-menu li {
+  padding: 10px;
+}
+
+footer .footer-menu li,
+footer .footer-menu li a {
+  font-size: 12px;
+}
+
+footer form label {
+  position: absolute;
+}
+
+footer form input[type="text"],
+footer form input[type="email"] {
+  height: 40px;
+  border: 1px solid #838383;
+  padding: 0px 10px;
+}
+
+footer form input[type="submit"] {
+  background-color: #ff3040;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #ff3040;
+}

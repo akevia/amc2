@@ -1,0 +1,27 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.vertical-middle {
+    align-items: center;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
+.row-container {
+    color: white;
+    padding: 0px 85px;
+    height: 100vh;
+    background-color: blue;
+    &:nth-child(odd) {
+        background-color: #c4c4c4;
+    }
+}

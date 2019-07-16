@@ -1,0 +1,47 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 85px;
+  position: fixed;
+  width: calc(100% - 170px);
+}
+
+header a.brand {
+  text-decoration: none;
+}
+
+header a.brand img.logo-header {
+  width: 50px;
+}
+
+header nav.nav-menu ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header nav.nav-menu ul li {
+  padding: 10px;
+}
+
+header nav.nav-menu ul li,
+header nav.nav-menu ul li a {
+  color: white;
+}

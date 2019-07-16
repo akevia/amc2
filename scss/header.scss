@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 85px;
+    position: fixed;
+    width: calc(100% - 170px);
+    a.brand {
+        text-decoration: none;
+        img.logo-header {
+            width: 50px;
+        }
+    }
+    nav.nav-menu {
+        ul {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(white, 0.6);
+            li {
+                padding: 10px;
+                &,
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
