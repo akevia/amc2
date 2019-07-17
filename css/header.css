@@ -35,6 +35,7 @@ header nav.nav-menu ul {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #9c9c9c;
 }
 
 header nav.nav-menu ul li {
@@ -44,4 +45,8 @@ header nav.nav-menu ul li {
 header nav.nav-menu ul li,
 header nav.nav-menu ul li a {
   color: white;
+  color: #4080ff;
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 12px;
 }

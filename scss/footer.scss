@@ -31,6 +31,8 @@ footer {
             &,
             a {
                 font-size: 12px;
+                font-family: "Raleway";
+                font-weight: normal;
             }
         }
     }
@@ -39,8 +41,14 @@ footer {
         label {
             left: 0;
             padding-left: 10px;
-            top: -20px;
+            top: -18px;
             position: absolute;
+            font-family: "Raleway";
+            font-weight: bold;
+            color: black;
+            font-size: 8px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         input[type="text"],
         input[type="email"] {
