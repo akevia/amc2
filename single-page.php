@@ -6,12 +6,46 @@
 
 get_header();
 ?>
-<!-- <div class="row-container flexbox vertical-middle">
-    <h1>
+<div class="row-container-fluid flexbox vertical-middle">
+    <!-- <h1>
         Capacitando a la industria <br> en el desarrollo de competencias
-    </h1>
-</div> -->
+    </h1> -->
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="media">
+                    <img src="<?php echo get_template_directory_uri() . '/media/slide-bg.png' ?>">
+                </div>
 
+                <div class="row-container flexbox vertical-middle">
+                    <div class="title-no-border">
+                        Capacitando a la industria <br>
+                        en el desarrollo de competencias
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+    </div>
+</div>
+
+<div class="row-container flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/row-2.jpg'; ?>); background-position: bottom right;">
+    <div class="content">
+
+    </div>
+</div>
 <div class="row-container flexbox vertical-middle">
     <div class="content">
         <div>
@@ -80,7 +114,7 @@ get_header();
         </div>
     </div>
 </div>
-<!-- 
+
 <div class="row-container flexbox" style="background-image: url(<?php echo get_template_directory_uri() . '/img/contact-bg.jpg'; ?>); background-position: bottom right;">
     <div class="colmn flexbox vertical-middle">
         <div class="content">
@@ -113,6 +147,17 @@ get_header();
             </form>
         </div>
     </div>
-</div> -->
+</div>
+
+<!-- SCRIPTS -->
+
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 9500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
 <?php
 get_footer();

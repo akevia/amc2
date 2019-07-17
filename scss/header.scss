@@ -4,6 +4,7 @@ header {
     align-items: center;
     padding: 30px 85px;
     position: fixed;
+    z-index: 10;
     width: calc(100% - 170px);
     a.brand {
         text-decoration: none;
