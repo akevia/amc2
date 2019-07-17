@@ -37,6 +37,19 @@ body {
   font-size: 17px;
 }
 
+.title-slider {
+  font-size: 45px;
+  color: white;
+  margin-top: 10px;
+  min-width: 290px;
+  padding: 10px;
+  font-family: "Raleway";
+  font-weight: 900;
+  background-color: #ff3140;
+  display: inline-block;
+  position: relative;
+}
+
 .title-no-border {
   font-size: 45px;
   color: white;
@@ -88,6 +101,27 @@ body {
   height: 2px;
   position: absolute;
   background-color: #838383;
+}
+
+.small-title-slider {
+  font-size: 20px;
+  color: white;
+  min-width: 290px;
+  padding: 10px 0px;
+  font-family: "Raleway";
+  font-weight: 900;
+  display: inline-block;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+
+.small-title-slider:before {
+  content: "";
+  bottom: -1px;
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  background-color: white;
 }
 
 .row-container {

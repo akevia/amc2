@@ -7,14 +7,10 @@
 get_header();
 ?>
 <div class="row-container-fluid flexbox vertical-middle">
-    <!-- <h1>
-        Capacitando a la industria <br> en el desarrollo de competencias
-    </h1> -->
-    <!-- Slider main container -->
-    <div class="swiper-container">
-        <!-- Additional required wrapper -->
+    <div class="swiper-container home-slider">
+
         <div class="swiper-wrapper">
-            <!-- Slides -->
+
             <div class="swiper-slide">
                 <div class="media">
                     <img src="<?php echo get_template_directory_uri() . '/media/slide-bg.png' ?>">
@@ -31,19 +27,93 @@ get_header();
             <div class="swiper-slide">Slide 3</div>
 
         </div>
-        <!-- If we need pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-
-        <!-- If we need navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
-
     </div>
 </div>
 
 <div class="row-container flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/row-2.jpg'; ?>); background-position: bottom right;">
     <div class="content">
+        <div class="swiper-container podemos-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="flexbox vertical-middle">
+                        <div class="content">
+                            <div>
+                                <span class="small-title-slider">
+                                    Nosotros
+                                </span>
+                            </div>
+                            <div class="title-slider">
+                                Advanced Manufacturing <br> Capability Center (AMC²)
+                            </div>
 
+                            <div class="desc">
+                                <p style="color: white;">
+                                    Es el primer centro de entrenamiento experiencial con una fábrica modelo <br> de última tecnología focalizada en el desarrollo de competencias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flexbox vertical-middle">
+                        <div class="content">
+                            <div>
+                                <span class="small-title-slider">
+                                    Nosotros
+                                </span>
+                            </div>
+                            <div class="title-slider">
+                                Advanced Manufacturing <br> Capability Center (AMC²)
+                            </div>
+
+                            <div class="desc">
+                                <p style="color: white;">
+                                    Es el primer centro de entrenamiento experiencial con una fábrica modelo <br> de última tecnología focalizada en el desarrollo de competencias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flexbox vertical-middle">
+                        <div class="content">
+                            <div>
+                                <span class="small-title-slider">
+                                    Nosotros
+                                </span>
+                            </div>
+                            <div class="title-slider">
+                                Advanced Manufacturing <br> Capability Center (AMC²)
+                            </div>
+
+                            <div class="desc">
+                                <p style="color: white;">
+                                    Es el primer centro de entrenamiento experiencial con una fábrica modelo <br> de última tecnología focalizada en el desarrollo de competencias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev podemos amc-slider-button">
+                <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+
+            </div>
+            <div class="swiper-button-next podemos amc-slider-button">
+                <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
+            </div>
+
+        </div>
     </div>
 </div>
 <div class="row-container flexbox vertical-middle">
@@ -152,10 +222,23 @@ get_header();
 <!-- SCRIPTS -->
 
 <script>
-    var mySwiper = new Swiper('.swiper-container', {
+    var home = new Swiper('.home-slider', {
         autoplay: {
             delay: 9500,
             disableOnInteraction: false,
+        },
+    });
+
+    var podemos = new Swiper('.podemos-slider', {
+        loop: true,
+        spaceBetween: 100,
+        autoplay: {
+            delay: 9500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next.podemos',
+            prevEl: '.swiper-button-prev.podemos',
         },
     });
 </script>
