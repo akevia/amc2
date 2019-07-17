@@ -18,7 +18,7 @@
     <ul>
         <li>Nosotros </li>
         <li>¿Qué podemos hacer por ti?</li>
-        <li>Servicios</li>
+        <li>Competencias</li>
         <li>Programas</li>
         <li>Blog</li>
         <li>Testimoniales</li>

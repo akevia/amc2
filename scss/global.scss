@@ -9,21 +9,39 @@ body {
 }
 
 .flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .vertical-middle {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .horizontal-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+}
+
+.title {
+    font-size: 30px;
+    background-color: #000;
+    color: #c2c2c2;
+    width: 320px;
+    padding: 10px;
+    display: block;
 }
 
 .row-container {
     padding: 0px 85px;
     height: 100vh;
-    &:nth-child(even) {
+    background-size: cover;
+    background-position: center;
+    width: calc(100% - 170px);
+    &:nth-child(odd) {
         background-color: #c4c4c4;
     }
     .colmn {
@@ -37,28 +55,40 @@ body {
 .form-contact {
     width: 75%;
     .form-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 15px 0px;
-        justify-content: space-around;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         &:last-child {
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
             justify-content: flex-start;
         }
         input {
             width: 100%;
-            height: 40px;
-            border: 1px solid #4080ff;
+            height: 50px;
+            padding: 0px 15px;
+            border: 2px solid #4080ff;
             &.i-50 {
-                width: 48%;
+                width: calc(48% - 30px);
             }
         }
         textarea {
             width: 100%;
-            border: 1px solid #4080ff;
+            border: 2px solid #4080ff;
+            padding: 15px;
         }
         input[type="submit"] {
             width: auto;
+            border-color: #ff3040;
             color: white;
+            -ms-flex-item-align: start;
             align-self: flex-start;
+            background-color: #ff3040;
+            padding: 0px 30px;
         }
     }
 }
