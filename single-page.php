@@ -6,6 +6,8 @@
 
 get_header();
 ?>
+
+<!-- Hero Banner -->
 <div class="row-container-fluid flexbox vertical-middle">
     <div class="swiper-container home-slider">
 
@@ -28,8 +30,9 @@ get_header();
 
         </div>
     </div>
-</div>
+</div><!-- Hero Banner -->
 
+<!-- Nosotros -->
 <div class="row-container flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/row-2.jpg'; ?>); background-position: bottom right;">
     <div class="content">
         <div class="swiper-container podemos-slider">
@@ -115,8 +118,10 @@ get_header();
 
         </div>
     </div>
-</div>
-<div class="row-container flexbox vertical-middle">
+</div><!-- Nosotros -->
+
+<!-- Que podemos hacer por ti  -->
+<div class="row-container flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-podemos.png'; ?>); background-position: bottom right;">
     <div class="content">
         <div>
             <span class="small-title">
@@ -183,8 +188,88 @@ get_header();
             </div>
         </div>
     </div>
-</div>
+</div><!-- Que podemos hacer por ti  -->
 
+<!-- Programas -->
+<div class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
+
+    <div class="swiper-container programas-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+
+                <div class="content flexbox vertical-top">
+                    <div class="colmn">
+                        <div class="content">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                        </div>
+                    </div>
+
+
+                    <div class="colmn">
+                        <div class="content">
+                            <div>
+                                <span class="small-title-slider">
+                                    Productos
+                                </span>
+                            </div>
+
+                            <div class="tabs-container">
+                                <div>
+                                    <ul class="tabs">
+                                        <li class="tab">Módulos Análogos</li>
+                                        <li class="tab">Módulos Digitales</li>
+                                        <li class="tab">Programa Empresarial</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tabs-contenido">
+                                    <div class="tabs-item active">
+                                        <div class="title-slider">Conciencia Lean</div>
+                                        <div class="desc">
+                                            <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
+                                            <p>¿Quieres conocer más sobre este entrenamiento?, <br>
+                                                <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                            </p>
+
+                                            <p>
+                                                <a href="#" class="button-link">Contáctanos</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tabs-item"></div>
+                                    <div class="tabs-item"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="row">
+            <div class="colmn">
+                <div class="swiper-button-next prgramas amc-slider-button">
+                    <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
+                </div>
+                <div class="swiper-button-prev prgramas amc-slider-button">
+                    <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div><!-- Programas -->
+
+<!-- Contacto -->
 <div class="row-container flexbox" style="background-image: url(<?php echo get_template_directory_uri() . '/img/contact-bg.jpg'; ?>); background-position: bottom right;">
     <div class="colmn flexbox vertical-middle">
         <div class="content">
@@ -217,7 +302,7 @@ get_header();
             </form>
         </div>
     </div>
-</div>
+</div><!-- Contacto -->
 
 <!-- SCRIPTS -->
 
@@ -239,6 +324,16 @@ get_header();
         navigation: {
             nextEl: '.swiper-button-next.podemos',
             prevEl: '.swiper-button-prev.podemos',
+        },
+    });
+
+    var prgramas = new Swiper('.programas-slider', {
+        loop: true,
+        spaceBetween: 100,
+
+        navigation: {
+            nextEl: '.swiper-button-next.prgramas',
+            prevEl: '.swiper-button-prev.prgramas',
         },
     });
 </script>

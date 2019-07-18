@@ -20,6 +20,12 @@ body {
     align-items: center;
 }
 
+.vertical-top {
+    -webkit-box-align: top;
+    -ms-flex-align: top;
+    align-items: top;
+}
+
 .horizontal-center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
