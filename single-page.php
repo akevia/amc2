@@ -218,14 +218,14 @@ get_header();
                             <div class="tabs-container">
                                 <div>
                                     <ul class="tabs">
-                                        <li class="tab active">Módulos Análogos</li>
-                                        <li class="tab">Módulos Digitales</li>
-                                        <li class="tab">Programa Empresarial</li>
+                                        <li class="tab active" data-tab="tab-content-1">Módulos Análogos</li>
+                                        <li class="tab" data-tab="tab-content-2">Módulos Digitales</li>
+                                        <li class="tab" data-tab="tab-content-3">Programa Empresarial</li>
                                     </ul>
                                 </div>
 
-                                <div class="tabs-contenido">
-                                    <div class="tabs-item active">
+                                <div class="panels">
+                                    <div class="panel active" id="tab-content-1">
                                         <div class="title-slider">Conciencia Lean</div>
                                         <div class="desc">
                                             <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
@@ -238,7 +238,7 @@ get_header();
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="tabs-item">
+                                    <div class="panel" id="tab-content-2">
                                         <div class="title-slider">Conciencia Lean 2</div>
                                         <div class="desc">
                                             <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
@@ -251,7 +251,7 @@ get_header();
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="tabs-item">
+                                    <div class="panel" id="tab-content-3">
                                         <div class="title-slider">Conciencia Lean 3</div>
                                         <div class="desc">
                                             <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
@@ -352,9 +352,8 @@ get_header();
     });
 
     var prgramas = new Swiper('.programas-slider', {
-        loop: true,
         spaceBetween: 100,
-
+        simulateTouch: false,
         navigation: {
             nextEl: '.swiper-button-next.prgramas',
             prevEl: '.swiper-button-prev.prgramas',
