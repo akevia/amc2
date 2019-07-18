@@ -51,7 +51,6 @@
                                 position: relative;
                                 width: auto;
                                 display: inline-block;
-                                &:before {}
                                 .tab {
                                     display: inline-block;
                                     color: white;
@@ -59,16 +58,23 @@
                                     margin-right: 30px;
                                     font-family: "Raleway";
                                     font-size: 14px;
-                                    border-bottom: 2px solid white;
+                                    border-bottom: 2px solid transparent;
                                     cursor: pointer;
                                     &:last-child {
                                         margin-right: 0;
+                                    }
+                                    &.active {
+                                        border-bottom: 2px solid white;
                                     }
                                 }
                             }
                         }
                         .tabs-contenido {
                             .tabs-item {
+                                display: none;
+                                &.active {
+                                    display: block;
+                                }
                                 .title-slider {
                                     font-size: 45px;
                                     color: white;

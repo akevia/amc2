@@ -70,12 +70,24 @@
   margin-right: 30px;
   font-family: "Raleway";
   font-size: 14px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid transparent;
   cursor: pointer;
 }
 
 .programas-slider .swiper-slide .content .colmn:nth-child(2) .content .tabs-container .tabs .tab:last-child {
   margin-right: 0;
+}
+
+.programas-slider .swiper-slide .content .colmn:nth-child(2) .content .tabs-container .tabs .tab.active {
+  border-bottom: 2px solid white;
+}
+
+.programas-slider .swiper-slide .content .colmn:nth-child(2) .content .tabs-contenido .tabs-item {
+  display: none;
+}
+
+.programas-slider .swiper-slide .content .colmn:nth-child(2) .content .tabs-contenido .tabs-item.active {
+  display: block;
 }
 
 .programas-slider .swiper-slide .content .colmn:nth-child(2) .content .tabs-contenido .tabs-item .title-slider {

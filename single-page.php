@@ -218,7 +218,7 @@ get_header();
                             <div class="tabs-container">
                                 <div>
                                     <ul class="tabs">
-                                        <li class="tab">Módulos Análogos</li>
+                                        <li class="tab active">Módulos Análogos</li>
                                         <li class="tab">Módulos Digitales</li>
                                         <li class="tab">Programa Empresarial</li>
                                     </ul>
@@ -238,8 +238,32 @@ get_header();
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="tabs-item"></div>
-                                    <div class="tabs-item"></div>
+                                    <div class="tabs-item">
+                                        <div class="title-slider">Conciencia Lean 2</div>
+                                        <div class="desc">
+                                            <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
+                                            <p>¿Quieres conocer más sobre este entrenamiento?, <br>
+                                                <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                            </p>
+
+                                            <p>
+                                                <a href="#" class="button-link">Contáctanos</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tabs-item">
+                                        <div class="title-slider">Conciencia Lean 3</div>
+                                        <div class="desc">
+                                            <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
+                                            <p>¿Quieres conocer más sobre este entrenamiento?, <br>
+                                                <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                            </p>
+
+                                            <p>
+                                                <a href="#" class="button-link">Contáctanos</a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
