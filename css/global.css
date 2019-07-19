@@ -32,6 +32,12 @@ body {
   justify-content: center;
 }
 
+.horizontal-space {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .color-pink {
   color: #ff3140;
 }
@@ -159,8 +165,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .grid .colmn {
@@ -316,4 +322,47 @@ body {
   align-self: flex-start;
   background-color: #ff3040;
   padding: 0px 30px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.form-contact .form-row input[type="submit"]:hover {
+  color: #ff3040;
+  background-color: #fff;
+}
+
+.suscribete form {
+  position: relative;
+}
+
+.suscribete form label {
+  font-family: "Raleway";
+  font-weight: bold;
+  color: black;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.suscribete form input[type="text"],
+.suscribete form input[type="email"] {
+  height: 40px;
+  border: 1px solid #838383;
+  padding: 0px 10px;
+  margin: 0px 5px;
+}
+
+.suscribete form input[type="submit"],
+.suscribete form button[type="submit"] {
+  background-color: #ff3040;
+  height: 43px;
+  width: 43px;
+  color: white;
+  border: 2px solid #ff3040;
+}
+
+.suscribete form input[type="submit"] img,
+.suscribete form button[type="submit"] img {
+  width: 10px;
 }
