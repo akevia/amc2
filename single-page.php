@@ -369,6 +369,101 @@ get_header();
 
 </div><!-- Programas -->
 
+
+
+<!-- testimonios -->
+<div class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
+
+    <div class="swiper-container testimonio-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+
+                <div class="content flexbox vertical-top">
+                    <div class="colmn">
+                        <div class="content">
+                            <div>
+                                <span class="small-title-slider">
+                                    Testimonios
+                                </span>
+                                <br>
+                                <div class="title-slider">Juan Lopez</div>
+                                <br>
+                                <div class="sub-title">
+                                    CAINTRA
+                                </div>
+                                <div class="desc">
+                                    <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
+                                    <p>¿Quieres conocer más sobre este entrenamiento?, <br>
+                                        <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="colmn">
+                        <div class="content">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+
+                <div class="content flexbox vertical-top">
+                    <div class="colmn">
+                        <div class="content">
+                            <div>
+                                <span class="small-title-slider">
+                                    Testimonios
+                                </span>
+                                <br>
+                                <div class="title-slider">Juan Lopez</div>
+                                <br>
+                                <div class="sub-title">
+                                    CAINTRA
+                                </div>
+                                <div class="desc">
+                                    <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
+                                    <p>¿Quieres conocer más sobre este entrenamiento?, <br>
+                                        <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="colmn">
+                        <div class="content">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="row">
+            <div class="colmn">
+                <div class="swiper-button-prev testimonios amc-slider-button">
+                    <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+
+                </div>
+                <div class="swiper-button-next testimonios amc-slider-button">
+                    <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div><!-- testimonios -->
+
 <!-- Contacto -->
 <div class="row-container flexbox" style="background-image: url(<?php echo get_template_directory_uri() . '/img/contact-bg.jpg'; ?>); background-position: bottom right;">
     <div class="colmn flexbox vertical-middle">
@@ -433,6 +528,15 @@ get_header();
         navigation: {
             nextEl: '.swiper-button-next.prgramas',
             prevEl: '.swiper-button-prev.prgramas',
+        },
+    });
+
+    var testimonio = new Swiper('.testimonio-slider', {
+        spaceBetween: 100,
+        simulateTouch: false,
+        navigation: {
+            nextEl: '.swiper-button-next.testimonios',
+            prevEl: '.swiper-button-prev.testimonios',
         },
     });
 </script>

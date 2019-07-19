@@ -21,9 +21,9 @@ body {
 }
 
 .vertical-top {
-    -webkit-box-align: top;
-    -ms-flex-align: top;
-    align-items: top;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
 }
 
 .horizontal-center {
