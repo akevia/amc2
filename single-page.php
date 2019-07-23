@@ -370,7 +370,7 @@ get_header();
 </div><!-- Programas -->
 
 <!-- Blog -->
-<div class="row-container flexbox vertical-middle">
+<div class="row-container flexbox vertical-middle contenedor-general-blog">
     <div class="content">
         <div class="flexbox vertical-middle horizontal-space">
             <div class="small-title">Blog</div>
@@ -386,31 +386,129 @@ get_header();
             </div>
         </div>
 
-        <div class="row flexbox horizontal-center">
-            <div class="colmn" style="width: 40%">
-                <div class="card">
-                    <div class="overlay" style="background-image: url('<?php echo get_template_directory_uri() . '' ?>') "></div>
+        <div class="row flexbox horizontal-center contenedor-blog">
+            <div class="column">
+                <a href="#" class="card" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post1.jpg' ?>') ">
+                    <div class="overlay">
+                        <p class="fecha-autor">
+                            22 abr. 2019 By Héctor García
+                        </p>
+                        <p class="tit">
+                            Las competencias Lean que debe tener nuestra organización rumbo a la transformación digital.
+                        </p>
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim ...
+                        </p>
+                    </div>
                     <div class="leer-mas">
                         <span>LEER MÁS</span>
-                        <span>
-                            <img src="" alt="">
-                        </span>
+                        <div>
+                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="colmn" style="width: 60%;">
+            <div class="column">
                 <div class="row">
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <a href="#" class="card" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post2.jpg' ?>') ">
+                        <div class="overlay">
+                            <p class="fecha-autor">
+                                05 mar. 2019 By Héctor García
+                            </p>
+                            <p class="tit">
+                                Empieza con una cultura Lean para capturar todos los beneficios de la 
+                            </p>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+                                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam ...
+                            </p>
+                        </div>
+                        <div class="leer-mas">
+                            <span>LEER MÁS</span>
+                            <div>
+                                <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card card-especial" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post3.jpg' ?>') ">
+                        <div class="overlay">
+                            <p class="fecha-autor">
+                                05 mar. 2019 By Héctor García
+                            </p>
+                            <p class="tit">
+                                ¿A qué se enfrentan las empresas en una transformación Lean y Digital?
+                            </p>
+                        </div>
+                        <div class="leer-mas">
+                            <span>LEER MÁS</span>
+                            <div>
+                                <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="row">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <a href="#" class="card card-especial" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post4.jpg' ?>') ">
+                        <div class="overlay">
+                            <p class="fecha-autor">
+                                17 abr. 2019 By Amy Radermacher, Markus Hammer t
+                            </p>
+                            <p class="tit">
+                                The Human Factor: The power of the digital capability center
+                            </p>
+                        </div>
+                        <div class="leer-mas">
+                            <span>LEER MÁS</span>
+                            <div>
+                                <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card card-especial" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post5.jpg' ?>') ">
+                        <div class="overlay">
+                            <p class="fecha-autor">
+                            10 abr. 2019 By Tanguy Catlin, Laura LaBerge, and Shannon Varney
+                            </p>
+                            <p class="tit">
+                                Digital strategy: The four fights you have to win
+                            </p>
+                        </div>
+                        <div class="leer-mas">
+                            <span>LEER MÁS</span>
+                            <div>
+                                <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card card-especial" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post6.jpg' ?>') ">
+                        <div class="overlay">
+                            <p class="fecha-autor">
+                                03 abr. 2019 By Alejandro Díaz, Kayvaun Rowshankish, and Tamim Saleh
+                            </p>
+                            <p class="tit">
+                                Why data culture matters
+                            </p>
+                        </div>
+                        <div class="leer-mas">
+                            <span>LEER MÁS</span>
+                            <div>
+                                <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
         </div>
+
+
+        <div class="contenedor-decoracion">
+            <div class="decoracion-roja"></div>
+        </div>
+
+
+
     </div>
 </div>
 <!-- Blog -->

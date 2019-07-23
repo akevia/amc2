@@ -1,0 +1,244 @@
+.contenedor-general-blog {
+  background-image: url(../img/fondo-blog.jpg);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.contenedor-general-blog .contenedor-blog {
+  height: 450px;
+  width: 85%;
+  margin: 20px auto 50px;
+}
+
+.contenedor-general-blog .contenedor-blog .column {
+  height: 100%;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 20px 3px #ccc;
+          box-shadow: 0px 0px 20px 3px #ccc;
+  display: block;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card .overlay {
+  width: calc(100% - 90px);
+  height: calc(100% - 90px);
+  padding: 45px;
+  /*
+                    background-size: cover;
+                    background-position: center;*/
+  background-position-y: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#4080ff));
+  background-image: linear-gradient(transparent 20%, #4080ff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card .overlay p {
+  margin: 0;
+  color: white;
+  font-family: "Raleway";
+}
+
+.contenedor-general-blog .contenedor-blog .column .card .overlay p.fecha-autor {
+  font-size: 8px;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card .overlay p.tit {
+  font-weight: 900;
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card .overlay p.desc {
+  font-size: 8px;
+  margin-bottom: 5px;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card .leer-mas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  padding: 0 10px;
+  height: 45px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card .leer-mas span {
+  color: black;
+  font-size: 10px;
+  font-family: "Raleway";
+  font-weight: 900;
+  width: 70%;
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card .leer-mas div {
+  width: 30%;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card .leer-mas div img {
+  width: 100%;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card.card-especial .overlay {
+  padding: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 65px);
+}
+
+.contenedor-general-blog .contenedor-blog .column .card.card-especial .leer-mas {
+  width: calc(100% - 20px);
+}
+
+.contenedor-general-blog .contenedor-blog .column .card:before {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-position-y: 100%;
+  opacity: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#ff3040));
+  background-image: linear-gradient(transparent 20%, #ff3040);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card:hover:before {
+  opacity: 1;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card:hover .overlay {
+  background-position-y: 300px;
+}
+
+.contenedor-general-blog .contenedor-blog .column .card:hover .leer-mas span {
+  color: #4080ff;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(1) {
+  width: 42%;
+  margin-right: 5px;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(1) .card {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(1) .card p.desc {
+  margin-bottom: 60px;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) {
+  width: 58%;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) .row .card {
+  margin: 0 5px;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) .row:nth-child(1) {
+  width: 100%;
+  height: calc(42% - 5px);
+  margin-bottom: 10px;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) .row:nth-child(1) .card:nth-child(1) {
+  /*width: 67%;*/
+  width: calc((100% / 3)*2 - 7px);
+  height: 100%;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) .row:nth-child(1) .card:nth-child(1) .overlay {
+  padding: 25px 45px 45px;
+  height: calc(100% - 70px);
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) .row:nth-child(1) .card:nth-child(2) {
+  /*width: 33%;*/
+  height: 100%;
+  margin-right: 0;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) .row:nth-child(2) {
+  width: 100%;
+  height: calc(58% - 5px);
+  margin-top: 10px;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) .row:nth-child(2) .card {
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+.contenedor-general-blog .contenedor-blog .column:nth-child(2) .row:nth-child(2) .card:nth-child(3) {
+  margin-right: 0;
+}
+
+.contenedor-general-blog .contenedor-decoracion {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contenedor-general-blog .contenedor-decoracion .decoracion-roja {
+  width: 61%;
+  height: 1px;
+  background: rgba(255, 48, 64, 0.5);
+  margin: 0 auto;
+  position: relative;
+}
+
+.contenedor-general-blog .contenedor-decoracion .decoracion-roja:after {
+  top: -2px;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 36%;
+  height: 4px;
+  background: #ff3040;
+}
+/*# sourceMappingURL=blog.css.map */
