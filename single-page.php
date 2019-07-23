@@ -607,7 +607,7 @@ get_header();
 </div><!-- testimonios -->
 
 <!-- Contacto -->
-<div class="row-container flexbox" style="background-image: url(<?php echo get_template_directory_uri() . '/img/contact-bg.jpg'; ?>); background-position: bottom right;">
+<div class="row-container flexbox contenedor-general-contacto" style="background-image: url(<?php echo get_template_directory_uri() . '/img/contact-bg.jpg'; ?>); background-position: bottom right;">
     <div class="colmn flexbox vertical-middle">
         <div class="content">
             <div>
@@ -620,15 +620,15 @@ get_header();
         <div class="content">
             <form action="" class="form-contact">
                 <div class="form-row">
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" placeholder="Nombre">
                 </div>
                 <div class="form-row">
-                    <input type="email" name="" id="" class="i-50">
-                    <input type="text" name="" id="" class="i-50">
+                    <input type="email" name="" id="" class="i-50" placeholder="E-mail">
+                    <input type="text" name="" id="" class="i-50" placeholder="Empresa">
                 </div>
                 <div class="form-row">
                     <input type="text" name="" id="" class="i-50" placeholder="Area(Compras, Etc)">
-                    <input type="text" name="" id="" class="i-50">
+                    <input type="text" name="" id="" class="i-50" placeholder="Teléfono">
                 </div>
                 <div class="form-row">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
