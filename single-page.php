@@ -514,7 +514,7 @@ get_header();
 <!-- Blog -->
 
 <!-- testimonios -->
-<div class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
+<div class="row-container-fluid flexbox vertical-middle contenedor-general-testimonios" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
 
     <div class="swiper-container testimonio-slider">
         <!-- Additional required wrapper -->
@@ -525,21 +525,35 @@ get_header();
                 <div class="content flexbox vertical-top">
                     <div class="colmn">
                         <div class="content">
-                            <div>
+                            <div class="cont-info">
                                 <span class="small-title-slider">
                                     Testimonios
                                 </span>
-                                <br>
                                 <div class="title-slider">Juan Lopez</div>
                                 <br>
                                 <div class="sub-title">
                                     CAINTRA
                                 </div>
                                 <div class="desc">
-                                    <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
-                                    <p>¿Quieres conocer más sobre este entrenamiento?, <br>
-                                        <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                    <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+                                        lobortis nisl ut aliquip ex ea commodo consequat”.
                                     </p>
+                                </div>
+                            </div>
+                            <div class="cont-slide-item">
+                                <div class="cont-arrows">
+                                    <div class="swiper-button-prev testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                    </div>
+                                    <div class="swiper-button-next testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cont-medalla">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                    <p>Net promoter Score</p>
                                 </div>
                             </div>
                         </div>
@@ -557,21 +571,36 @@ get_header();
                 <div class="content flexbox vertical-top">
                     <div class="colmn">
                         <div class="content">
-                            <div>
+                            <div class="cont-info">
                                 <span class="small-title-slider">
                                     Testimonios
                                 </span>
-                                <br>
-                                <div class="title-slider">Juan Lopez</div>
+                                <div class="title-slider">El pelos</div>
                                 <br>
                                 <div class="sub-title">
                                     CAINTRA
                                 </div>
                                 <div class="desc">
-                                    <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
-                                    <p>¿Quieres conocer más sobre este entrenamiento?, <br>
-                                        <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                    <p>
+                                        “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+                                        lobortis nisl ut aliquip ex ea commodo consequat”
                                     </p>
+                                </div>
+                            </div>
+                            <div class="cont-slide-item">
+                                <div class="cont-arrows">
+                                    <div class="swiper-button-prev testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                    </div>
+                                    <div class="swiper-button-next testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cont-medalla">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                    <p>Net promoter Score</p>
                                 </div>
                             </div>
                         </div>
@@ -589,7 +618,7 @@ get_header();
         <!-- <div class="swiper-pagination"></div> -->
 
         <!-- If we need navigation buttons -->
-        <div class="row">
+<!--        <div class="row">
             <div class="colmn">
                 <div class="swiper-button-prev testimonios amc-slider-button">
                     <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
@@ -600,8 +629,12 @@ get_header();
                 </div>
 
             </div>
+            <div class="cont-medalla">
+                <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                <p>Net promoter Score</p>
+            </div>
         </div>
-
+-->
     </div>
 
 </div><!-- testimonios -->

@@ -79,20 +79,42 @@
   width: 100%;
 }
 
-.testimonio-slider .swiper-slide .content .colmn:nth-child(1) {
+.testimonio-slider .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonio-slider .swiper-wrapper .swiper-slide .content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) {
   width: 60%;
 }
 
-.testimonio-slider .swiper-slide .content .colmn:nth-child(1) .content {
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content {
   padding: 10px 80px;
 }
 
-.testimonio-slider .swiper-slide .content .colmn:nth-child(1) .content .title-slider {
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-info {
+  width: 80%;
+}
+
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .small-title-slider {
+  display: block;
+  padding: 10px 0px 15px;
+  margin-bottom: 10px;
+}
+
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .title-slider {
   padding: 0 10px;
   min-width: unset;
 }
 
-.testimonio-slider .swiper-slide .content .colmn:nth-child(1) .content .sub-title {
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .sub-title {
   font-family: "Raleway";
   font-size: 14px;
   color: white;
@@ -102,16 +124,36 @@
   padding-bottom: 10px;
 }
 
-.testimonio-slider .swiper-slide .content .colmn:nth-child(1) .content .desc {
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .desc {
   color: white;
+  font-style: italic;
+  margin: 0;
 }
 
-.testimonio-slider .swiper-slide .content .colmn:nth-child(2) {
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .desc p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-arrows {
+  display: inline-block;
+}
+
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-slide-item {
+  display: block;
+}
+
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(2) {
   width: 40%;
 }
 
-.testimonio-slider .swiper-slide .content .colmn:nth-child(2) .content .video {
+.testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(2) .content .video {
   width: 100%;
+}
+
+.testimonio-slider .swiper-button-prev {
+  left: 0;
+  margin-right: 23px;
 }
 
 .testimonio-slider .swiper-button-prev img {
@@ -120,6 +162,27 @@
 
 .testimonio-slider .swiper-button-next img {
   margin-right: -2px;
+}
+
+.testimonio-slider .cont-medalla {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonio-slider .cont-medalla img {
+  width: 100px;
+}
+
+.testimonio-slider .cont-medalla p {
+  font-size: 24px;
+  color: white;
+  font-family: "Raleway";
+  font-weight: 700;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
 .testimonio-slider .row {
@@ -141,8 +204,8 @@
 }
 
 .amc-slider-button {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: white;
   border-radius: 50%;
   position: relative;
@@ -160,10 +223,11 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  outline: none;
 }
 
 .amc-slider-button img {
-  width: 10px;
+  width: 8px;
 }
 
 .tabs-container {
@@ -250,5 +314,97 @@
 .panels .panel .desc a.button-link:hover {
   background-color: #ff3140;
   color: #fff;
+}
+
+@media screen and (min-width: 1750px) {
+  .amc-slider-button {
+    width: 40px;
+    height: 40px;
+  }
+  .amc-slider-button img {
+    width: 10px;
+  }
+  /* Testimonios */
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .sub-title {
+    font-size: 20px;
+  }
+  .testimonio-slider .cont-medalla img {
+    width: 130px;
+  }
+  .testimonio-slider .cont-medalla p {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  /* Testimonios */
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content {
+    padding: 10px 25px;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-info {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Testimonios */
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) {
+    width: 50%;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content {
+    padding: 10px 15px;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-info {
+    width: 95%;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(2) {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Testimonios */
+  .contenedor-general-testimonios {
+    padding: 60px 20px;
+    width: auto;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) {
+    width: 100%;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content {
+    padding: 0;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-info {
+    width: 100%;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-arrows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(2) {
+    width: 100%;
+  }
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(2) .content {
+    padding: 0;
+  }
+  .testimonio-slider .cont-medalla {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .testimonio-slider .cont-medalla img {
+    width: 70px;
+  }
+  .testimonio-slider .cont-medalla p {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=swiper-custom.css.map */
