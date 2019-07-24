@@ -5,10 +5,14 @@
   background-repeat: no-repeat;
 }
 
+.contenedor-general-blog .small-title {
+  text-transform: uppercase;
+}
+
 .contenedor-general-blog .contenedor-blog {
   height: 450px;
   width: 85%;
-  margin: 20px auto 50px;
+  margin: 45px auto;
 }
 
 .contenedor-general-blog .contenedor-blog .column {
