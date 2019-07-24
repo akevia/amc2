@@ -28,3 +28,12 @@ function acm_styles()
 }
 
 add_action('wp_enqueue_scripts', 'acm_styles');
+
+function shapeSpace_display_search_form()
+{
+    $search_form = '<form method="get" id="search-form-alt" action="' . esc_url(home_url('/')) . '">
+		<input type="text" name="s" id="s" placeholder="Search..">
+	</form>';
+    return $search_form;
+}
+add_shortcode('display_search_form', 'shapeSpace_display_search_form');

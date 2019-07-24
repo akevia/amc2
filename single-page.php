@@ -397,7 +397,7 @@ get_header();
                             Las competencias Lean que debe tener nuestra organización rumbo a la transformación digital.
                         </p>
                         <p class="desc">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
                             dolore magna aliquam erat volutpat. Ut wisi enim ad minim ...
                         </p>
                     </div>
@@ -417,10 +417,10 @@ get_header();
                                 05 mar. 2019 By Héctor García
                             </p>
                             <p class="tit">
-                                Empieza con una cultura Lean para capturar todos los beneficios de la 
+                                Empieza con una cultura Lean para capturar todos los beneficios de la
                             </p>
                             <p class="desc">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
                                 dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam ...
                             </p>
                         </div>
@@ -468,7 +468,7 @@ get_header();
                     <a href="#" class="card card-especial" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post5.jpg' ?>') ">
                         <div class="overlay">
                             <p class="fecha-autor">
-                            10 abr. 2019 By Tanguy Catlin, Laura LaBerge, and Shannon Varney
+                                10 abr. 2019 By Tanguy Catlin, Laura LaBerge, and Shannon Varney
                             </p>
                             <p class="tit">
                                 Digital strategy: The four fights you have to win
