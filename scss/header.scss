@@ -49,6 +49,15 @@
             }
         }
     }
+    .main-form-search {
+        input[type="text"] {
+            background: transparent;
+            border: none;
+            padding: 5px 10px;
+            color: rgba(#4080ff, 0.6);
+            border-bottom: 2px solid rgba(#4080ff, 0.6);
+        }
+    }
 }
 
 .light {
@@ -75,6 +84,15 @@
             top: 0;
             left: 0;
             transition: all 0.1s;
+        }
+    }
+    .main-form-search {
+        input[type="text"] {
+            background: transparent;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-bottom: 2px solid rgba(white, 0.6);
         }
     }
     nav.nav-menu {

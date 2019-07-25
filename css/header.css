@@ -72,6 +72,14 @@
   font-size: 12px;
 }
 
+.dark .main-form-search input[type="text"] {
+  background: transparent;
+  border: none;
+  padding: 5px 10px;
+  color: rgba(64, 128, 255, 0.6);
+  border-bottom: 2px solid rgba(64, 128, 255, 0.6);
+}
+
 .light {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +118,14 @@
   left: 0;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
+}
+
+.light .main-form-search input[type="text"] {
+  background: transparent;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
 }
 
 .light nav.nav-menu ul {

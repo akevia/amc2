@@ -31,8 +31,8 @@ add_action('wp_enqueue_scripts', 'acm_styles');
 
 function shapeSpace_display_search_form()
 {
-    $search_form = '<form method="get" id="search-form-alt" action="' . esc_url(home_url('/')) . '">
-		<input type="text" name="s" id="s" placeholder="Search..">
+    $search_form = '<form method="get" class="main-form-search" id="search-form-alt" action="' . esc_url(home_url('/')) . '">
+        <input type="text" class="main-search-input" name="s" id="s" >
 	</form>';
     return $search_form;
 }
