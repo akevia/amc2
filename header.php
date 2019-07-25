@@ -11,9 +11,11 @@
 
 <body>
 
-    <header>
+    <header class="light header">
         <a href="#" class="brand">
             <img src="<?php echo get_template_directory_uri() . '/img/logo-amc-blue.png' ?>" alt="Logo AMC 2 White" class="logo-header">
+            <img src="<?php echo get_template_directory_uri() . '/img/logo-amc-white.png' ?>" alt="Logo AMC 2 White" class="logo-header-white">
+
         </a>
 
         <nav class="nav-menu">
@@ -29,6 +31,6 @@
         </nav>
 
         <div class="search-container">
-            &nbsp
+            <?php echo do_shortcode('[display_search_form]') ?>
         </div>
     </header>

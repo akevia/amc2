@@ -1,4 +1,4 @@
-header {
+.dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,17 +12,33 @@ header {
   position: fixed;
   z-index: 10;
   width: calc(100% - 170px);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
-header a.brand {
+.dark a.brand {
   text-decoration: none;
+  position: relative;
 }
 
-header a.brand img.logo-header {
+.dark a.brand img.logo-header {
+  opacity: 1;
   width: 50px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
-header nav.nav-menu ul {
+.dark a.brand img.logo-header-white {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.dark nav.nav-menu ul {
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -37,18 +53,95 @@ header nav.nav-menu ul {
           align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid #9c9c9c;
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
 }
 
-header nav.nav-menu ul li {
+.dark nav.nav-menu ul li {
   padding: 10px;
 }
 
-header nav.nav-menu ul li,
-header nav.nav-menu ul li a {
+.dark nav.nav-menu ul li,
+.dark nav.nav-menu ul li a {
   color: white;
   color: #4080ff;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   font-family: "Raleway";
   font-weight: normal;
   font-size: 12px;
 }
-/*# sourceMappingURL=header.css.map */
+
+.light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 85px;
+  position: fixed;
+  z-index: 10;
+  width: calc(100% - 170px);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.light a.brand {
+  position: relative;
+  text-decoration: none;
+}
+
+.light a.brand img.logo-header {
+  opacity: 0;
+  width: 50px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.light a.brand img.logo-header-white {
+  width: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.light nav.nav-menu ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.light nav.nav-menu ul li {
+  padding: 10px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.light nav.nav-menu ul li,
+.light nav.nav-menu ul li a {
+  color: white;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 12px;
+}
