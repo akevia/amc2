@@ -12,6 +12,8 @@
   position: fixed;
   z-index: 10;
   width: calc(100% - 170px);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .dark a.brand {
@@ -22,6 +24,8 @@
 .dark a.brand img.logo-header {
   opacity: 1;
   width: 50px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .dark a.brand img.logo-header-white {
@@ -30,6 +34,8 @@
   top: 0;
   opacity: 0;
   left: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .dark nav.nav-menu ul {
@@ -47,6 +53,8 @@
           align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid #9c9c9c;
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
 }
 
 .dark nav.nav-menu ul li {
@@ -57,6 +65,8 @@
 .dark nav.nav-menu ul li a {
   color: white;
   color: #4080ff;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   font-family: "Raleway";
   font-weight: normal;
   font-size: 12px;
@@ -76,6 +86,8 @@
   position: fixed;
   z-index: 10;
   width: calc(100% - 170px);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .light a.brand {
@@ -86,6 +98,8 @@
 .light a.brand img.logo-header {
   opacity: 0;
   width: 50px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .light a.brand img.logo-header-white {
@@ -94,6 +108,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .light nav.nav-menu ul {
@@ -110,15 +126,21 @@
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .light nav.nav-menu ul li {
   padding: 10px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .light nav.nav-menu ul li,
 .light nav.nav-menu ul li a {
   color: white;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   font-family: "Raleway";
   font-weight: normal;
   font-size: 12px;

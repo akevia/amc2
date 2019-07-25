@@ -6,12 +6,14 @@
     position: fixed;
     z-index: 10;
     width: calc(100% - 170px);
+    transition: all 0.1s;
     a.brand {
         text-decoration: none;
         position: relative;
         img.logo-header {
             opacity: 1;
             width: 50px;
+            transition: all 0.1s;
         }
         img.logo-header-white {
             width: 50px;
@@ -19,6 +21,7 @@
             top: 0;
             opacity: 0;
             left: 0;
+            transition: all 0.1s;
         }
     }
     nav.nav-menu {
@@ -31,12 +34,14 @@
             align-items: center;
             border-bottom: 1px solid rgba(white, 0.6);
             border-bottom: 1px solid #9c9c9c;
+            transition: all 1.3s;
             li {
                 padding: 10px;
                 &,
                 a {
                     color: white;
                     color: #4080ff;
+                    transition: all 0.1s;
                     font-family: "Raleway";
                     font-weight: normal;
                     font-size: 12px;
@@ -54,12 +59,14 @@
     position: fixed;
     z-index: 10;
     width: calc(100% - 170px);
+    transition: all 0.1s;
     a.brand {
         position: relative;
         text-decoration: none;
         img.logo-header {
             opacity: 0;
             width: 50px;
+            transition: all 0.1s;
         }
         img.logo-header-white {
             width: 50px;
@@ -67,6 +74,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            transition: all 0.1s;
         }
     }
     nav.nav-menu {
@@ -78,12 +86,15 @@
             justify-content: center;
             align-items: center;
             border-bottom: 1px solid rgba(white, 0.6);
+            transition: all 0.1s;
             // border-bottom: 1px solid #9c9c9c;
             li {
                 padding: 10px;
+                transition: all 0.1s;
                 &,
                 a {
                     color: white;
+                    transition: all 0.1s;
                     // color: #4080ff;
                     font-family: "Raleway";
                     font-weight: normal;
