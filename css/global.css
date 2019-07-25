@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body,
 html {
   padding: 0;
@@ -95,7 +96,7 @@ body {
 }
 
 .small-title {
-  font-size: 20px;
+  font-size: 16px;
   color: #838383;
   min-width: 290px;
   padding: 10px 0px;
@@ -178,29 +179,47 @@ body {
   transition: all 0.1s ease-in-out;
   padding: 30px 10px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .grid .colmn .column-img {
-  height: 80px;
+  height: 70px;
   width: auto;
 }
 
 .grid .colmn .column-img-hover {
-  height: 80px;
+  height: 70px;
   width: auto;
   position: absolute;
-  left: 10px;
+  left: 0;
+  top: 0;
   opacity: 0;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
+}
+
+.grid .colmn .div-img {
+  position: relative;
 }
 
 .grid .colmn .column-title {
   color: #4080ff;
   font-family: "Raleway";
   font-weight: 900;
-  font-size: 18px;
-  margin: 30px 0px;
+  font-size: 14px;
+  margin: 20px 0px;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
@@ -208,7 +227,8 @@ body {
 .grid .colmn .column-desc {
   color: #b6b5b6;
   font-family: "Raleway";
-  font-size: 14px;
+  font-size: 12px;
+  height: 80px;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
@@ -224,6 +244,8 @@ body {
 
 .grid .colmn:hover .column-img-hover {
   opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .grid .colmn:hover .column-title,
@@ -374,6 +396,9 @@ body {
   .small-title-slider {
     font-size: 22px;
   }
+  .small-title {
+    font-size: 22px;
+  }
   .desc {
     font-size: 24px;
   }
@@ -441,4 +466,17 @@ body {
   .form-contact .form-row textarea {
     width: auto;
   }
+  /* ¿Que podemos hacer por ti */
+  .grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grid .colmn {
+    height: 300px;
+    width: calc(100% - 20px);
+    margin: 20px 0;
+  }
 }
+/*# sourceMappingURL=global.css.map */

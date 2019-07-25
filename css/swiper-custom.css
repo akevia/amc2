@@ -33,8 +33,14 @@
   width: 100%;
 }
 
+.programas-slider .swiper-slide .content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .programas-slider .swiper-slide .content .colmn:nth-child(1) {
-  width: 40%;
+  width: 40.5%;
 }
 
 .programas-slider .swiper-slide .content .colmn:nth-child(1) .content .video {
@@ -42,11 +48,15 @@
 }
 
 .programas-slider .swiper-slide .content .colmn:nth-child(2) {
-  width: 60%;
+  width: 59.5%;
 }
 
 .programas-slider .swiper-slide .content .colmn:nth-child(2) .content {
-  padding: 10px 80px;
+  padding: 10px 60px;
+}
+
+.programas-slider .swiper-slide .content .colmn:nth-child(2) .content .small-title-slider {
+  width: 100%;
 }
 
 .programas-slider .swiper-button-prev img {
@@ -261,6 +271,7 @@
 
 .tabs-container .tabs .tab.active {
   border-bottom: 2px solid white;
+  font-weight: bold;
 }
 
 .panels .panel {
@@ -299,12 +310,23 @@
   color: white;
 }
 
+.panels .panel .desc p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 11px;
+}
+
+.panels .panel .desc p:last-of-type {
+  margin-bottom: 10px;
+}
+
 .panels .panel .desc a.button-link {
   background-color: #fff;
   color: #ff3140;
-  padding: 10px;
+  padding: 5px 10px;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 8px;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: all 0.1s ease-in-out;
@@ -325,6 +347,9 @@
     width: 10px;
   }
   /* Testimonios */
+  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .title-slider {
+    font-size: 55px;
+  }
   .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .sub-title {
     font-size: 20px;
   }
@@ -334,6 +359,34 @@
   .testimonio-slider .cont-medalla p {
     margin-top: 40px;
     font-size: 30px;
+  }
+  /* Programas */
+  .programas-slider .swiper-slide .content .colmn:nth-child(2) .content {
+    width: 60%;
+    max-width: none !important;
+  }
+  /* Tabs */
+  .tabs-container .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tabs-container .tabs .tab {
+    margin-right: 12px;
+    font-size: 18px;
+  }
+  .panels .panel .title-slider {
+    font-size: 55px;
+  }
+  .panels .panel .desc p {
+    font-size: 16px;
+  }
+  .panels .panel .desc a.button-link {
+    padding: 10px 20px;
+    font-size: 12px;
   }
 }
 
@@ -361,6 +414,18 @@
   .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(2) {
     width: 50%;
   }
+  /* Programas */
+  .programas-slider .swiper-slide .content .colmn:nth-child(2) {
+    width: 59.5%;
+  }
+  .programas-slider .swiper-slide .content .colmn:nth-child(2) .content {
+    padding: 10px 15px;
+  }
+  /* Tabs */
+  .tabs-container .tabs .tab {
+    margin-right: 8px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -382,14 +447,6 @@
   .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-info {
     width: 100%;
   }
-  .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-arrows {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(2) {
     width: 100%;
   }
@@ -405,5 +462,34 @@
   }
   .testimonio-slider .cont-medalla p {
     font-size: 18px;
+  }
+  /* Programas */
+  .contenedor-general-programas {
+    padding: 60px 20px;
+    width: auto;
+  }
+  .programas-slider .swiper-slide .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .programas-slider .swiper-slide .content .colmn:nth-child(1) {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .programas-slider .swiper-slide .content .colmn:nth-child(2) {
+    width: 100%;
+  }
+  .programas-slider .swiper-slide .content .colmn:nth-child(2) .content {
+    padding: 0;
+  }
+  .programas-slider .row .colmn:nth-child(1) {
+    width: 100%;
+  }
+  /* Tabs */
+  .tabs-container .tabs .tab {
+    margin-right: 4px;
+    font-size: 10px;
   }
 }

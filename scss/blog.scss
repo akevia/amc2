@@ -360,6 +360,10 @@
                             display: none;
                         }
                     }
+
+                    .leer-mas{
+                        width: calc(100% - 20px) !important;
+                    }
                 }
     
             }
@@ -393,7 +397,7 @@
                         }
                     }
                     .card:nth-child(2){
-                        width: 100%;
+                        width: 100% !important;
                     }
                 }
     
