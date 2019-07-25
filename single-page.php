@@ -191,7 +191,7 @@ get_header();
 </div><!-- Que podemos hacer por ti  -->
 
 <!-- Programas -->
-<div class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
+<div class="row-container-fluid flexbox vertical-middle contenedor-general-programas" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
 
     <div class="swiper-container programas-slider">
         <!-- Additional required wrapper -->
@@ -202,7 +202,7 @@ get_header();
                 <div class="content flexbox vertical-top">
                     <div class="colmn">
                         <div class="content">
-                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video2.jpg' ?>" alt="" class="video">
                         </div>
                     </div>
 
@@ -233,9 +233,7 @@ get_header();
                                                 <strong> contáctanos para agendar tu Demo-Day.</strong>
                                             </p>
 
-                                            <p>
-                                                <a href="#" class="button-link">Contáctanos</a>
-                                            </p>
+                                            <a href="#" class="button-link">Contáctanos</a>
                                         </div>
                                     </div>
                                     <div class="panel">
@@ -246,9 +244,7 @@ get_header();
                                                 <strong> contáctanos para agendar tu Demo-Day.</strong>
                                             </p>
 
-                                            <p>
-                                                <a href="#" class="button-link">Contáctanos</a>
-                                            </p>
+                                            <a href="#" class="button-link">Contáctanos</a>
                                         </div>
                                     </div>
                                     <div class="panel">
@@ -259,9 +255,7 @@ get_header();
                                                 <strong> contáctanos para agendar tu Demo-Day.</strong>
                                             </p>
 
-                                            <p>
-                                                <a href="#" class="button-link">Contáctanos</a>
-                                            </p>
+                                            <a href="#" class="button-link">Contáctanos</a>
                                         </div>
                                     </div>
                                 </div>
@@ -278,7 +272,7 @@ get_header();
                 <div class="content flexbox vertical-top">
                     <div class="colmn">
                         <div class="content">
-                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video2.jpg' ?>" alt="" class="video">
                         </div>
                     </div>
 
@@ -309,9 +303,7 @@ get_header();
                                                 <strong> contáctanos para agendar tu Demo-Day.</strong>
                                             </p>
 
-                                            <p>
-                                                <a href="#" class="button-link">Contáctanos</a>
-                                            </p>
+                                            <a href="#" class="button-link">Contáctanos</a>
                                         </div>
                                     </div>
                                     <div class="panel">
@@ -322,9 +314,7 @@ get_header();
                                                 <strong> contáctanos para agendar tu Demo-Day.</strong>
                                             </p>
 
-                                            <p>
-                                                <a href="#" class="button-link">Contáctanos</a>
-                                            </p>
+                                            <a href="#" class="button-link">Contáctanos</a>
                                         </div>
                                     </div>
                                     <div class="panel">
@@ -335,9 +325,7 @@ get_header();
                                                 <strong> contáctanos para agendar tu Demo-Day.</strong>
                                             </p>
 
-                                            <p>
-                                                <a href="#" class="button-link">Contáctanos</a>
-                                            </p>
+                                            <a href="#" class="button-link">Contáctanos</a>
                                         </div>
                                     </div>
                                 </div>
