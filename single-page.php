@@ -136,59 +136,83 @@ get_header();
 
             <div class="grid">
                 <div class="colmn">
-                    <img src="<?php echo get_template_directory_uri() . '/img/file-grey.png' ?>" class="column-img">
-                    <img src="<?php echo get_template_directory_uri() . '/img/file-white.png' ?>" class="column-img-hover">
+                    <div class="div-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/file-grey.png' ?>" class="column-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/file-white.png' ?>" class="column-img-hover">
+                    </div>
                     <div>
                         <div class="column-title">
-                            Plan de estudios completo
+                            Plan de estudios <br> completo
                         </div>
-
-
                         <div class="column-desc">
                             <p>
-                                Plan de estudios completo, que incluye manufactura lean y herramientas digitales avanzadas, como mantenimiento predictivo y análisis de rendimientos.
+                                Plan de estudios completo, que incluye manufactura lean y herramientas digitales avanzadas, como mantenimiento predictivo y análisis de rendimientos.                             
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="colmn">
-                    <img src="<?php echo get_template_directory_uri() . '/img/people-grey.png' ?>" class="column-img">
-                    <img src="<?php echo get_template_directory_uri() . '/img/people-white.png' ?>" class="column-img-hover">
+                    <div class="div-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/people-grey.png' ?>" class="column-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/people-white.png' ?>" class="column-img-hover">
+                    </div>
                     <div>
                         <div class="column-title">
-                            Plan de estudios completo
+                            Cursos <br> interactivos
+                        </div>
+                        <div class="column-desc">
+                            <p>
+                                Cursos interactivos adaptados a las necesidades individuales y específicas de los participantes.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="colmn">
-                    <img src="<?php echo get_template_directory_uri() . '/img/mind-grey.png' ?>" class="column-img">
-                    <img src="<?php echo get_template_directory_uri() . '/img/mind-white.png' ?>" class="column-img-hover">
+                    <div class="div-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/mind-grey.png' ?>" class="column-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/mind-white.png' ?>" class="column-img-hover">
+                    </div>
                     <div>
                         <div class="column-title">
-                            Plan de estudios completo
+                            Ritmo de aprendizaje vivencia                        
+                        </div>
+                        <div class="column-desc">
+                            <p>
+                                Ritmo de aprendizaje acelerado de forma experiencial en un entorno libre de riesgo.                            
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="colmn">
-                    <img src="<?php echo get_template_directory_uri() . '/img/man-grey.png' ?>" class="column-img">
-                    <img src="<?php echo get_template_directory_uri() . '/img/man-white.png' ?>" class="column-img-hover">
+                    <div class="div-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/man-grey.png' ?>" class="column-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/man-white.png' ?>" class="column-img-hover">
+                    </div>
                     <div>
                         <div class="column-title">
-                            Plan de estudios completo
+                            Acompañamiento en la formación de personal
+                        </div>
+                        <div class="column-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.                            
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="colmn">
-                    <img src="<?php echo get_template_directory_uri() . '/img/book-grey.png' ?>" class="column-img">
-                    <img src="<?php echo get_template_directory_uri() . '/img/book-white.png' ?>" class="column-img-hover">
+                    <div class="div-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/book-grey.png' ?>" class="column-img">
+                        <img src="<?php echo get_template_directory_uri() . '/img/book-white.png' ?>" class="column-img-hover">
+                    </div>
                     <div>
                         <div class="column-title">
-                            Plan de estudios completo
+                            Diseño de un programa de capacitación
                         </div>
-
-                        <p>
-                            Plan de estudios completo, que incluye manufactura lean y herramientas digitales avanzadas, como mantenimiento predictivo y análisis de rendimientos.
-                        </p>
+                        <div class="column-desc">
+                            <p>
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.                        
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
