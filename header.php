@@ -32,5 +32,6 @@
 
         <div class="search-container">
             <?php echo do_shortcode('[display_search_form]') ?>
+            <i class="fa fa-search"></i>
         </div>
     </header>

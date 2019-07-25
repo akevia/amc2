@@ -78,6 +78,11 @@
   padding: 5px 10px;
   color: rgba(64, 128, 255, 0.6);
   border-bottom: 2px solid rgba(64, 128, 255, 0.6);
+  outline: none;
+}
+
+.dark .search-container i {
+  color: #4080ff;
 }
 
 .light {
@@ -126,6 +131,7 @@
   padding: 5px 10px;
   color: white;
   border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  outline: none;
 }
 
 .light nav.nav-menu ul {
@@ -161,3 +167,20 @@
   font-weight: normal;
   font-size: 12px;
 }
+
+.light .search-container i {
+  color: white;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container i {
+  position: absolute;
+  top: 5px;
+  left: -30px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/*# sourceMappingURL=header.css.map */
