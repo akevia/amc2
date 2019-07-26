@@ -402,6 +402,14 @@ body {
   .desc {
     font-size: 24px;
   }
+  .title-slider {
+    font-size: 55px;
+  }
+  /* ¿Que podemos hacer por ti */
+  .grid .colmn {
+    width: calc(16% - 60px);
+    padding: 30px;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -430,6 +438,10 @@ body {
   }
   .row-container-fluid {
     height: auto;
+  }
+  .title-slider {
+    font-size: 35px !important;
+    min-width: unset !important;
   }
   /* Contact */
   .contenedor-general-contacto {

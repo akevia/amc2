@@ -24,6 +24,32 @@
     }
 }
 
+.podemos-slider {
+    .swiper-slide {
+        .content {
+            .title-slider {
+                padding: 5px 13px;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    width: 80px;
+                    height: 4px;
+                    left: 10px;
+                    top: calc(100% + 10px);
+                    background-color: #fff;
+                }
+            }
+            .small-title-slider{
+                margin-left: 15px;
+                margin-bottom: 20px;
+            }
+            .desc{
+                margin: 40px 0 25px 15px;
+            }
+        }
+    }
+}
+
 .programas-slider {
     width: 100%;
     .swiper-slide {
@@ -263,12 +289,13 @@
             background-color: #ff3140;
             display: inline-block;
             position: relative;
+            left: -10px;
             &:before {
                 position: absolute;
                 content: "";
                 width: 80px;
                 height: 4px;
-                left: 0;
+                left: 10px;
                 top: calc(100% + 10px);
                 background-color: #fff;
             }
