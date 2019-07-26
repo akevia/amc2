@@ -373,6 +373,9 @@ body {
             font-size: 55px;
         }
 
+        .title-no-border {
+            font-size: 55px;
+        }
 
     /* ¿Que podemos hacer por ti */
 
@@ -428,9 +431,14 @@ body {
         height: auto;
     }
 
-    .title-slider {
+    .title-slider{
         font-size: 35px !important;
         min-width: unset !important;
+    }
+
+    .title-no-border {
+        font-size: 35px;
+        min-width: unset;
     }
 
 

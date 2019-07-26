@@ -405,6 +405,9 @@ body {
   .title-slider {
     font-size: 55px;
   }
+  .title-no-border {
+    font-size: 55px;
+  }
   /* ¿Que podemos hacer por ti */
   .grid .colmn {
     width: calc(16% - 60px);
@@ -442,6 +445,10 @@ body {
   .title-slider {
     font-size: 35px !important;
     min-width: unset !important;
+  }
+  .title-no-border {
+    font-size: 35px;
+    min-width: unset;
   }
   /* Contact */
   .contenedor-general-contacto {

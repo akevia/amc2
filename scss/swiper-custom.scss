@@ -15,9 +15,11 @@
                 height: 100%;
                 top: 0;
                 left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 img {
-                    height: 100vh;
-                    width: auto;
+                    height: 100%;
                 }
             }
         }
@@ -128,6 +130,7 @@
                             .title-slider {
                                 padding: 0 10px;
                                 min-width: unset;
+                                left: -10px;
                             }
                             .sub-title {
                                 font-family: "Raleway";
@@ -517,6 +520,20 @@
 
 
 @media screen and (max-width: 767px){
+
+
+    /* Home */
+
+    .home-slider {
+        .swiper-wrapper {
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
 
     /* Testimonios */
 
