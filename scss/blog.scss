@@ -8,6 +8,10 @@
         text-transform: uppercase;
     }
 
+    .horizontal-space{
+        margin-right: 7.5%;
+    }
+
     .contenedor-blog{
         height: 450px;
         width: 85%;
@@ -295,6 +299,10 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px){
 
     .contenedor-general-blog{
+
+        .horizontal-space{
+            margin-right: 5%;
+        }
     
         .contenedor-blog{
             width: 90%;
@@ -312,6 +320,10 @@
 @media screen and (min-width: 768px) and (max-width: 1023px){
 
     .contenedor-general-blog{
+
+        .horizontal-space{
+            margin-right: 0;
+        }
     
         .contenedor-blog{
             width: 100%;
@@ -336,10 +348,17 @@
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (max-width: 767px){
 
 
     .contenedor-general-blog{
+        .horizontal-space{
+            margin: 0;
+            flex-direction: column;
+            .suscribete{
+                margin-top: 20px;
+            }
+        }
         .contenedor-blog{
             width: 100%;
             height: auto;

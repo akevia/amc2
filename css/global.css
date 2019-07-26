@@ -353,6 +353,11 @@ body {
   background-color: #fff;
 }
 
+.suscribete {
+  position: relative;
+  top: 10px;
+}
+
 .suscribete form {
   position: relative;
 }
@@ -373,20 +378,31 @@ body {
   border: 1px solid #838383;
   padding: 0px 10px;
   margin: 0px 5px;
+  width: 185px;
 }
 
 .suscribete form input[type="submit"],
 .suscribete form button[type="submit"] {
   background-color: #ff3040;
-  height: 43px;
-  width: 43px;
+  height: 42px;
+  width: 42px;
   color: white;
   border: 2px solid #ff3040;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+  outline: none;
 }
 
 .suscribete form input[type="submit"] img,
 .suscribete form button[type="submit"] img {
   width: 10px;
+}
+
+.suscribete form input[type="submit"]:hover,
+.suscribete form button[type="submit"]:hover {
+  background: #4080ff;
+  border-color: #4080ff;
 }
 
 @media screen and (min-width: 1750px) {

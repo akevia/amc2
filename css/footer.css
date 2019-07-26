@@ -82,11 +82,21 @@ footer form button[type="submit"] {
   width: 42px;
   color: white;
   border: 1px solid #ff3040;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  outline: none;
+  cursor: pointer;
 }
 
 footer form input[type="submit"] img,
 footer form button[type="submit"] img {
   width: 10px;
+}
+
+footer form input[type="submit"]:hover,
+footer form button[type="submit"]:hover {
+  background: #4080ff;
+  border-color: #4080ff;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
