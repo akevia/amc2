@@ -16,8 +16,9 @@ $(function() {
     });
 
     function blogconfig() {
-        if ($(window).width() > 767 && $(window).width() < 1750) {
-            /* Blog */
+        
+        /* Blog */
+        if ($(window).width() > 767) {
             var anchoCarta = $(
                 ".contenedor-general-blog .contenedor-blog .column:nth-child(2) .row:nth-child(2) .card:nth-child(1)"
             ).width();
@@ -31,9 +32,10 @@ $(function() {
             $(
                 ".contenedor-general-blog .contenedor-blog .column:nth-child(2) .row:nth-child(1) .card:nth-child(1) .leer-mas, .contenedor-general-blog .contenedor-blog .column:nth-child(1) .card .leer-mas"
             ).css("width", anchoBoton);
+        }
 
-            /* Productos */
-
+        /* Productos */
+        if ($(window).width() > 767 && $(window).width() < 1750) {
             $(".programas-slider .swiper-slide").each(function(index) {
                 var anchoContTab = $(this)
                     .find("ul.tabs")
