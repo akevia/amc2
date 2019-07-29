@@ -26,8 +26,32 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+
+                <div class="swiper-slide">
+                    <div class="media">
+                        <img src="<?php echo get_template_directory_uri() . '/media/slide-bg.png' ?>">
+                    </div>
+
+                    <div class="row-container flexbox vertical-middle">
+                        <div class="title-no-border">
+                            Capacitando a la industria <br>
+                            en el desarrollo de competencias
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="media">
+                        <img src="<?php echo get_template_directory_uri() . '/media/slide-bg.png' ?>">
+                    </div>
+
+                    <div class="row-container flexbox vertical-middle">
+                        <div class="title-no-border">
+                            Capacitando a la industria <br>
+                            en el desarrollo de competencias
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -146,7 +170,7 @@ get_header();
                         </div>
                         <div class="column-desc">
                             <p>
-                                Plan de estudios completo, que incluye manufactura lean y herramientas digitales avanzadas, como mantenimiento predictivo y análisis de rendimientos.                             
+                                Plan de estudios completo, que incluye manufactura lean y herramientas digitales avanzadas, como mantenimiento predictivo y análisis de rendimientos.
                             </p>
                         </div>
                     </div>
@@ -174,11 +198,11 @@ get_header();
                     </div>
                     <div>
                         <div class="column-title">
-                            Ritmo de aprendizaje vivencia                        
+                            Ritmo de aprendizaje vivencia
                         </div>
                         <div class="column-desc">
                             <p>
-                                Ritmo de aprendizaje acelerado de forma experiencial en un entorno libre de riesgo.                            
+                                Ritmo de aprendizaje acelerado de forma experiencial en un entorno libre de riesgo.
                             </p>
                         </div>
                     </div>
@@ -194,7 +218,7 @@ get_header();
                         </div>
                         <div class="column-desc">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.                            
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                             </p>
                         </div>
                     </div>
@@ -210,7 +234,7 @@ get_header();
                         </div>
                         <div class="column-desc">
                             <p>
-                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.                        
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.
                             </p>
                         </div>
                     </div>
@@ -407,7 +431,7 @@ get_header();
 
     <div class="row-container flexbox vertical-middle contenedor-general-blog">
         <div class="content">
-            <div class="flexbox vertical-middle horizontal-space">
+            <!-- <div class="flexbox vertical-middle horizontal-space">
                 <div class="small-title">Blog</div>
 
                 <div class="suscribete">
@@ -419,7 +443,7 @@ get_header();
                         </button>
                     </form>
                 </div>
-            </div>
+            </div> -->
 
             <div class="row flexbox horizontal-center contenedor-blog">
                 <div class="column">

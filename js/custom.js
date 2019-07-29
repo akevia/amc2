@@ -1,5 +1,8 @@
 $ = jQuery;
 $(function() {
+    $(".button-mobile").click(function() {
+        $(".content-header").toggleClass("active");
+    });
     var tabs_container = $(".tabs-container");
     tabs_container.find($(".tab")).click(function() {
         var index = $(this).index();
@@ -16,7 +19,6 @@ $(function() {
     });
 
     function blogconfig() {
-        
         /* Blog */
         if ($(window).width() > 767) {
             var anchoCarta = $(
