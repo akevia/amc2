@@ -16,6 +16,8 @@
             <i class="fa fa-bars"></i>
         </div>
         <div class="content-header">
+
+
             <a href="#" class="brand">
                 <img src="<?php echo get_template_directory_uri() . '/img/logo-amc-blue.png' ?>" alt="Logo AMC 2 White" class="logo-header">
                 <img src="<?php echo get_template_directory_uri() . '/img/logo-amc-white.png' ?>" alt="Logo AMC 2 White" class="logo-header-white">
@@ -39,4 +41,5 @@
                 <i class="fa fa-search"></i>
             </div>
         </div>
+
     </header>
