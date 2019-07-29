@@ -322,6 +322,18 @@
   .contenedor-general-blog .horizontal-space .suscribete {
     margin-top: 20px;
   }
+  .contenedor-general-blog .horizontal-space .suscribete form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contenedor-general-blog .horizontal-space .suscribete form label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .contenedor-general-blog .horizontal-space .suscribete form input {
+    margin: 0;
+    width: calc(100% - 64px);
+  }
   .contenedor-general-blog .contenedor-blog {
     width: 100%;
     height: auto;
@@ -388,3 +400,4 @@
     width: 100%;
   }
 }
+/*# sourceMappingURL=blog.css.map */

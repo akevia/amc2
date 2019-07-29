@@ -357,6 +357,17 @@
             flex-direction: column;
             .suscribete{
                 margin-top: 20px;
+                form{
+                    flex-wrap: wrap;
+                    label{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    input{
+                        margin: 0;
+                        width: calc(100% - 64px);
+                    }
+                }
             }
         }
         .contenedor-blog{
