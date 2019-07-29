@@ -317,6 +317,8 @@ body {
 }
 
 .suscribete {
+    position: relative;
+    top: 10px;
     form {
         position: relative;
         label {
@@ -334,16 +336,25 @@ body {
             border: 1px solid #838383;
             padding: 0px 10px;
             margin: 0px 5px;
+            width: 185px;
         }
         input[type="submit"],
         button[type="submit"] {
             background-color: #ff3040;
-            height: 43px;
-            width: 43px;
+            height: 42px;
+            width: 42px;
             color: white;
             border: 2px solid #ff3040;
+            transition: all .3s;
+            cursor: pointer;
+            outline: none;
             img {
                 width: 10px;
+            }
+
+            &:hover{
+                background: #4080ff;
+                border-color: #4080ff;
             }
         }
     }
@@ -368,6 +379,23 @@ body {
         .desc{
            font-size: 24px;
         }
+
+        .title-slider {
+            font-size: 55px;
+        }
+
+        .title-no-border {
+            font-size: 55px;
+        }
+
+    /* ¿Que podemos hacer por ti */
+
+    .grid {
+        .colmn {
+            width: calc(16% - 60px);
+            padding: 30px;
+        }
+    }
 
 }
 
@@ -414,6 +442,15 @@ body {
         height: auto;
     }
 
+    .title-slider{
+        font-size: 35px !important;
+        min-width: unset !important;
+    }
+
+    .title-no-border {
+        font-size: 35px;
+        min-width: unset;
+    }
 
 
     /* Contact */

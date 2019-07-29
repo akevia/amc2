@@ -70,8 +70,16 @@ footer {
             width: 42px;
             color: white;
             border: 1px solid #ff3040;
+            transition: all .3s;
+            outline: none;
+            cursor: pointer;
             img {
                 width: 10px;
+            }
+
+            &:hover{
+                background: #4080ff;
+                border-color: #4080ff;
             }
         }
     }

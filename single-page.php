@@ -60,7 +60,7 @@ get_header();
 
 <!-- Nosotros -->
 <div class="light-menu">
-    <div class="row-container flexbox vertical-middle " style="background-image: url(<?php echo get_template_directory_uri() . '/img/row-2.jpg'; ?>); background-position: bottom right;">
+    <div class="row-container flexbox vertical-middle contenedor-general-nosotros" style="background-image: url(<?php echo get_template_directory_uri() . '/img/row-2.jpg'; ?>); background-position: bottom right;">
         <div class="content">
             <div class="swiper-container podemos-slider">
                 <!-- Additional required wrapper -->
