@@ -431,7 +431,7 @@ get_header();
 
     <div class="row-container flexbox vertical-middle contenedor-general-blog">
         <div class="content">
-            <!-- <div class="flexbox vertical-middle horizontal-space">
+            <div class="flexbox vertical-middle horizontal-space">
                 <div class="small-title">Blog</div>
 
                 <div class="suscribete">
@@ -443,7 +443,7 @@ get_header();
                         </button>
                     </form>
                 </div>
-            </div> -->
+            </div>
 
             <div class="row flexbox horizontal-center contenedor-blog">
                 <div class="column">
