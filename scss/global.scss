@@ -232,6 +232,40 @@ body {
     }
 }
 
+.columns-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .colmn {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px;
+        &#antes {
+            width: 60%;
+        }
+        &#durante,
+        &#despues {
+            width: 20%;
+        }
+        .top-text {
+            text-align: center;
+            font-family: "Raleway";
+            font-weight: 800;
+            border-bottom: 1px solid black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        .item {
+            .info {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 .form-contact {
     max-width: 600px;
     width: 90%;

@@ -247,7 +247,7 @@ get_header();
 <!-- competencias -->
 <div class="light-menu">
 
-    <div id="competencias" class="row-container-fluid flexbox vertical-middle contenedor-general-competencias" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
+    <div id="competencias" class="row-container-fluid flexbox vertical-middle contenedor-general-competencias" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-competencias.png'; ?>);">
 
         <div class="swiper-container competencias-slider">
             <!-- Additional required wrapper -->
@@ -423,6 +423,77 @@ get_header();
 
         </div>
 
+    </div>
+</div><!-- competencias -->
+
+<!-- programas -->
+<div class="dark-menu">
+
+    <div id="programas" class="row-container flexbox vertical-middle " style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
+        <div class="content">
+            <div>EL AMC2 se enfoca en el desarrollo de competencias por medio de programas adaptadosa las necesidades particulares de cada cliente</div>
+            <div class="title">
+                Modelo de entrega de servicios del AMC2:
+            </div>
+
+            <div class="columns-container">
+                <div class="colmn" id="antes">
+                    <div class="content">
+                        <div class="top-text">
+                            Antes
+                        </div>
+
+                        <div class="columns-container">
+                            <div class="column">
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmn" id="durante">
+                    <div class="content">
+                        <div class="top-text">
+                            Durante
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmn" id="despues">
+                    <div class="content">
+                        <div class="top-text">
+                            Después
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div><!-- competencias -->
 
@@ -745,6 +816,14 @@ get_header();
         navigation: {
             nextEl: '.swiper-button-next.competencias',
             prevEl: '.swiper-button-prev.competencias',
+        },
+    });
+    var programas = new Swiper('.programas-slider', {
+        spaceBetween: 100,
+        simulateTouch: false,
+        navigation: {
+            nextEl: '.swiper-button-next.programas',
+            prevEl: '.swiper-button-prev.programas',
         },
     });
 

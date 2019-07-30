@@ -258,6 +258,50 @@ body {
   color: white;
 }
 
+.columns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.columns-container .colmn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+}
+
+.columns-container .colmn#antes {
+  width: 60%;
+}
+
+.columns-container .colmn#durante, .columns-container .colmn#despues {
+  width: 20%;
+}
+
+.columns-container .colmn .top-text {
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 800;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.columns-container .colmn .item .info img {
+  width: 100%;
+}
+
 .form-contact {
   max-width: 600px;
   width: 90%;
