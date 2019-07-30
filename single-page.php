@@ -9,7 +9,7 @@ get_header();
 
 <!-- Hero Banner -->
 <div class="light-menu">
-    <div class="row-container-fluid flexbox vertical-middle ">
+    <div class="row-container-fluid flexbox vertical-middle" id="#inicio">
         <div class="swiper-container home-slider">
 
             <div class="swiper-wrapper">
@@ -60,7 +60,7 @@ get_header();
 
 <!-- Nosotros -->
 <div class="light-menu">
-    <div class="row-container flexbox vertical-middle contenedor-general-nosotros" style="background-image: url(<?php echo get_template_directory_uri() . '/img/row-2.jpg'; ?>); background-position: bottom right;">
+    <div id="nosotros" class="row-container flexbox vertical-middle contenedor-general-nosotros" style="background-image: url(<?php echo get_template_directory_uri() . '/img/row-2.jpg'; ?>); background-position: bottom right;">
         <div class="content">
             <div class="swiper-container podemos-slider">
                 <!-- Additional required wrapper -->
@@ -150,7 +150,7 @@ get_header();
 
 <!-- Que podemos hacer por ti  -->
 <div class="dark-menu">
-    <div class="row-container flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-podemos.png'; ?>); background-position: bottom right;">
+    <div id="quepodemos" class="row-container flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-podemos.png'; ?>); background-position: bottom right;">
         <div class="content">
             <div>
                 <span class="small-title">
@@ -244,12 +244,12 @@ get_header();
     </div>
 </div><!-- Que podemos hacer por ti  -->
 
-<!-- Programas -->
+<!-- competencias -->
 <div class="light-menu">
 
-    <div class="row-container-fluid flexbox vertical-middle contenedor-general-programas" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
+    <div id="competencias" class="row-container-fluid flexbox vertical-middle contenedor-general-competencias" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
 
-        <div class="swiper-container programas-slider">
+        <div class="swiper-container competencias-slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -411,10 +411,10 @@ get_header();
             <!-- If we need navigation buttons -->
             <div class="row">
                 <div class="colmn">
-                    <div class="swiper-button-next prgramas amc-slider-button">
+                    <div class="swiper-button-next competencias amc-slider-button">
                         <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
                     </div>
-                    <div class="swiper-button-prev prgramas amc-slider-button">
+                    <div class="swiper-button-prev competencias amc-slider-button">
                         <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
 
                     </div>
@@ -424,12 +424,12 @@ get_header();
         </div>
 
     </div>
-</div><!-- Programas -->
+</div><!-- competencias -->
 
 <!-- Blog -->
 <div class="dark-menu">
 
-    <div class="row-container flexbox vertical-middle contenedor-general-blog">
+    <div id="blog" class="row-container flexbox vertical-middle contenedor-general-blog">
         <div class="content">
             <div class="flexbox vertical-middle horizontal-space">
                 <div class="small-title">Blog</div>
@@ -574,7 +574,7 @@ get_header();
 
 <!-- testimonios -->
 <div class="light-menu">
-    <div class="row-container-fluid flexbox vertical-middle contenedor-general-testimonios" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
+    <div id="testimonios" class="row-container-fluid flexbox vertical-middle contenedor-general-testimonios" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
 
         <div class="swiper-container testimonio-slider">
             <!-- Additional required wrapper -->
@@ -681,7 +681,7 @@ get_header();
 
 <!-- Contacto -->
 <div class="dark-menu">
-    <div class="row-container flexbox contenedor-general-contacto" style="background-image: url(<?php echo get_template_directory_uri() . '/img/contact-bg.jpg'; ?>); background-position: bottom right;">
+    <div id="contacto" class="row-container flexbox contenedor-general-contacto" style="background-image: url(<?php echo get_template_directory_uri() . '/img/contact-bg.jpg'; ?>); background-position: bottom right;">
         <div class="colmn flexbox vertical-middle">
             <div class="content">
                 <div>
@@ -739,12 +739,12 @@ get_header();
         },
     });
 
-    var prgramas = new Swiper('.programas-slider', {
+    var competencias = new Swiper('.competencias-slider', {
         spaceBetween: 100,
         simulateTouch: false,
         navigation: {
-            nextEl: '.swiper-button-next.prgramas',
-            prevEl: '.swiper-button-prev.prgramas',
+            nextEl: '.swiper-button-next.competencias',
+            prevEl: '.swiper-button-prev.competencias',
         },
     });
 

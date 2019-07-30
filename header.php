@@ -10,8 +10,8 @@
 </head>
 
 <body>
-
-    <header class="light header">
+    <?php $menu_class = is_front_page() ? 'light' : ' dark'; ?>
+    <header class="<?php echo $menu_class ?> header">
         <div class="button-mobile">
             <i class="fa fa-bars"></i>
         </div>
@@ -26,13 +26,20 @@
 
             <nav class="nav-menu">
                 <ul>
-                    <li>Nosotros </li>
-                    <li>¿Qué podemos hacer por ti?</li>
-                    <li>Competencias</li>
-                    <li>Programas</li>
-                    <li>Blog</li>
-                    <li>Testimoniales</li>
-                    <li>Contacto</li>
+                    <li><a href="#nosotros">Nosotros</a> </li>
+                    <li><a href="#quepodemos">¿Qué podemos hacer por ti?</a> </li>
+                    <li><a href="#competencias">Competencias</a></li>
+                    <li>
+                        <a href="#programas">Programas</a>
+                        <ul>
+                            <li>
+                                <a href="#casos">Casos de exito</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#testimonios">Testimoniales</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
 

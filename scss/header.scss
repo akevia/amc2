@@ -51,20 +51,32 @@
                 }
             }
             nav.nav-menu {
-                ul {
+                >ul {
                     margin: 0 auto;
                     padding: 0;
                     list-style: none;
-                    li {
+                    width: 50%;
+                    text-align: left;
+                    >li {
                         padding: 10px 0px;
                         transition: all 0.1s;
                         &,
                         a {
                             color: white;
+                            text-decoration: none;
                             transition: all 0.1s;
                             font-family: "Raleway";
                             font-weight: normal;
                             font-size: 18px;
+                        }
+                        ul {
+                            list-style: none;
+                            li {
+                                padding: 5px;
+                                a {
+                                    font-size: 16px;
+                                }
+                            }
                         }
                     }
                 }
@@ -128,7 +140,7 @@
                 }
             }
             nav.nav-menu {
-                ul {
+                >ul {
                     margin: 0 auto;
                     padding: 0;
                     list-style: none;
@@ -139,12 +151,31 @@
                     li {
                         padding: 10px;
                         transition: all 0.1s;
+                        position: relative;
                         &,
                         a {
+                            text-decoration: none;
                             transition: all 0.1s;
                             font-family: "Raleway";
                             font-weight: normal;
                             font-size: 12px;
+                        }
+                        ul {
+                            display: none;
+                            position: absolute;
+                            top: calc(100% + 1px);
+                            width: 150px;
+                            left: 0;
+                            padding: 0;
+                            margin: 0;
+                            background: #4080ff;
+                            color: white;
+                            list-style: none;
+                        }
+                        &:hover {
+                            >ul {
+                                display: block;
+                            }
                         }
                     }
                 }
@@ -198,14 +229,23 @@
                 }
             }
             nav.nav-menu {
-                ul {
+                >ul {
                     border-bottom: 1px solid rgba(white, 0.6);
-                    li {
+                    >li {
                         padding: 10px;
                         transition: all 0.1s;
                         &,
                         a {
                             color: white;
+                        }
+                        ul {
+                            background: white;
+                            li {
+                                &,
+                                a {
+                                    color: #4080ff;
+                                }
+                            }
                         }
                     }
                 }
@@ -230,12 +270,21 @@
                 }
             }
             nav.nav-menu {
-                ul {
+                >ul {
                     border-bottom: 1px solid #9c9c9c;
-                    li {
+                    >li {
                         &,
                         a {
                             color: #4080ff;
+                        }
+                        ul {
+                            background: #4080ff;
+                            li {
+                                &,
+                                a {
+                                    color: #fff;
+                                }
+                            }
                         }
                     }
                 }

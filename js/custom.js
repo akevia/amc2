@@ -1,5 +1,10 @@
 $ = jQuery;
 $(function() {
+    $('a[href*="#"]').click(function() {
+        if ($(window).width() <= 991 && $(".content-header").hasClass("active")) {
+            $(".content-header").toggleClass("active");
+        }
+    });
     $(".button-mobile").click(function() {
         $(".content-header").toggleClass("active");
     });

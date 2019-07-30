@@ -60,56 +60,56 @@
   margin: 40px 0 25px 15px;
 }
 
-.programas-slider {
+.competencias-slider {
   width: 100%;
 }
 
-.programas-slider .swiper-slide .content {
+.competencias-slider .swiper-slide .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.programas-slider .swiper-slide .content .colmn:nth-child(1) {
+.competencias-slider .swiper-slide .content .colmn:nth-child(1) {
   width: 40.5%;
 }
 
-.programas-slider .swiper-slide .content .colmn:nth-child(1) .content .video {
+.competencias-slider .swiper-slide .content .colmn:nth-child(1) .content .video {
   width: 100%;
 }
 
-.programas-slider .swiper-slide .content .colmn:nth-child(2) {
+.competencias-slider .swiper-slide .content .colmn:nth-child(2) {
   width: 59.5%;
 }
 
-.programas-slider .swiper-slide .content .colmn:nth-child(2) .content {
+.competencias-slider .swiper-slide .content .colmn:nth-child(2) .content {
   padding: 10px 60px;
 }
 
-.programas-slider .swiper-slide .content .colmn:nth-child(2) .content .small-title-slider {
+.competencias-slider .swiper-slide .content .colmn:nth-child(2) .content .small-title-slider {
   width: 100%;
 }
 
-.programas-slider .swiper-button-prev img {
+.competencias-slider .swiper-button-prev img {
   margin-left: -2px;
 }
 
-.programas-slider .swiper-button-next img {
+.competencias-slider .swiper-button-next img {
   margin-right: -2px;
 }
 
-.programas-slider .row {
+.competencias-slider .row {
   display: block;
   width: 100%;
   margin: 40px 0px;
 }
 
-.programas-slider .row .colmn:nth-child(1) {
+.competencias-slider .row .colmn:nth-child(1) {
   width: 40%;
   height: 30px;
 }
 
-.programas-slider .row .colmn:nth-child(1) .amc-slider-button {
+.competencias-slider .row .colmn:nth-child(1) .amc-slider-button {
   float: right;
   margin: 0;
   margin-left: 30px;
@@ -393,8 +393,8 @@
     margin-top: 40px;
     font-size: 30px;
   }
-  /* Programas */
-  .programas-slider .swiper-slide .content .colmn:nth-child(2) .content {
+  /* competencias */
+  .competencias-slider .swiper-slide .content .colmn:nth-child(2) .content {
     width: 60%;
     max-width: none !important;
   }
@@ -447,11 +447,11 @@
   .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(2) {
     width: 50%;
   }
-  /* Programas */
-  .programas-slider .swiper-slide .content .colmn:nth-child(2) {
+  /* competencias */
+  .competencias-slider .swiper-slide .content .colmn:nth-child(2) {
     width: 59.5%;
   }
-  .programas-slider .swiper-slide .content .colmn:nth-child(2) .content {
+  .competencias-slider .swiper-slide .content .colmn:nth-child(2) .content {
     padding: 10px 15px;
   }
   /* Tabs */
@@ -508,28 +508,28 @@
   .testimonio-slider .cont-medalla p {
     font-size: 18px;
   }
-  /* Programas */
-  .contenedor-general-programas {
+  /* competencias */
+  .contenedor-general-competencias {
     padding: 60px 20px;
     width: auto;
   }
-  .programas-slider .swiper-slide .content {
+  .competencias-slider .swiper-slide .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .programas-slider .swiper-slide .content .colmn:nth-child(1) {
+  .competencias-slider .swiper-slide .content .colmn:nth-child(1) {
     width: 100%;
     margin-top: 20px;
   }
-  .programas-slider .swiper-slide .content .colmn:nth-child(2) {
+  .competencias-slider .swiper-slide .content .colmn:nth-child(2) {
     width: 100%;
   }
-  .programas-slider .swiper-slide .content .colmn:nth-child(2) .content {
+  .competencias-slider .swiper-slide .content .colmn:nth-child(2) .content {
     padding: 0;
   }
-  .programas-slider .row .colmn:nth-child(1) {
+  .competencias-slider .row .colmn:nth-child(1) {
     width: 100%;
   }
   /* Tabs */
