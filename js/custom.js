@@ -1,5 +1,6 @@
 $ = jQuery;
 $(function() {
+    changingMenuClass();
     $('a[href*="#"]').click(function() {
         if ($(window).width() <= 991 && $(".content-header").hasClass("active")) {
             $(".content-header").toggleClass("active");
@@ -58,45 +59,48 @@ $(function() {
 
     $(window).resize(function() {
         blogconfig();
+        changingMenuClass();
     });
 
-    var menu_light = $(".light-menu").toArray();
-    var menu_dark = $(".dark-menu").toArray();
-    var menus = menu_dark.concat(menu_light);
-    menus.forEach(function(element, index) {
-        menus[index].top = $(element).position().top;
-        menus[index].bottom =
-            $(element).position().top + $(element).outerHeight(true);
-    });
+    function changingMenuClass() {
+        var menu_light = $(".light-menu").toArray();
+        var menu_dark = $(".dark-menu").toArray();
+        var menus = menu_dark.concat(menu_light);
+        menus.forEach(function(element, index) {
+            menus[index].top = $(element).position().top;
+            menus[index].bottom =
+                $(element).position().top + $(element).outerHeight(true);
+        });
 
-    function compare(a, b) {
-        if (a.top < b.top) {
-            return -1;
-        }
-        if (a.top > b.top) {
-            return 1;
-        }
-        return 0;
-    }
-
-    menus.sort(compare);
-    $(window).scroll(function() {
-        var header = $(window).scrollTop();
-        for (var i = 0; i < menus.length; i++) {
-            var name = menus[i].className;
-            var pTop = menus[i].top;
-            var pBottom = menus[i].bottom - 100;
-
-            if (header < pBottom && header >= pTop) {
-                if (name == "dark-menu") {
-                    $("header").addClass("dark");
-                    $("header").removeClass("light");
-                } else {
-                    $("header").addClass("light");
-                    $("header").removeClass("dark");
-                }
-                break;
+        function compare(a, b) {
+            if (a.top < b.top) {
+                return -1;
             }
+            if (a.top > b.top) {
+                return 1;
+            }
+            return 0;
         }
-    });
+
+        menus.sort(compare);
+        $(window).scroll(function() {
+            var header = $(window).scrollTop();
+            for (var i = 0; i < menus.length; i++) {
+                var name = menus[i].className;
+                var pTop = menus[i].top;
+                var pBottom = menus[i].bottom - 100;
+
+                if (header < pBottom && header >= pTop) {
+                    if (name == "dark-menu") {
+                        $("header").addClass("dark");
+                        $("header").removeClass("light");
+                    } else {
+                        $("header").addClass("light");
+                        $("header").removeClass("dark");
+                    }
+                    break;
+                }
+            }
+        });
+    }
 });
