@@ -9,7 +9,7 @@ get_header();
 
 <!-- Hero Banner -->
 <div class="light-menu">
-    <div class="row-container-fluid flexbox vertical-middle ">
+    <div class="row-container-fluid flexbox vertical-middle" id="#inicio">
         <div class="swiper-container home-slider">
 
             <div class="swiper-wrapper">
@@ -60,7 +60,7 @@ get_header();
 
 <!-- Nosotros -->
 <div class="light-menu">
-    <div class="row-container flexbox vertical-middle contenedor-general-nosotros" style="background-image: url(<?php echo get_template_directory_uri() . '/img/row-2.jpg'; ?>); background-position: bottom right;">
+    <div id="nosotros" class="row-container flexbox vertical-middle contenedor-general-nosotros" style="background-image: url(<?php echo get_template_directory_uri() . '/img/row-2.jpg'; ?>); background-position: bottom right;">
         <div class="content">
             <div class="swiper-container podemos-slider">
                 <!-- Additional required wrapper -->
@@ -150,7 +150,7 @@ get_header();
 
 <!-- Que podemos hacer por ti  -->
 <div class="dark-menu">
-    <div class="row-container flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-podemos.png'; ?>); background-position: bottom right;">
+    <div id="quepodemos" class="row-container flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-podemos.png'; ?>); background-position: bottom right;">
         <div class="content">
             <div>
                 <span class="small-title">
@@ -244,12 +244,12 @@ get_header();
     </div>
 </div><!-- Que podemos hacer por ti  -->
 
-<!-- Programas -->
+<!-- competencias -->
 <div class="light-menu">
 
-    <div class="row-container-fluid flexbox vertical-middle contenedor-general-programas" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
+    <div id="competencias" class="row-container-fluid flexbox vertical-middle contenedor-general-competencias" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-competencias.png'; ?>);">
 
-        <div class="swiper-container programas-slider">
+        <div class="swiper-container competencias-slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -411,10 +411,10 @@ get_header();
             <!-- If we need navigation buttons -->
             <div class="row">
                 <div class="colmn">
-                    <div class="swiper-button-next prgramas amc-slider-button">
+                    <div class="swiper-button-next competencias amc-slider-button">
                         <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
                     </div>
-                    <div class="swiper-button-prev prgramas amc-slider-button">
+                    <div class="swiper-button-prev competencias amc-slider-button">
                         <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
 
                     </div>
@@ -424,12 +424,201 @@ get_header();
         </div>
 
     </div>
-</div><!-- Programas -->
+</div><!-- competencias -->
+
+<!-- programas -->
+<div class="dark-menu">
+
+    <div id="programas" class="row-container flexbox vertical-middle " style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
+        <div class="content">
+            <div>EL AMC2 se enfoca en el desarrollo de competencias por medio de programas adaptadosa las necesidades particulares de cada cliente</div>
+            <div class="title">
+                Modelo de entrega de servicios del AMC2:
+            </div>
+
+            <div class="columns-container">
+                <div class="colmn" id="antes">
+                    <div class="content">
+                        <div class="top-text">
+                            Antes
+                        </div>
+
+                        <div class="columns-container">
+                            <div class="column">
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmn" id="durante">
+                    <div class="content">
+                        <div class="top-text">
+                            Durante
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmn" id="despues">
+                    <div class="content">
+                        <div class="top-text">
+                            Después
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- competencias -->
+
+
+
+<!-- Casos de exito -->
+
+<div class="light-menu">
+
+    <div id="casos-de-exito" class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
+
+        <div class="swiper-container casos-de-exito-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Casos de éxito
+                                    </span>
+
+                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
+
+                                    <p class="mas-casos">
+                                        Más casos de exito
+                                    </p>
+
+
+
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+
+                            <table style="width:100%">
+                                <tr>
+                                    <td>Giro</td>
+                                    <td>Grupo en insdustrias Energía y Alimentos</td>
+                                </tr>
+                                <tr>
+                                    <td>Tamaño</td>
+                                    <td>Grande  ( > 12,000 Empleados)</td>
+                                </tr>
+                                <tr>
+                                    <td>Situación</td>
+                                    <td>· 
+                                        Cuentan con una <span> cultura Lean robusta </span> y poseen un programa de capacitación propio de la empresa <br><br>
+
+· Están en <span> proceso continuo de formación de los empleados </span> de la organización <br><br>
+
+· Buscan <span> innovar en su modelo de enseñanza </span> para generar mayor impacto</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Situación</th>
+                                </tr>
+
+                            </table>
+
+                            <div class="cont-m">
+                                <div>
+                                    <p class="tit">Programa de formación</p>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/circulos-cde.png' ?>" alt="">
+                                    <p class="desc">
+                                    · Desarrollo de 6 módulos ajustados a las prácticas propias
+                                    <br><br>
+                                    · Ejecución de cursos con instructores compartidos
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tit">Participantes:</p>
+                                    <p class="desc">
+                                    Ola inicial de 50 participantes
+                                    <br><br>
+                                    · Gerentes de operación
+                                    <br>
+                                    · Líderes mejora continua
+                                    <br>
+                                    · Staff de soporte
+                                    <br>
+                                    · Coordinadores de producción
+                                    <br>
+                                    · Supervisores de producción
+                                    <br><br>
+                                    Despliegue de cursos 11 meses
+                                    </p>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
 
 <!-- Blog -->
 <div class="dark-menu">
 
-    <div class="row-container flexbox vertical-middle contenedor-general-blog">
+    <div id="blog" class="row-container flexbox vertical-middle contenedor-general-blog">
         <div class="content">
             <div class="flexbox vertical-middle horizontal-space">
                 <div class="small-title">Blog</div>
@@ -574,7 +763,7 @@ get_header();
 
 <!-- testimonios -->
 <div class="light-menu">
-    <div class="row-container-fluid flexbox vertical-middle contenedor-general-testimonios" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
+    <div id="testimonios" class="row-container-fluid flexbox vertical-middle contenedor-general-testimonios" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
 
         <div class="swiper-container testimonio-slider">
             <!-- Additional required wrapper -->
@@ -681,7 +870,7 @@ get_header();
 
 <!-- Contacto -->
 <div class="dark-menu">
-    <div class="row-container flexbox contenedor-general-contacto" style="background-image: url(<?php echo get_template_directory_uri() . '/img/contact-bg.jpg'; ?>); background-position: bottom right;">
+    <div id="contacto" class="row-container flexbox contenedor-general-contacto" style="background-image: url(<?php echo get_template_directory_uri() . '/img/contact-bg.jpg'; ?>); background-position: bottom right;">
         <div class="colmn flexbox vertical-middle">
             <div class="content">
                 <div>
@@ -739,12 +928,20 @@ get_header();
         },
     });
 
-    var prgramas = new Swiper('.programas-slider', {
+    var competencias = new Swiper('.competencias-slider', {
         spaceBetween: 100,
         simulateTouch: false,
         navigation: {
-            nextEl: '.swiper-button-next.prgramas',
-            prevEl: '.swiper-button-prev.prgramas',
+            nextEl: '.swiper-button-next.competencias',
+            prevEl: '.swiper-button-prev.competencias',
+        },
+    });
+    var programas = new Swiper('.programas-slider', {
+        spaceBetween: 100,
+        simulateTouch: false,
+        navigation: {
+            nextEl: '.swiper-button-next.programas',
+            prevEl: '.swiper-button-prev.programas',
         },
     });
 
@@ -756,6 +953,16 @@ get_header();
             prevEl: '.swiper-button-prev.testimonios',
         },
     });
+
+    var testimonio = new Swiper('.casos-de-exito-slider', {
+        spaceBetween: 100,
+        simulateTouch: false,
+        navigation: {
+            nextEl: '.swiper-button-next.casos-de-exito',
+            prevEl: '.swiper-button-prev.casos-de-exito',
+        },
+    });
+
 </script>
 <?php
 get_footer();
