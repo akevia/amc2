@@ -16,7 +16,8 @@ get_header();
 
                 <div class="swiper-slide">
                     <div class="media">
-                        <img src="<?php echo get_template_directory_uri() . '/media/slide-bg.png' ?>">
+                        <!-- <img src="<?php echo get_template_directory_uri() . '/media/slide-bg.png' ?>"> -->
+                        <video src="<?php echo get_template_directory_uri() . '/img/video.mp4' ?>" muted autoplay loop></video>
                     </div>
 
                     <div class="row-container flexbox vertical-middle">
@@ -26,33 +27,6 @@ get_header();
                         </div>
                     </div>
                 </div>
-
-                <div class="swiper-slide">
-                    <div class="media">
-                        <img src="<?php echo get_template_directory_uri() . '/media/slide-bg.png' ?>">
-                    </div>
-
-                    <div class="row-container flexbox vertical-middle">
-                        <div class="title-no-border">
-                            Capacitando a la industria <br>
-                            en el desarrollo de competencias
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="media">
-                        <img src="<?php echo get_template_directory_uri() . '/media/slide-bg.png' ?>">
-                    </div>
-
-                    <div class="row-container flexbox vertical-middle">
-                        <div class="title-no-border">
-                            Capacitando a la industria <br>
-                            en el desarrollo de competencias
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -660,17 +634,14 @@ get_header();
                                     <span class="small-title-slider">
                                         Testimonios
                                     </span>
-                                    <div class="title-slider">Juan Lopez</div>
+                                    <div class="title-slider">José Alfredo Vázquez</div>
                                     <br>
                                     <div class="sub-title">
-                                        CAINTRA
+                                        Ing. Mejora Continua, Xignux
                                     </div>
                                     <div class="desc">
-                                        <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                            lobortis nisl ut aliquip ex ea commodo consequat”.
-                                        </p>
+                                        <blockquote>“La parte práctica, el implementar físicamente lo aprendido y realizar la simulación en la línea es de gran ayuda para transmitir el conocimiento”.
+                                        </blockquote>
                                     </div>
                                 </div>
                                 <div class="cont-slide-item">
@@ -706,18 +677,60 @@ get_header();
                                     <span class="small-title-slider">
                                         Testimonios
                                     </span>
-                                    <div class="title-slider">El pelos</div>
+                                    <div class="title-slider">Arturo Montoya Villarello</div>
                                     <br>
                                     <div class="sub-title">
-                                        CAINTRA
+                                        Gerente Nacional Ventas Mayoreo, Ragasa
                                     </div>
                                     <div class="desc">
-                                        <p>
-                                            “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                            lobortis nisl ut aliquip ex ea commodo consequat”
-                                        </p>
+                                        <blockquote>
+                                            “El poner en práctica todos lo conceptos teóricos facilita muchas más el aprendizaje. Las instalaciones son totalmente adecuadas y los instructores ampliamente capacitados.”
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev testimonios amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next testimonios amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="cont-medalla">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                        <p>Net promoter Score</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Testimonios
+                                    </span>
+                                    <div class="title-slider">Erick Cajero Rodríguez</div>
+                                    <br>
+                                    <div class="sub-title">
+                                        Jefe turno, Reynera
+                                    </div>
+                                    <div class="desc">
+                                        <blockquote>
+                                            “Porque este curso te abre nuevas formas de implementar métodos de trabajo en pro de la mejora continua y te ayuda a la medicón de los estándares o tiempos efectivos.”
+                                        </blockquote>
                                     </div>
                                 </div>
                                 <div class="cont-slide-item">
