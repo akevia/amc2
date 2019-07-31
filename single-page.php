@@ -471,6 +471,124 @@ get_header();
     </div>
 </div><!-- competencias -->
 
+
+
+<!-- Casos de exito -->
+
+<div class="light-menu">
+
+    <div id="casos-de-exito" class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
+
+        <div class="swiper-container casos-de-exito-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Casos de éxito
+                                    </span>
+
+                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
+
+                                    <p class="mas-casos">
+                                        Más casos de exito
+                                    </p>
+
+
+
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+
+                            <table style="width:100%">
+                                <tr>
+                                    <td>Giro</td>
+                                    <td>Grupo en insdustrias Energía y Alimentos</td>
+                                </tr>
+                                <tr>
+                                    <td>Tamaño</td>
+                                    <td>Grande  ( > 12,000 Empleados)</td>
+                                </tr>
+                                <tr>
+                                    <td>Situación</td>
+                                    <td>· 
+                                        Cuentan con una <span> cultura Lean robusta </span> y poseen un programa de capacitación propio de la empresa <br><br>
+
+· Están en <span> proceso continuo de formación de los empleados </span> de la organización <br><br>
+
+· Buscan <span> innovar en su modelo de enseñanza </span> para generar mayor impacto</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Situación</th>
+                                </tr>
+
+                            </table>
+
+                            <div class="cont-m">
+                                <div>
+                                    <p class="tit">Programa de formación</p>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/circulos-cde.png' ?>" alt="">
+                                    <p class="desc">
+                                    · Desarrollo de 6 módulos ajustados a las prácticas propias
+                                    <br><br>
+                                    · Ejecución de cursos con instructores compartidos
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tit">Participantes:</p>
+                                    <p class="desc">
+                                    Ola inicial de 50 participantes
+                                    <br><br>
+                                    · Gerentes de operación
+                                    <br>
+                                    · Líderes mejora continua
+                                    <br>
+                                    · Staff de soporte
+                                    <br>
+                                    · Coordinadores de producción
+                                    <br>
+                                    · Supervisores de producción
+                                    <br><br>
+                                    Despliegue de cursos 11 meses
+                                    </p>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
 <!-- Blog -->
 <div class="dark-menu">
 
@@ -848,6 +966,16 @@ get_header();
             prevEl: '.swiper-button-prev.testimonios',
         },
     });
+
+    var testimonio = new Swiper('.casos-de-exito-slider', {
+        spaceBetween: 100,
+        simulateTouch: false,
+        navigation: {
+            nextEl: '.swiper-button-next.casos-de-exito',
+            prevEl: '.swiper-button-prev.casos-de-exito',
+        },
+    });
+
 </script>
 <?php
 get_footer();

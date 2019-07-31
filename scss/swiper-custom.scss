@@ -218,6 +218,153 @@
     }
 }
 
+
+#casos-de-exito{
+    padding: 0 55px 0 85px;
+    width: calc(100% - 140px);
+}
+.casos-de-exito-slider {
+    width: 100%;
+    margin-top: 70px;
+    .swiper-wrapper{
+        align-items: center;
+        .swiper-slide {
+            .content {
+                .colmn {
+                    &:nth-child(1) {
+                        width: 50%;
+                        .content {
+                            .cont-info{
+                                width: 80%;
+                            }
+                            .img-principal{
+                                width: 100%;
+                                margin: 60px 0 40px;
+                            }
+
+                            .mas-casos{
+                                font-size: 16px;
+                                color: white;
+                                font-family: "Raleway";
+                                font-weight: 900;
+                            }
+
+                            .cont-arrows{
+                                display: inline-block;
+                            }
+                            .cont-slide-item{
+                                display: block;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        width: 50%;
+                        .content {
+                            table{
+                                border-spacing: 30px 7px;
+                                tbody{
+                                    tr{
+                                        td{
+                                            padding: 10px 15px;
+                                            span{
+                                                font-weight: 900;
+                                            }
+                                            &:nth-child(1){
+                                                font-size: 15px;
+                                                color: #4080ff;
+                                                font-family: "Raleway";
+                                                font-weight: 900;
+                                                background: white;
+                                                text-transform: uppercase;
+                                            }
+                                            &:nth-child(2){
+                                                font-size: 12px;
+                                                color: #4080ff;
+                                                font-family: "Raleway";
+                                                background: rgba($color: white, $alpha: 0.9);
+                                            }
+                                        }
+
+                                        
+                                    }
+                                }
+                            }
+                            .cont-m{
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 0 30px;
+                                div{
+                                    width: 200px;
+                                    p.tit{
+                                        font-size: 15px;
+                                        color: white;
+                                        font-family: "Raleway";
+                                        font-weight: 900;
+                                        text-align: center;
+                                    }
+                                    p.desc{
+                                        font-size: 12px;
+                                        color: white;
+                                        font-family: "Raleway";
+                                    }
+                                    img{
+                                        width: 200px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-button-prev {
+        left: 0;
+        margin-right: 23px;
+        img {
+            margin-left: -2px;
+        }
+    }
+    .swiper-button-next {
+        img {
+            margin-right: -2px;
+        }
+    }
+    .cont-medalla{
+        margin-top: 20px;
+        display: flex;
+        img{
+            width: 100px;
+        }
+        p{
+            font-size: 24px;
+            color: white;
+            font-family: "Raleway";
+            font-weight: 700;
+            margin: 0;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+    }
+    .row {
+        display: block;
+        width: 100%;
+        padding-left: 80px;
+        .colmn {
+            &:nth-child(1) {
+                width: 40%;
+                height: 30px;
+                .amc-slider-button {
+                    float: left;
+                    margin: 0;
+                    margin-right: 30px;
+                    margin-top: -35px;
+                }
+            }
+        }
+    }
+}
+
 .amc-slider-button {
     width: 30px;
     height: 30px;
@@ -378,6 +525,63 @@
     }
 
 
+    /* Casos de exito */
+
+    .casos-de-exito-slider {
+        .swiper-wrapper{
+            .swiper-slide {
+                .content {
+                    .colmn {
+
+                        &:nth-child(1){
+                            .content{
+                                .mas-casos{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            .content {
+                                table{
+                                    tbody{
+                                        tr{
+                                            td{
+                                                &:nth-child(1){
+                                                    font-size: 18px;
+                                                }
+                                                &:nth-child(2){
+                                                    font-size: 15px;
+                                                }
+                                            }
+    
+                                            
+                                        }
+                                    }
+                                }
+                                .cont-m{
+                                    div{
+                                        width: 300px;
+                                        p.tit{
+                                            font-size: 18px;
+                                        }
+                                        p.desc{
+                                            font-size: 15px;
+                                        }
+                                        img{
+                                            width: 300px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
     /* competencias */
 
     .competencias-slider {
@@ -453,6 +657,13 @@
         }
     }
 
+    /* Casos de exito */
+
+    #casos-de-exito{
+        padding: 0 0 0 25px;
+        width: calc(100% - 25px);
+    }
+
 }
 
 
@@ -483,6 +694,43 @@
         }
     }
 
+
+    /* Casos de exito */
+
+    #casos-de-exito{
+        padding: 0 0 0 15px;
+        width: calc(100% - 15px);
+    }
+
+    .casos-de-exito-slider {
+        .swiper-wrapper{
+            .swiper-slide {
+                .content {
+                    .colmn {
+                        &:nth-child(1) {
+                            width: 40%;
+                            .content{
+                                .cont-info{
+                                    width: 95%;
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
+                            width: 60%;
+                            .content {
+                                table{
+                                    border-spacing: 15px 7px;
+                                }
+                                .cont-m{
+                                    padding: 0 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 
@@ -578,6 +826,54 @@
             }
         }
     }
+
+
+        /* Casos de exito */
+
+        #casos-de-exito{
+            padding: 60px 20px;
+            width: calc(100% - 40px);
+        }
+    
+        .casos-de-exito-slider {
+            .swiper-wrapper{
+                .swiper-slide {
+                    > .content {
+                        flex-wrap: wrap;
+                        .colmn {
+                            &:nth-child(1) {
+                                width: 100%;
+                                .content{
+                                    .cont-info{
+                                        width: 95%;
+                                    }
+                                }
+                            }
+                            &:nth-child(2) {
+                                width: 100%;
+                                .content {
+                                    table{
+                                        border-spacing: 0px 7px;
+                                    }
+                                    .cont-m{
+                                        padding: 0;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        div{
+                                            width: 100%;
+                                            img{
+                                                margin: 0 auto;
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
     /* competencias */
 
