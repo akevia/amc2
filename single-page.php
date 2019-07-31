@@ -733,7 +733,7 @@ get_header();
                                     <div class="title-slider">José Alfredo Vázquez</div>
                                     <br>
                                     <div class="sub-title">
-                                        Ing. Mejora Continua, Xignux
+                                        Ing. Mejora Continua <br> Xignux
                                     </div>
                                     <div class="desc">
                                         <blockquote>“La parte práctica, el implementar físicamente lo aprendido y realizar la simulación en la línea es de gran ayuda para transmitir el conocimiento”.
@@ -776,7 +776,7 @@ get_header();
                                     <div class="title-slider">Arturo Montoya Villarello</div>
                                     <br>
                                     <div class="sub-title">
-                                        Gerente Nacional Ventas Mayoreo, Ragasa
+                                        Gerente Nacional Ventas Mayoreo <br> Ragasa
                                     </div>
                                     <div class="desc">
                                         <blockquote>
@@ -821,11 +821,58 @@ get_header();
                                     <div class="title-slider">Erick Cajero Rodríguez</div>
                                     <br>
                                     <div class="sub-title">
-                                        Jefe turno, Reynera
+                                        Jefe turno <br> Reynera
                                     </div>
                                     <div class="desc">
                                         <blockquote>
                                             “Porque este curso te abre nuevas formas de implementar métodos de trabajo en pro de la mejora continua y te ayuda a la medicón de los estándares o tiempos efectivos.”
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev testimonios amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next testimonios amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="cont-medalla">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                        <p>Net promoter Score</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Testimonios
+                                    </span>
+                                    <div class="title-slider">Mario Verdinez</div>
+                                    <br>
+                                    <div class="sub-title">
+                                        Operational Excellence Manager <br>FRISA
+                                    </div>
+                                    <div class="desc">
+                                        <blockquote>
+                                            “Todo el taller es muy bueno, pero quisiera destacar estos dos puntos:
+                                            1) Simulación de los Desperdicios, es muy clara, que no solo sirve para que el personal nuevo los identifique, sino que también para reforzar la teoría a los veteranos.
+                                            2) Visión del VSM completo, nuestros procesos demandan una gran área de trabajo, por lo que no todos los operadores pueden ver el desempeño del VSM completo tan claro como en el taller; esto ayudó a fortalecer la sensibilidad para estar receptivos a los problemas de los demás.”
                                         </blockquote>
                                     </div>
                                 </div>

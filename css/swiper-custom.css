@@ -138,7 +138,7 @@
 
 .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content {
   padding: 10px 80px;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-info {
@@ -612,7 +612,7 @@
     padding: 10px 25px;
   }
   .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-info {
-    width: 80%;
+    width: 90%;
   }
   /* Casos de exito */
   #casos-de-exito {
