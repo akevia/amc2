@@ -125,12 +125,12 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 30px 85px;
+    padding: 30px 35px;
     position: fixed;
     z-index: 10;
-    width: calc(100% - 170px);
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
+    width: calc(100% - 70px);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   header .content-header a.brand {
     position: relative;
@@ -147,8 +147,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  header .content-header.min-header {
+    width: calc(100% - 50px);
+    padding: 5px 25px;
+  }
+  header .content-header.min-header a.brand img {
+    width: 30px;
   }
   header .content-header nav.nav-menu > ul {
     margin: 0 auto;
@@ -214,80 +221,69 @@
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
-  .light .content-header a.brand img.logo-header {
+  header.light .content-header a.brand img.logo-header {
     opacity: 0;
-    width: 50px;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
   }
-  .light .content-header a.brand img.logo-header-white {
-    width: 50px;
+  header.light .content-header a.brand img.logo-header-white {
     opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
-  .light .content-header .search-container .main-form-search input[type="text"] {
+  header.light .content-header.min-header {
+    background-color: #4080ff;
+  }
+  header.light .content-header .search-container .main-form-search input[type="text"] {
     color: white;
     border-bottom: 2px solid rgba(255, 255, 255, 0.6);
   }
-  .light .content-header .search-container i {
+  header.light .content-header .search-container i {
     color: white;
   }
-  .light .content-header nav.nav-menu > ul {
+  header.light .content-header nav.nav-menu > ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   }
-  .light .content-header nav.nav-menu > ul > li {
+  header.light .content-header nav.nav-menu > ul > li {
     padding: 10px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
-  .light .content-header nav.nav-menu > ul > li,
-  .light .content-header nav.nav-menu > ul > li a {
+  header.light .content-header nav.nav-menu > ul > li,
+  header.light .content-header nav.nav-menu > ul > li a {
     color: white;
   }
-  .light .content-header nav.nav-menu > ul > li ul {
+  header.light .content-header nav.nav-menu > ul > li ul {
     background: white;
   }
-  .light .content-header nav.nav-menu > ul > li ul li,
-  .light .content-header nav.nav-menu > ul > li ul li a {
+  header.light .content-header nav.nav-menu > ul > li ul li,
+  header.light .content-header nav.nav-menu > ul > li ul li a {
     color: #4080ff;
   }
-  .dark .content-header a.brand img.logo-header {
+  header.dark .content-header a.brand img.logo-header {
     opacity: 1;
-    width: 50px;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
   }
-  .dark .content-header a.brand img.logo-header-white {
-    width: 50px;
-    position: absolute;
-    top: 0;
+  header.dark .content-header a.brand img.logo-header-white {
     opacity: 0;
-    left: 0;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
   }
-  .dark .content-header nav.nav-menu > ul {
+  header.dark .content-header.min-header {
+    background-color: #fff;
+  }
+  header.dark .content-header nav.nav-menu > ul {
     border-bottom: 1px solid #9c9c9c;
   }
-  .dark .content-header nav.nav-menu > ul > li,
-  .dark .content-header nav.nav-menu > ul > li a {
+  header.dark .content-header nav.nav-menu > ul > li,
+  header.dark .content-header nav.nav-menu > ul > li a {
     color: #4080ff;
   }
-  .dark .content-header nav.nav-menu > ul > li ul {
+  header.dark .content-header nav.nav-menu > ul > li ul {
     background: #4080ff;
   }
-  .dark .content-header nav.nav-menu > ul > li ul li,
-  .dark .content-header nav.nav-menu > ul > li ul li a {
+  header.dark .content-header nav.nav-menu > ul > li ul li,
+  header.dark .content-header nav.nav-menu > ul > li ul li a {
     color: #fff;
   }
-  .dark .content-header .search-container i {
+  header.dark .content-header .search-container i {
     color: #4080ff;
   }
-  .dark .content-header .search-container .main-form-search input[type="text"] {
+  header.dark .content-header .search-container .main-form-search input[type="text"] {
     color: rgba(64, 128, 255, 0.6);
     border-bottom: 2px solid rgba(64, 128, 255, 0.6);
   }
 }
-/*# sourceMappingURL=header.css.map */

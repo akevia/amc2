@@ -151,6 +151,9 @@ body {
     .content {
         width: 100%;
     }
+    &.search-page {
+        padding-top: 130px;
+    }
 }
 
 .row-container-fluid {
@@ -160,9 +163,9 @@ body {
     width: 100%;
 }
 
-#quepodemos{
-    .content{
-        > div:nth-child(1){
+#quepodemos {
+    .content {
+        >div:nth-child(1) {
             margin-top: 70px;
         }
     }
@@ -406,6 +409,7 @@ body {
         }
     }
 }
+
 
 /*
 @media screen and (min-width: 991px) {

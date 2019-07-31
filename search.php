@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="row-container flexbox vertical-top">
+<div class="row-container search-page flexbox vertical-top">
     <div class="container">
 
         <?php

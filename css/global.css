@@ -159,6 +159,10 @@ body {
   width: 100%;
 }
 
+.row-container.search-page {
+  padding-top: 130px;
+}
+
 .row-container-fluid {
   min-height: 100vh;
   background-size: cover;
@@ -575,4 +579,3 @@ body {
     margin: 20px 0;
   }
 }
-/*# sourceMappingURL=global.css.map */

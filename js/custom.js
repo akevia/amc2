@@ -6,9 +6,11 @@ $(function() {
             $(".content-header").toggleClass("active");
         }
     });
+
     $(".button-mobile").click(function() {
         $(".content-header").toggleClass("active");
     });
+
     var tabs_container = $(".tabs-container");
     tabs_container.find($(".tab")).click(function() {
         var index = $(this).index();
@@ -101,6 +103,14 @@ $(function() {
                     break;
                 }
             }
+            console.log({ header });
+            if (header > 0) {
+                $(".content-header").addClass("min-header");
+            } else {
+                $(".content-header").removeClass("min-header");
+            }
         });
     }
+
+    //
 });

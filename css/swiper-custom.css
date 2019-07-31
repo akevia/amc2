@@ -138,10 +138,11 @@
 
 .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content {
   padding: 10px 80px;
+  padding-right: 20px;
 }
 
 .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-info {
-  width: 80%;
+  width: 90%;
 }
 
 .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .small-title-slider {
@@ -783,4 +784,3 @@
     font-size: 10px;
   }
 }
-/*# sourceMappingURL=swiper-custom.css.map */
