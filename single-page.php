@@ -49,6 +49,26 @@ get_header();
                                     </span>
                                 </div>
                                 <div class="title-slider">
+                                    Advanced Manufacturing <br> Capability Center (AMC²)
+                                </div>
+
+                                <div class="desc">
+                                    <p style="color: white;">
+                                        Es el primer centro de entrenamiento experiencial con una fábrica modelo <br> de última tecnología focalizada en el desarrollo de competencias.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flexbox vertical-middle">
+                            <div class="content">
+                                <div>
+                                    <span class="small-title-slider">
+                                        Nosotros
+                                    </span>
+                                </div>
+                                <div class="title-slider">
                                     Misión
                                 </div>
 

@@ -152,10 +152,10 @@
   }
   header .content-header.min-header {
     width: calc(100% - 50px);
-    padding: 5px 25px;
+    padding: 10px 25px;
   }
   header .content-header.min-header a.brand img {
-    width: 30px;
+    width: 40px;
   }
   header .content-header nav.nav-menu > ul {
     margin: 0 auto;
@@ -186,7 +186,7 @@
     transition: all 0.1s;
     font-family: "Raleway";
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
   }
   header .content-header nav.nav-menu > ul li ul {
     display: none;
