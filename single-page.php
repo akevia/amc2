@@ -427,14 +427,15 @@ get_header();
 </div><!-- competencias -->
 
 <!-- programas -->
-<div class="dark-menu">
+<div class="dark-menu" id="cont-chido">
 
     <div id="programas" class="row-container flexbox vertical-middle " style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
         <div class="content">
-            <div>EL AMC2 se enfoca en el desarrollo de competencias por medio de programas adaptadosa las necesidades particulares de cada cliente</div>
-            <div class="title">
+            <p class="desc"> <span>EL AMC2</span> se enfoca en el desarrollo de competencias por medio de programas adaptadosa las necesidades particulares de cada cliente</p>
+            <p class="mark">
                 Modelo de entrega de servicios del AMC2:
-            </div>
+            </p>
+            <div class="dec"></div>
 
             <div class="columns-container">
                 <div class="colmn" id="antes">
@@ -447,21 +448,41 @@ get_header();
                             <div class="column">
                                 <div class="item">
                                     <div class="info">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure-azul.png' ?>" alt="">
+                                        <div class="cont-items">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/figure-icon1.png' ?>" alt="">
+                                            <p>Diagnóstico
+                                                de Competencias
+                                                (Opcional)
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="column">
                                 <div class="item">
                                     <div class="info">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure-azul.png' ?>" alt="">
+                                        <div class="cont-items">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/figure-icon2.png' ?>" alt="">
+                                            <p>Alineación
+                                                con aspiraciones
+                                                de la empresa
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="column">
                                 <div class="item">
                                     <div class="info">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure-azul.png' ?>" alt="">
+                                        <div class="cont-items">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/figure-icon3.png' ?>" alt="">
+                                            <p>Diseño del programa de formación
+                                                de talento
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -475,7 +496,14 @@ get_header();
                         </div>
                         <div class="item">
                             <div class="info">
-                                <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/img/figure-celeste.png' ?>" alt="">
+                                <div class="cont-items">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/figure-icon4.png' ?>" alt="">
+                                    <p>Ejecución
+                                        de talleres
+                                        de formación
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -488,25 +516,146 @@ get_header();
                         <div class="item">
                             <div class="info">
                                 <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                <div class="cont-items">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/figure-icon5.png' ?>" alt="">
+                                    <p>Retroalimentación
+                                        de aprendizajes
+                                        a la empresa
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <button id="mas">Ver más</button>
         </div>
     </div>
+
+    <!-- jdhjdfhjdfhjdfhdfhjdhfjdhjhjdfhjdfhjdfjhdfhjdfdhjf  -->
+
+
+    <div id="casos-de-exito" class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
+
+        <div class="swiper-container casos-de-exito-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Casos de éxito
+                                    </span>
+
+                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
+
+                                    <p class="mas-casos">
+                                        Más casos de exito
+                                    </p>
+
+
+
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+
+                            <table style="width:100%">
+                                <tr>
+                                    <td>Giro</td>
+                                    <td>Grupo en insdustrias Energía y Alimentos</td>
+                                </tr>
+                                <tr>
+                                    <td>Tamaño</td>
+                                    <td>Grande  ( > 12,000 Empleados)</td>
+                                </tr>
+                                <tr>
+                                    <td>Situación</td>
+                                    <td>· 
+                                        Cuentan con una <span> cultura Lean robusta </span> y poseen un programa de capacitación propio de la empresa <br><br>
+
+· Están en <span> proceso continuo de formación de los empleados </span> de la organización <br><br>
+
+· Buscan <span> innovar en su modelo de enseñanza </span> para generar mayor impacto</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Situación</th>
+                                </tr>
+
+                            </table>
+
+                            <div class="cont-m">
+                                <div>
+                                    <p class="tit">Programa de formación</p>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/circulos-cde.png' ?>" alt="">
+                                    <p class="desc">
+                                    · Desarrollo de 6 módulos ajustados a las prácticas propias
+                                    <br><br>
+                                    · Ejecución de cursos con instructores compartidos
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="tit">Participantes:</p>
+                                    <p class="desc">
+                                    Ola inicial de 50 participantes
+                                    <br><br>
+                                    · Gerentes de operación
+                                    <br>
+                                    · Líderes mejora continua
+                                    <br>
+                                    · Staff de soporte
+                                    <br>
+                                    · Coordinadores de producción
+                                    <br>
+                                    · Supervisores de producción
+                                    <br><br>
+                                    Despliegue de cursos 11 meses
+                                    </p>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+            <button id="menos">Ver menos</button>
+
+        </div>
+    </div>
+
+
+
+
 </div><!-- competencias -->
 
 
 
-<!-- Casos de exito -->
+<!-- Casos de exito 
 
 <div class="light-menu">
 
     <div id="casos-de-exito" class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
 
         <div class="swiper-container casos-de-exito-slider">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
@@ -612,7 +761,7 @@ get_header();
     </div>
 
 </div>
-
+-->
 
 
 <!-- Blog -->

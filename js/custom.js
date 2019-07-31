@@ -62,6 +62,24 @@ $(function() {
         changingMenuClass();
     });
 
+
+    $("#mas").click(function(e) {
+		$("#programas").addClass("move");
+        $("#casos-de-exito").addClass("move");
+        $("header").addClass("light");
+        $("header").removeClass("dark");
+        
+    });
+
+    $("#menos").click(function(e) {
+		$("#programas").removeClass("move");
+        $("#casos-de-exito").removeClass("move");
+        $("header").removeClass("light");
+        $("header").addClass("dark");
+    });
+    
+
+
     function changingMenuClass() {
         var menu_light = $(".light-menu").toArray();
         var menu_dark = $(".dark-menu").toArray();
