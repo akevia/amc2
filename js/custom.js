@@ -103,7 +103,7 @@ $(function() {
                     break;
                 }
             }
-            console.log({ header });
+
             if (header > 0) {
                 $(".content-header").addClass("min-header");
             } else {

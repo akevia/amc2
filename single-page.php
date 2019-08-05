@@ -920,6 +920,52 @@ get_header();
                         </div>
                     </div>
                 </div>
+
+                <div class="swiper-slide">
+
+                    <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Testimonios
+                                    </span>
+                                    <div class="title-slider">Alfredo Nuño Toledo</div>
+                                    <br>
+                                    <div class="sub-title">
+                                        Gerente Mejora continua <br>Ragasa
+                                    </div>
+                                    <div class="desc">
+                                        <blockquote>
+                                            "Definitivamente muy enriquecedora, se viven de manera práctica y muy didáctica los principios Lean. Además confirma que es vital dominar primero lo más importante que son los principios Lean y controlar tus procesos, para después potencializarlos con Tecnología.
+                                            En general contamos con Colaboradores con un mejor entendimiento de cuáles son los principios Lean, cuestionan más para llegar a la causa raíz de los problemas, en áreas operativas, se tomó importancia en los cambios de modelos."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev testimonios amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next testimonios amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="cont-medalla">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                        <p>Net promoter Score</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
