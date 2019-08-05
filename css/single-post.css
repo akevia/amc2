@@ -49,6 +49,7 @@
   max-width: 1440px;
   margin: 0 auto;
   min-height: 100vh;
+  padding-top: 30px;
   padding-bottom: 140px;
   font-family: "Raleway";
 }
@@ -76,6 +77,7 @@
 .post-content .column .post-related .post-related-title {
   color: #4080ff;
   font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .post-content .column .post-related .grid-related {
@@ -96,17 +98,19 @@
           flex: 1 0 45%;
   height: 300px;
   margin: 10px;
+  position: relative;
   background-size: cover;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-position: center;
   -webkit-box-shadow: 0px 0px 10px -5px black;
           box-shadow: 0px 0px 10px -5px black;
+  text-decoration: none;
 }
 
 .post-content .column .post-related .grid-related .item .info {
   width: calc(100% - 20px);
-  height: calc(200px - 20px);
+  height: calc(250px - 20px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,6 +119,11 @@
           align-items: flex-end;
   padding: 10px;
   position: relative;
+  background-position-y: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#4080ff));
+  background-image: linear-gradient(transparent 20%, #4080ff);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -125,23 +134,6 @@
   left: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#4080ff));
   background-image: linear-gradient(transparent 20%, #4080ff);
-}
-
-.post-content .column .post-related .grid-related .item .info:before {
-  top: 0;
-  left: 0;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-position-y: 100%;
-  opacity: 0;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#ff3040));
-  background-image: linear-gradient(transparent 20%, #ff3040);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 .post-content .column .post-related .grid-related .item .info .date {
@@ -156,20 +148,78 @@
   font-weight: 800;
 }
 
-.post-content .column .post-related .grid-related .item .leermas {
-  height: 100px;
-  background-color: white;
+.post-content .column .post-related .grid-related .item .leer-mas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  height: 50px;
+  width: calc(100% - 20px);
+  background: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+}
+
+.post-content .column .post-related .grid-related .item .leer-mas span {
+  color: black;
+  font-size: 10px;
+  font-family: "Raleway";
+  font-weight: 900;
+  width: 70%;
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.post-content .column .post-related .grid-related .item .leer-mas div {
+  width: 30%;
+}
+
+.post-content .column .post-related .grid-related .item .leer-mas div img {
+  width: 100%;
+  max-width: 80px;
 }
 
 .post-content .column .post-related .grid-related .item:hover .info:before {
   opacity: 1;
 }
+
+.post-content .column .post-related .grid-related .item:before {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: calc(100% - 20px);
+  height: calc(250px - 20px);
+  padding: 10px;
+  background-position-y: 100%;
+  opacity: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#ff3040));
+  background-image: linear-gradient(transparent 20%, #ff3040);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.post-content .column .post-related .grid-related .item:hover:before {
+  opacity: 1;
+}
+
+.post-content .column .post-related .grid-related .item:hover .info {
+  background-position-y: 300px;
+}
+
+.post-content .column .post-related .grid-related .item:hover .leer-mas span {
+  color: #4080ff;
+}
+/*# sourceMappingURL=single-post.css.map */

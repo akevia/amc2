@@ -87,7 +87,7 @@ $author_id = $post->post_author;
                         $link_nota = ($link_externo) ? $link_externo : get_the_permalink();
                         ?>
 
-                        <div class="item" style='background-image: url("<?php echo $img; ?>");'>
+                        <a class="item" href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> style='background-image: url("<?php echo $img; ?>");'>
                             <div class="info">
                                 <div class="overlay"></div>
                                 <div class="content">
@@ -112,12 +112,11 @@ $author_id = $post->post_author;
                                     </div>
                                 </div>
                             </div>
-                            <div class="leermas">
-                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?>><span>Leer más</span>
-                                    <span><img src="" alt=""></span>
-                                </a>
+                            <div class="leer-mas">
+                                <span>LEER MÁS</span>
+                                <div><img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt=""></div>
                             </div>
-                        </div>
+                        </a>
                     <?php
                     endwhile;
                     echo '</div>';
