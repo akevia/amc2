@@ -514,7 +514,7 @@ get_header();
 
                 <div class="swiper-slide">
 
-                <div class="content flexbox vertical-top">
+                    <div class="content flexbox vertical-top">
                         <div class="colmn">
                             <div class="content">
                                 <div class="cont-info">
@@ -547,65 +547,65 @@ get_header();
                         <div class="colmn">
                             <div class="content">
 
-                            <table style="width:100%">
-                                <tr>
-                                    <td>Giro</td>
-                                    <td>Grupo en insdustrias Energía y Alimentos</td>
-                                </tr>
-                                <tr>
-                                    <td>Tamaño</td>
-                                    <td>Grande  ( > 12,000 Empleados)</td>
-                                </tr>
-                                <tr>
-                                    <td>Situación</td>
-                                    <td>· 
-                                        Cuentan con una <span> cultura Lean robusta </span> y poseen un programa de capacitación propio de la empresa <br><br>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>Giro</td>
+                                        <td>Grupo en insdustrias Energía y Alimentos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tamaño</td>
+                                        <td>Grande ( > 12,000 Empleados)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Situación</td>
+                                        <td>·
+                                            Cuentan con una <span> cultura Lean robusta </span> y poseen un programa de capacitación propio de la empresa <br><br>
 
-· Están en <span> proceso continuo de formación de los empleados </span> de la organización <br><br>
+                                            · Están en <span> proceso continuo de formación de los empleados </span> de la organización <br><br>
 
-· Buscan <span> innovar en su modelo de enseñanza </span> para generar mayor impacto</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Situación</th>
-                                </tr>
+                                            · Buscan <span> innovar en su modelo de enseñanza </span> para generar mayor impacto</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Situación</th>
+                                    </tr>
 
-                            </table>
+                                </table>
 
-                            <div class="cont-m">
-                                <div>
-                                    <p class="tit">Programa de formación</p>
-                                    <img src="<?php echo get_template_directory_uri() . '/img/circulos-cde.png' ?>" alt="">
-                                    <p class="desc">
-                                    · Desarrollo de 6 módulos ajustados a las prácticas propias
-                                    <br><br>
-                                    · Ejecución de cursos con instructores compartidos
-                                    </p>
+                                <div class="cont-m">
+                                    <div>
+                                        <p class="tit">Programa de formación</p>
+                                        <img src="<?php echo get_template_directory_uri() . '/img/circulos-cde.png' ?>" alt="">
+                                        <p class="desc">
+                                            · Desarrollo de 6 módulos ajustados a las prácticas propias
+                                            <br><br>
+                                            · Ejecución de cursos con instructores compartidos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="tit">Participantes:</p>
+                                        <p class="desc">
+                                            Ola inicial de 50 participantes
+                                            <br><br>
+                                            · Gerentes de operación
+                                            <br>
+                                            · Líderes mejora continua
+                                            <br>
+                                            · Staff de soporte
+                                            <br>
+                                            · Coordinadores de producción
+                                            <br>
+                                            · Supervisores de producción
+                                            <br><br>
+                                            Despliegue de cursos 11 meses
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p class="tit">Participantes:</p>
-                                    <p class="desc">
-                                    Ola inicial de 50 participantes
-                                    <br><br>
-                                    · Gerentes de operación
-                                    <br>
-                                    · Líderes mejora continua
-                                    <br>
-                                    · Staff de soporte
-                                    <br>
-                                    · Coordinadores de producción
-                                    <br>
-                                    · Supervisores de producción
-                                    <br><br>
-                                    Despliegue de cursos 11 meses
-                                    </p>
-                                </div>
-                            </div>
 
                             </div>
                         </div>
                     </div>
 
-                    
+
                 </div>
 
             </div>
@@ -883,242 +883,242 @@ get_header();
 </div><!-- Blog -->
 
 <!-- testimonios -->
-<div class="light-menu">
-    <div id="testimonios" class="row-container-fluid flexbox vertical-middle contenedor-general-testimonios" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
+<div class="light-menu"></div>
+<div id="testimonios" class="row-container-fluid flexbox vertical-middle contenedor-general-testimonios" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
 
-        <div class="swiper-container testimonio-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
+    <div class="swiper-container testimonio-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
 
-                    <div class="content flexbox vertical-top">
-                        <div class="colmn">
-                            <div class="content">
-                                <div class="cont-info">
-                                    <span class="small-title-slider">
-                                        Testimonios
-                                    </span>
-                                    <div class="title-slider">José Alfredo Vázquez</div>
-                                    <br>
-                                    <div class="sub-title">
-                                        Ing. Mejora Continua <br> Xignux
-                                    </div>
-                                    <div class="desc">
-                                        <blockquote>“La parte práctica, el implementar físicamente lo aprendido y realizar la simulación en la línea es de gran ayuda para transmitir el conocimiento”.
-                                        </blockquote>
-                                    </div>
+                <div class="content flexbox vertical-top">
+                    <div class="colmn">
+                        <div class="content">
+                            <div class="cont-info">
+                                <span class="small-title-slider">
+                                    Testimonios
+                                </span>
+                                <div class="title-slider">José Alfredo Vázquez</div>
+                                <br>
+                                <div class="sub-title">
+                                    Ing. Mejora Continua <br> Xignux
                                 </div>
-                                <div class="cont-slide-item">
-                                    <div class="cont-arrows">
-                                        <div class="swiper-button-prev testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
-                                        </div>
-                                        <div class="swiper-button-next testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cont-medalla">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
-                                        <p>Net promoter Score</p>
-                                    </div>
+                                <div class="desc">
+                                    <blockquote>“La parte práctica, el implementar físicamente lo aprendido y realizar la simulación en la línea es de gran ayuda para transmitir el conocimiento”.
+                                    </blockquote>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="colmn">
-                            <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                            <div class="cont-slide-item">
+                                <div class="cont-arrows">
+                                    <div class="swiper-button-prev testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                    </div>
+                                    <div class="swiper-button-next testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cont-medalla">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                    <p>Net promoter Score</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
 
-                    <div class="content flexbox vertical-top">
-                        <div class="colmn">
-                            <div class="content">
-                                <div class="cont-info">
-                                    <span class="small-title-slider">
-                                        Testimonios
-                                    </span>
-                                    <div class="title-slider">Arturo Montoya Villarello</div>
-                                    <br>
-                                    <div class="sub-title">
-                                        Gerente Nacional Ventas Mayoreo <br> Ragasa
-                                    </div>
-                                    <div class="desc">
-                                        <blockquote>
-                                            “El poner en práctica todos lo conceptos teóricos facilita muchas más el aprendizaje. Las instalaciones son totalmente adecuadas y los instructores ampliamente capacitados.”
-                                        </blockquote>
-                                    </div>
-                                </div>
-                                <div class="cont-slide-item">
-                                    <div class="cont-arrows">
-                                        <div class="swiper-button-prev testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
-                                        </div>
-                                        <div class="swiper-button-next testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cont-medalla">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
-                                        <p>Net promoter Score</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="colmn">
-                            <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
-                            </div>
+                    <div class="colmn">
+                        <div class="content">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="swiper-slide">
 
-                <div class="swiper-slide">
-
-                    <div class="content flexbox vertical-top">
-                        <div class="colmn">
-                            <div class="content">
-                                <div class="cont-info">
-                                    <span class="small-title-slider">
-                                        Testimonios
-                                    </span>
-                                    <div class="title-slider">Erick Cajero Rodríguez</div>
-                                    <br>
-                                    <div class="sub-title">
-                                        Jefe turno <br> Reynera
-                                    </div>
-                                    <div class="desc">
-                                        <blockquote>
-                                            “Porque este curso te abre nuevas formas de implementar métodos de trabajo en pro de la mejora continua y te ayuda a la medicón de los estándares o tiempos efectivos.”
-                                        </blockquote>
-                                    </div>
+                <div class="content flexbox vertical-top">
+                    <div class="colmn">
+                        <div class="content">
+                            <div class="cont-info">
+                                <span class="small-title-slider">
+                                    Testimonios
+                                </span>
+                                <div class="title-slider">Arturo Montoya Villarello</div>
+                                <br>
+                                <div class="sub-title">
+                                    Gerente Nacional Ventas Mayoreo <br> Ragasa
                                 </div>
-                                <div class="cont-slide-item">
-                                    <div class="cont-arrows">
-                                        <div class="swiper-button-prev testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
-                                        </div>
-                                        <div class="swiper-button-next testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cont-medalla">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
-                                        <p>Net promoter Score</p>
-                                    </div>
+                                <div class="desc">
+                                    <blockquote>
+                                        “El poner en práctica todos lo conceptos teóricos facilita muchas más el aprendizaje. Las instalaciones son totalmente adecuadas y los instructores ampliamente capacitados.”
+                                    </blockquote>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="colmn">
-                            <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                            <div class="cont-slide-item">
+                                <div class="cont-arrows">
+                                    <div class="swiper-button-prev testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                    </div>
+                                    <div class="swiper-button-next testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cont-medalla">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                    <p>Net promoter Score</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="swiper-slide">
-
-                    <div class="content flexbox vertical-top">
-                        <div class="colmn">
-                            <div class="content">
-                                <div class="cont-info">
-                                    <span class="small-title-slider">
-                                        Testimonios
-                                    </span>
-                                    <div class="title-slider">Mario Verdinez</div>
-                                    <br>
-                                    <div class="sub-title">
-                                        Operational Excellence Manager <br>FRISA
-                                    </div>
-                                    <div class="desc">
-                                        <blockquote>
-                                            “Todo el taller es muy bueno, pero quisiera destacar estos dos puntos:
-                                            1) Simulación de los Desperdicios, es muy clara, que no solo sirve para que el personal nuevo los identifique, sino que también para reforzar la teoría a los veteranos.
-                                            2) Visión del VSM completo, nuestros procesos demandan una gran área de trabajo, por lo que no todos los operadores pueden ver el desempeño del VSM completo tan claro como en el taller; esto ayudó a fortalecer la sensibilidad para estar receptivos a los problemas de los demás.”
-                                        </blockquote>
-                                    </div>
-                                </div>
-                                <div class="cont-slide-item">
-                                    <div class="cont-arrows">
-                                        <div class="swiper-button-prev testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
-                                        </div>
-                                        <div class="swiper-button-next testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cont-medalla">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
-                                        <p>Net promoter Score</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="colmn">
-                            <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
-                            </div>
+                    <div class="colmn">
+                        <div class="content">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="swiper-slide">
+            <div class="swiper-slide">
 
-                    <div class="content flexbox vertical-top">
-                        <div class="colmn">
-                            <div class="content">
-                                <div class="cont-info">
-                                    <span class="small-title-slider">
-                                        Testimonios
-                                    </span>
-                                    <div class="title-slider">Alfredo Nuño Toledo</div>
-                                    <br>
-                                    <div class="sub-title">
-                                        Gerente Mejora continua <br>Ragasa
+                <div class="content flexbox vertical-top">
+                    <div class="colmn">
+                        <div class="content">
+                            <div class="cont-info">
+                                <span class="small-title-slider">
+                                    Testimonios
+                                </span>
+                                <div class="title-slider">Erick Cajero Rodríguez</div>
+                                <br>
+                                <div class="sub-title">
+                                    Jefe turno <br> Reynera
+                                </div>
+                                <div class="desc">
+                                    <blockquote>
+                                        “Porque este curso te abre nuevas formas de implementar métodos de trabajo en pro de la mejora continua y te ayuda a la medicón de los estándares o tiempos efectivos.”
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="cont-slide-item">
+                                <div class="cont-arrows">
+                                    <div class="swiper-button-prev testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
                                     </div>
-                                    <div class="desc">
-                                        <blockquote>
-                                            "Definitivamente muy enriquecedora, se viven de manera práctica y muy didáctica los principios Lean. Además confirma que es vital dominar primero lo más importante que son los principios Lean y controlar tus procesos, para después potencializarlos con Tecnología.
-                                            En general contamos con Colaboradores con un mejor entendimiento de cuáles son los principios Lean, cuestionan más para llegar a la causa raíz de los problemas, en áreas operativas, se tomó importancia en los cambios de modelos."
-                                        </blockquote>
+                                    <div class="swiper-button-next testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
                                     </div>
                                 </div>
-                                <div class="cont-slide-item">
-                                    <div class="cont-arrows">
-                                        <div class="swiper-button-prev testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
-                                        </div>
-                                        <div class="swiper-button-next testimonios amc-slider-button">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cont-medalla">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
-                                        <p>Net promoter Score</p>
-                                    </div>
+                                <div class="cont-medalla">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                    <p>Net promoter Score</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="colmn">
-                            <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                    <div class="colmn">
+                        <div class="content">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+
+                <div class="content flexbox vertical-top">
+                    <div class="colmn">
+                        <div class="content">
+                            <div class="cont-info">
+                                <span class="small-title-slider">
+                                    Testimonios
+                                </span>
+                                <div class="title-slider">Mario Verdinez</div>
+                                <br>
+                                <div class="sub-title">
+                                    Operational Excellence Manager <br>FRISA
+                                </div>
+                                <div class="desc">
+                                    <blockquote>
+                                        “Todo el taller es muy bueno, pero quisiera destacar estos dos puntos:
+                                        1) Simulación de los Desperdicios, es muy clara, que no solo sirve para que el personal nuevo los identifique, sino que también para reforzar la teoría a los veteranos.
+                                        2) Visión del VSM completo, nuestros procesos demandan una gran área de trabajo, por lo que no todos los operadores pueden ver el desempeño del VSM completo tan claro como en el taller; esto ayudó a fortalecer la sensibilidad para estar receptivos a los problemas de los demás.”
+                                    </blockquote>
+                                </div>
                             </div>
+                            <div class="cont-slide-item">
+                                <div class="cont-arrows">
+                                    <div class="swiper-button-prev testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                    </div>
+                                    <div class="swiper-button-next testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cont-medalla">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                    <p>Net promoter Score</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="colmn">
+                        <div class="content">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+
+                <div class="content flexbox vertical-top">
+                    <div class="colmn">
+                        <div class="content">
+                            <div class="cont-info">
+                                <span class="small-title-slider">
+                                    Testimonios
+                                </span>
+                                <div class="title-slider">Alfredo Nuño Toledo</div>
+                                <br>
+                                <div class="sub-title">
+                                    Gerente Mejora continua <br>Ragasa
+                                </div>
+                                <div class="desc">
+                                    <blockquote>
+                                        "Definitivamente muy enriquecedora, se viven de manera práctica y muy didáctica los principios Lean. Además confirma que es vital dominar primero lo más importante que son los principios Lean y controlar tus procesos, para después potencializarlos con Tecnología.
+                                        En general contamos con Colaboradores con un mejor entendimiento de cuáles son los principios Lean, cuestionan más para llegar a la causa raíz de los problemas, en áreas operativas, se tomó importancia en los cambios de modelos."
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="cont-slide-item">
+                                <div class="cont-arrows">
+                                    <div class="swiper-button-prev testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                    </div>
+                                    <div class="swiper-button-next testimonios amc-slider-button">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cont-medalla">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                    <p>Net promoter Score</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="colmn">
+                        <div class="content">
+                            <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+
+</div>
 </div><!-- testimonios -->
 
 <!-- Contacto -->
