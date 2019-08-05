@@ -64,23 +64,19 @@ $(function() {
         changingMenuClass();
     });
 
-
     $("#mas").click(function(e) {
-		$("#programas").addClass("move");
+        $("#programas").addClass("move");
         $("#casos-de-exito").addClass("move");
         $("header").addClass("light");
         $("header").removeClass("dark");
-        
     });
 
     $("#menos").click(function(e) {
-		$("#programas").removeClass("move");
+        $("#programas").removeClass("move");
         $("#casos-de-exito").removeClass("move");
         $("header").removeClass("light");
         $("header").addClass("dark");
     });
-    
-
 
     function changingMenuClass() {
         var menu_light = $(".light-menu").toArray();
@@ -108,7 +104,7 @@ $(function() {
             for (var i = 0; i < menus.length; i++) {
                 var name = menus[i].className;
                 var pTop = menus[i].top;
-                var pBottom = menus[i].bottom - 100;
+                var pBottom = menus[i].bottom - 70;
 
                 if (header < pBottom && header >= pTop) {
                     if (name == "dark-menu") {

@@ -8,7 +8,7 @@ function amc_scripts()
     wp_enqueue_script('jquery');
 
     wp_enqueue_script('swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js', array(), '1.0.0', false);
-    wp_enqueue_script('custom', get_template_directory_uri() . '/js/custom.js', array(), filemtime(get_template_directory_uri() . '/js/custom.js'), false);
+    wp_enqueue_script('custom', get_template_directory_uri() . '/js/custom.js', array(), "0.0.2", false);
 }
 add_action('wp_enqueue_scripts', 'amc_scripts');
 

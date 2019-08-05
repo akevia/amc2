@@ -1,17 +1,28 @@
-<?php get_header(); ?>
+<?php
+
+
+// Data 
+$link_externo = get_field('link_externo');
+
+if ($link_externo) {
+    header("Location: " . $link_externo);
+    exit();
+}
+
+get_header(); ?>
+<?php
+$post_month  = get_the_time('F');
+$post_year = get_the_time('Y');
+$author_id = $post->post_author;
+
+
+?>
 <div class="row-container flexbox vertical-middle post-hero" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
     <div class="overlay"></div>
     <div class="content">
         <div class="post-date">
-            <?php
-            $post_month  = get_the_time('F');
-            $post_year = get_the_time('Y');
-            echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
-            ?>
-            <?php $author_id = $post->post_author; ?>
-            By:
-            <?php the_author_meta('display_name', $author_id); ?>
-
+            <?php echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>'; ?>
+            By: <?php the_author_meta('display_name', $author_id); ?>
         </div>
         <div class="post-title">
             <?php the_title(); ?>
@@ -41,19 +52,6 @@
                     get_the_title()
                 )
             );
-
-        // Previous/next post navigation.
-        // the_post_navigation(array(
-        //     'next_text' => '<span class="meta-nav" aria-hidden="true">' . __('Next', 'twentyfifteen') . '</span> ' .
-        //         '<span class="screen-reader-text">' . __('Next post:', 'twentyfifteen') . '</span> ' .
-        //         '<span class="post-title">%title</span>',
-        //     'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __('Previous', 'twentyfifteen') . '</span> ' .
-        //         '<span class="screen-reader-text">' . __('Previous post:', 'twentyfifteen') . '</span> ' .
-        //         '<span class="post-title">%title</span>',
-        // ));
-
-
-
         endwhile;
         ?>
     </div>
@@ -71,7 +69,7 @@
                     'tag__in' => $tag_ids,
                     'post__not_in' => array($post->ID),
                     'posts_per_page' => 5,
-                    'caller_get_posts' => 1
+                    'ignore_sticky_posts' => 1
                 );
                 $my_query = new wp_query($args);
                 if ($my_query->have_posts()) {
@@ -81,6 +79,12 @@
                     while ($my_query->have_posts()) :
                         $my_query->the_post();
                         $img = get_the_post_thumbnail_url($post->ID, 'post-featured-img');
+                        $authors = get_field('autores');
+                        if (!$authors) {
+                            $author_id = $post->post_author;
+                        }
+                        $link_externo = get_field('link_externo');
+                        $link_nota = ($link_externo) ? $link_externo : get_the_permalink();
                         ?>
 
                         <div class="item" style='background-image: url("<?php echo $img; ?>");'>
@@ -89,13 +93,19 @@
                                 <div class="content">
                                     <div class="date">
                                         <?php
+
                                         $post_month  = get_the_time('F');
                                         $post_year = get_the_time('Y');
                                         echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
                                         ?>
-                                        <?php $author_id = $post->post_author; ?>
                                         By:
-                                        <?php the_author_meta('display_name', $author_id); ?>
+                                        <?php
+                                        if ($authors) {
+                                            echo $authors;
+                                        } else {
+                                            the_author_meta('display_name', $author_id);
+                                        }
+                                        ?>
                                     </div>
                                     <div class="related-title">
                                         <?php the_title(); ?>
@@ -103,9 +113,9 @@
                                 </div>
                             </div>
                             <div class="leermas">
-                                <a href="<?php the_permalink() ?>"><span>Leer más</span>
-                                <span><img src="" alt=""></span>
-                            </a>
+                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?>><span>Leer más</span>
+                                    <span><img src="" alt=""></span>
+                                </a>
                             </div>
                         </div>
                     <?php
@@ -113,7 +123,7 @@
                     echo '</div>';
                 }
             }
-            $post = $orig_post;
+
             wp_reset_query();
             ?>
         </div>
