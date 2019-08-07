@@ -34,6 +34,7 @@
   -webkit-box-shadow: 0px 0px 20px 3px #ccc;
           box-shadow: 0px 0px 20px 3px #ccc;
   display: block;
+  text-decoration: none;
 }
 
 .contenedor-general-blog .contenedor-blog .column .card .overlay {
@@ -121,6 +122,7 @@
 
 .contenedor-general-blog .contenedor-blog .column .card .leer-mas div img {
   width: 100%;
+  max-width: 80px;
 }
 
 .contenedor-general-blog .contenedor-blog .column .card.card-especial .overlay {
@@ -401,3 +403,4 @@
     width: 100%;
   }
 }
+/*# sourceMappingURL=blog.css.map */
