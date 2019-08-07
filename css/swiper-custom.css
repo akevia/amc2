@@ -60,11 +60,30 @@
   margin: 40px 0 25px 15px;
 }
 
+#competencias {
+  padding: 0 85px;
+  width: calc(100% - 170px);
+}
+
 .competencias-slider {
   width: 100%;
 }
 
+.competencias-slider .swiper-slide .small-title-slider {
+  margin-bottom: 20px;
+}
+
 .competencias-slider .swiper-slide .content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 350px;
+}
+
+.competencias-slider .swiper-slide .content .colmn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -74,8 +93,19 @@
   width: 40.5%;
 }
 
+.competencias-slider .swiper-slide .content .colmn:nth-child(1) .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .competencias-slider .swiper-slide .content .colmn:nth-child(1) .content .video {
   width: 100%;
+  display: none;
+}
+
+.competencias-slider .swiper-slide .content .colmn:nth-child(1) .content .video.active {
+  display: block;
 }
 
 .competencias-slider .swiper-slide .content .colmn:nth-child(2) {
@@ -83,7 +113,10 @@
 }
 
 .competencias-slider .swiper-slide .content .colmn:nth-child(2) .content {
-  padding: 10px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 50px;
 }
 
 .competencias-slider .swiper-slide .content .colmn:nth-child(2) .content .small-title-slider {
@@ -435,7 +468,7 @@
 }
 
 .tabs-container {
-  margin-top: 20px;
+  display: none;
 }
 
 .tabs-container .tabs {
@@ -466,6 +499,10 @@
 .tabs-container .tabs .tab.active {
   border-bottom: 2px solid white;
   font-weight: bold;
+}
+
+.tabs-container.active {
+  display: block;
 }
 
 .panels .panel {
@@ -508,7 +545,7 @@
 .panels .panel .desc p {
   margin: 0;
   margin-bottom: 20px;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .panels .panel .desc p:last-of-type {
@@ -518,9 +555,9 @@
 .panels .panel .desc a.button-link {
   background-color: #fff;
   color: #ff3140;
-  padding: 5px 10px;
+  padding: 7px 10px;
   text-decoration: none;
-  font-size: 8px;
+  font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -578,21 +615,15 @@
     width: 300px;
   }
   /* competencias */
+  .competencias-slider .swiper-slide .content {
+    min-height: 450px;
+  }
   .competencias-slider .swiper-slide .content .colmn:nth-child(2) .content {
-    width: 60%;
+    width: 75%;
     max-width: none !important;
   }
   /* Tabs */
-  .tabs-container .tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .tabs-container .tabs .tab {
-    margin-right: 12px;
     font-size: 18px;
   }
   .panels .panel .title-slider {
@@ -614,6 +645,17 @@
   }
   .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .cont-info {
     width: 90%;
+  }
+  #competencias {
+    padding: 0 25px;
+    width: calc(100% - 50px);
+  }
+  .tabs-container .tabs .tab {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+  .tabs-container.active {
+    display: block;
   }
   /* Casos de exito */
   #casos-de-exito {
@@ -637,6 +679,10 @@
     width: 50%;
   }
   /* Casos de exito */
+  #competencias {
+    padding: 60px 15px;
+    width: calc(100% - 30px);
+  }
   #casos-de-exito {
     padding: 0 0 0 15px;
     width: calc(100% - 15px);
@@ -657,6 +703,18 @@
     padding: 0 15px;
   }
   /* competencias */
+  .competencias-slider .swiper-slide .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    min-height: auto;
+  }
+  .competencias-slider .swiper-slide .content .colmn {
+    width: 85% !important;
+    min-height: auto;
+    margin-top: 30px;
+  }
   .competencias-slider .swiper-slide .content .colmn:nth-child(2) {
     width: 59.5%;
   }
@@ -756,6 +814,10 @@
     display: block;
   }
   /* competencias */
+  #competencias {
+    padding: 60px 20px;
+    width: calc(100% - 40px);
+  }
   .contenedor-general-competencias {
     padding: 60px 20px;
     width: auto;
@@ -765,6 +827,8 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin-top: 30px;
+    min-height: auto;
   }
   .competencias-slider .swiper-slide .content .colmn:nth-child(1) {
     width: 100%;

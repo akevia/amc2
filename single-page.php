@@ -227,23 +227,10 @@ get_header();
                 <!-- Slides -->
                 <div class="swiper-slide">
 
-                    <div class="content flexbox vertical-top">
-                        <div class="colmn">
-                            <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
-                            </div>
-                        </div>
-
-
-                        <div class="colmn">
-                            <div class="content">
-                                <div>
-                                    <span class="small-title-slider">
-                                        Productos
-                                    </span>
-                                </div>
-
-                                <div class="tabs-container">
+                <span class="small-title-slider">
+                                    Competencias
+                                </span>
+                                <div class="tabs-container active" role="competencias">
                                     <div>
                                         <ul class="tabs">
                                             <li class="tab active">Módulos Análogos</li>
@@ -251,90 +238,62 @@ get_header();
                                             <li class="tab">Programa Empresarial</li>
                                         </ul>
                                     </div>
-
-                                    <div class="panels">
-                                        <div class="panel active">
-                                            <div class="title-slider">Conciencia Lean</div>
-                                            <div class="desc">
-                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
-                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
-                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Conciencia Lean 2</div>
-                                            <div class="desc">
-                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
-                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
-                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Conciencia Lean 3</div>
-                                            <div class="desc">
-                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
-                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
-                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
 
                     <div class="content flexbox vertical-top">
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <div class="colection-videos">
+                                    <video class="video active" preload playsinline autobuffer muted controls name="Conciencia Lean">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CONCIENCIA LEAN_6seg_v2.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Overall Equipment Effectiveness (OEE)">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-OEE_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Single Minute Exchange of Die (SMED)">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-SMED_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Solución de Problemas Causa Raíz">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CAUSA RUIZ_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Advanced Analytics">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-ADVANCED ANALYTICS_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Gestión de Desempeño Digital">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-GESTION DE DESEMPEÑO DIGITAL_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                </div>
                             </div>
                         </div>
 
 
                         <div class="colmn">
                             <div class="content">
-                                <div>
-                                    <span class="small-title-slider">
-                                        Productos
-                                    </span>
-                                </div>
 
-                                <div class="tabs-container">
+                                <div class="tabs-container active">
                                     <div>
                                         <ul class="tabs">
-                                            <li class="tab active">Módulos Análogos 2</li>
-                                            <li class="tab">Módulos Digitales 2</li>
-                                            <li class="tab">Programa Empresarial 2</li>
+                                            <li class="tab active">Conciencia Lean</li>
+                                            <li class="tab">Overall Equipment Effectiveness (OEE)</li>
+                                            <li class="tab">Single Minute Exchange of Die (SMED)</li>
+                                            <li class="tab">Solución de Problemas Causa Raíz</li>
                                         </ul>
                                     </div>
 
                                     <div class="panels">
                                         <div class="panel active">
-                                            <div class="title-slider">Conciencia Lean 4</div>
+                                            <div class="title-slider">Conciencia Lean</div>
                                             <div class="desc">
-                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
-                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
-                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                                <p>
+                                                    Desarrollar una <strong>compresión de los conceptos Lean básicos,</strong> incluyendo identificación de 8 desperdicios, 
+                                                    estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño 
+                                                    en el piso de producción.
                                                 </p>
 
                                                 <p>
@@ -343,11 +302,12 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="panel">
-                                            <div class="title-slider">Conciencia Lean 5</div>
+                                            <div class="title-slider">Overall Equipment Effectiveness (OEE)</div>
                                             <div class="desc">
-                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
-                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
-                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                                <p>
+                                                Entender la <strong>importancia de medición de la eficiencia</strong> en equipos y máquinas de manera vivencial, y  a su vez desarrollará la 
+                                                <strong>habilidad para el cálculo del OEE, </strong>
+                                                través de la recolección de los datos que lo componen.
                                                 </p>
 
                                                 <p>
@@ -356,11 +316,25 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="panel">
-                                            <div class="title-slider">Conciencia Lean 6</div>
+                                            <div class="title-slider">Single Minute Exchange of Die (SMED)</div>
                                             <div class="desc">
-                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
-                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
-                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                                <p>
+                                                Optimizar cambio de modelo, en este módulo se <strong>comprenderá el impacto que tiene el cambio de modelo</strong> en la operación de una línea de producción, 
+                                                y pondrá en práctica el <strong>análisis sistemático</strong> para mejora de dicho proceso
+                                                </p>
+
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                            <div class="title-slider">Solución de Problemas Causa Raíz</div>
+                                            <div class="desc">
+                                                <p>
+                                                Enfocar los esfuerzos en los <strong>problemas de mayor impacto,</strong> y llevará a cabo la 
+                                                <strong>resolución de problemas causa raíz </strong> de manera 
+                                                <strong>sistemática</strong> incluyendo 5 Por Qués, seguimiento de tareas e indicadores de confiabilidad.
                                                 </p>
 
                                                 <p>
@@ -369,18 +343,86 @@ get_header();
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
+
+
+                                <div class="tabs-container">
+                                    <div>
+                                        <ul class="tabs">
+                                            <li class="tab active">Advanced Analytics</li>
+                                            <li class="tab">Gestión de Desempeño Digital</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="panels">
+                                        <div class="panel active">
+                                            <div class="title-slider">Advanced Analytics</div>
+                                            <div class="desc">
+                                                <p>
+                                                Entender y <strong>experimentar el uso de analíticos avanzados</strong> en la optimización de procesos productivos, así como comprender 
+                                                una <strong>visón general de la Industria 4.0</strong> y como impacta en el ambiente de negocios de hoy en día
+                                                </p>
+
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                            <div class="title-slider">Gestión de Desempeño Digital</div>
+                                            <div class="desc">
+                                                <p>
+                                                Fortalecer el entendimiento de los <strong> elementos clave de un sistema de gestión del desempeño </strong> efectivo, 
+                                                a través de indicadores de desempeño visuales, y <strong>entender los beneficios</strong> de los mismos 
+                                                <strong> de forma digital y en tiempo real. </strong>
+                                                </p>
+
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="tabs-container">
+                                    <div>
+                                        <ul class="tabs">
+                                            <li class="tab active">Título del programa</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="panels">
+                                        <div class="panel active">
+                                            <div class="title-slider">Título del programa</div>
+                                            <div class="desc">
+                                                <p>
+                                                Programa de formación flexible y adaptado a las necesidades de la organización, abarcando 
+                                                <strong> talleres Ejecutivos para Alta Dirección, </strong> y talleres de capacitación para el staff de la empresa. 
+                                                El programa incluye competencias de <strong> Fundamentos Lean, Conciencia Digital, 
+                                                Gestión de Desempeño y Gestión del Cambio.</strong>
+                                                </p>
+
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
                     </div>
                 </div>
+
             </div>
             <!-- If we need pagination -->
             <!-- <div class="swiper-pagination"></div> -->
 
-            <!-- If we need navigation buttons -->
+            <!-- If we need navigation buttons 
             <div class="row">
                 <div class="colmn">
                     <div class="swiper-button-next competencias amc-slider-button">
@@ -392,6 +434,7 @@ get_header();
                     </div>
                 </div>
             </div>
+            -->
 
         </div>
 

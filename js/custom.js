@@ -13,17 +13,40 @@ $(function() {
 
     var tabs_container = $(".tabs-container");
     tabs_container.find($(".tab")).click(function() {
+        var role = $(this).closest(".tabs-container").attr("role");
+        var name = $(this).text();
         var index = $(this).index();
         $(this).addClass("active");
         $(this)
             .siblings(".tab")
             .removeClass("active");
-        $(this)
-            .closest(".tabs-container")
-            .find(".panel")
-            .removeClass("active")
-            .eq(index)
-            .addClass("active");
+            if(role){
+                $(this)
+                //.closest(".colmn").next().find(".tabs-container").removeClass("active").eq(index).addClass("active");
+                .closest(".tabs-container").next().children(".colmn:nth-child(2)").find(".tabs-container").removeClass("active").eq(index).addClass("active");
+
+            }
+            else{
+                $(this)
+                .closest(".tabs-container")
+                .find(".panel")
+                .removeClass("active")
+                .eq(index)
+                .addClass("active");
+
+                $(".colection-videos .video").each(function(){
+                    var aux = $(this).attr("name");
+                    if(aux == name){
+                        $(this).addClass("active");
+                    } 
+                    else{
+                        $(this).removeClass("active");
+                    }
+                });
+                
+
+
+            }
     });
 
     function blogconfig() {
@@ -45,6 +68,7 @@ $(function() {
         }
 
         /* Productos */
+        /*
         if ($(window).width() > 767 && $(window).width() < 1750) {
             $(".programas-slider .swiper-slide").each(function(index) {
                 var anchoContTab = $(this)
@@ -55,6 +79,7 @@ $(function() {
                     .css("max-width", anchoContTab + 3);
             });
         }
+        */
     }
 
     blogconfig();
