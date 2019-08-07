@@ -9,6 +9,7 @@ footer {
     &.footer-single {
         position: relative;
         padding: 40px 85px;
+        width: calc(100% - 170px);
     }
     .column:nth-child(1) {
         display: flex;

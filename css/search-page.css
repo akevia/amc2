@@ -2,6 +2,10 @@
   font-family: "Raleway";
 }
 
+.search-page {
+  padding-bottom: 120px;
+}
+
 .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,41 +18,134 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.card-container .card-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 20%;
-          flex: 1 1 20%;
-  margin: 5px;
-  border-radius: 28px;
-  overflow: hidden;
   font-family: "Raleway";
 }
 
-.card-container .card-item .card-content .card-img img {
-  margin: 0;
-  width: 100%;
-  height: auto;
-  margin-bottom: -5px;
+.card-container .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  background-size: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-position: center;
+  -webkit-box-shadow: 0px 0px 10px -5px black;
+          box-shadow: 0px 0px 10px -5px black;
+  text-decoration: none;
 }
 
-.card-container .card-item .card-content .card-info {
-  background-color: #4080ff;
+.card-container .item .info {
+  width: calc(100% - 20px);
+  height: calc(250px - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 10px;
+  position: relative;
+  background-position-y: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#4080ff));
+  background-image: linear-gradient(transparent 20%, #4080ff);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.card-container .card-item .card-content .card-info .card-title {
-  font-size: 20px;
-  line-height: 20px;
+.card-container .item .info .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#4080ff));
+  background-image: linear-gradient(transparent 20%, #4080ff);
 }
 
-.card-container .card-item .card-content .card-info .card-title .card-date {
-  color: #f2f2f2;
+.card-container .item .info .date {
+  text-transform: capitalize;
   font-size: 12px;
+  color: white;
+  margin-bottom: 5px;
 }
 
-.card-container .card-item .card-content .card-info .card-author {
-  font-size: 14px;
+.card-container .item .info .related-title {
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
-/*# sourceMappingURL=search-page.css.map */
+
+.card-container .item .leer-mas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  height: 50px;
+  width: calc(100% - 20px);
+  background: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+}
+
+.card-container .item .leer-mas span {
+  color: black;
+  font-size: 10px;
+  font-family: "Raleway";
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-right: 15px;
+}
+
+.card-container .item .leer-mas div img {
+  width: 100%;
+  max-width: 80px;
+}
+
+.card-container .item:hover .info:before {
+  opacity: 1;
+}
+
+.card-container .item:before {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: calc(100% - 20px);
+  height: calc(250px - 20px);
+  padding: 10px;
+  background-position-y: 100%;
+  opacity: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#ff3040));
+  background-image: linear-gradient(transparent 20%, #ff3040);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.card-container .item:hover:before {
+  opacity: 1;
+}
+
+.card-container .item:hover .info {
+  background-position-y: 300px;
+}
+
+.card-container .item:hover .leer-mas span {
+  color: #4080ff;
+}
