@@ -395,6 +395,7 @@
 
 .tabs-container {
     margin-top: 20px;
+    display: none;
     .tabs {
         list-style: none;
         padding: 0;
@@ -420,6 +421,10 @@
                 font-weight: bold;
             }
         }
+    }
+
+    &.active{
+        display: block;
     }
 }
 

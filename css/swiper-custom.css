@@ -436,6 +436,7 @@
 
 .tabs-container {
   margin-top: 20px;
+  display: none;
 }
 
 .tabs-container .tabs {
@@ -466,6 +467,10 @@
 .tabs-container .tabs .tab.active {
   border-bottom: 2px solid white;
   font-weight: bold;
+}
+
+.tabs-container.active {
+  display: block;
 }
 
 .panels .panel {

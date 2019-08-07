@@ -13,17 +13,24 @@ $(function() {
 
     var tabs_container = $(".tabs-container");
     tabs_container.find($(".tab")).click(function() {
+        var role = $(this).closest(".tabs-container").attr("role");
         var index = $(this).index();
         $(this).addClass("active");
         $(this)
             .siblings(".tab")
             .removeClass("active");
-        $(this)
-            .closest(".tabs-container")
-            .find(".panel")
-            .removeClass("active")
-            .eq(index)
-            .addClass("active");
+            if(role){
+                $(this)
+                .closest(".colmn").next().find(".tabs-container").removeClass("active").eq(index).addClass("active");
+            }
+            else{
+                $(this)
+                .closest(".tabs-container")
+                .find(".panel")
+                .removeClass("active")
+                .eq(index)
+                .addClass("active");
+            }
     });
 
     function blogconfig() {

@@ -230,6 +230,18 @@ get_header();
                     <div class="content flexbox vertical-top">
                         <div class="colmn">
                             <div class="content">
+                                <span class="small-title-slider">
+                                    Competencias
+                                </span>
+                                <div class="tabs-container active" role="competencias">
+                                    <div>
+                                        <ul class="tabs">
+                                            <li class="tab active">Módulos Análogos</li>
+                                            <li class="tab">Módulos Digitales</li>
+                                            <li class="tab">Programa Empresarial</li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
                             </div>
                         </div>
@@ -237,18 +249,14 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <div>
-                                    <span class="small-title-slider">
-                                        Productos
-                                    </span>
-                                </div>
 
-                                <div class="tabs-container">
+                                <div class="tabs-container active">
                                     <div>
                                         <ul class="tabs">
-                                            <li class="tab active">Módulos Análogos</li>
-                                            <li class="tab">Módulos Digitales</li>
-                                            <li class="tab">Programa Empresarial</li>
+                                            <li class="tab active">Conciencia Lean</li>
+                                            <li class="tab">Overall Equipment Effectiveness (OEE)</li>
+                                            <li class="tab">Single Minute Exchange of Die (SMED)</li>
+                                            <li class="tab">Solución de Problemas Causa Raíz</li>
                                         </ul>
                                     </div>
 
@@ -267,7 +275,7 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="panel">
-                                            <div class="title-slider">Conciencia Lean 2</div>
+                                            <div class="title-slider">Overall Equipment Effectiveness (OEE)</div>
                                             <div class="desc">
                                                 <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
                                                 <p>¿Quieres conocer más sobre este entrenamiento?, <br>
@@ -280,7 +288,20 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="panel">
-                                            <div class="title-slider">Conciencia Lean 3</div>
+                                            <div class="title-slider">Single Minute Exchange of Die (SMED)</div>
+                                            <div class="desc">
+                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
+                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
+                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                                </p>
+
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                            <div class="title-slider">Solución de Problemas Causa Raíz</div>
                                             <div class="desc">
                                                 <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
                                                 <p>¿Quieres conocer más sobre este entrenamiento?, <br>
@@ -293,8 +314,72 @@ get_header();
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
+
+
+                                <div class="tabs-container">
+                                    <div>
+                                        <ul class="tabs">
+                                            <li class="tab active">Advanced Analytics</li>
+                                            <li class="tab">Gestión de Desempeño Digital</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="panels">
+                                        <div class="panel active">
+                                            <div class="title-slider">Advanced Analytics</div>
+                                            <div class="desc">
+                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
+                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
+                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                                </p>
+
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                            <div class="title-slider">Gestión de Desempeño Digital</div>
+                                            <div class="desc">
+                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
+                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
+                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                                </p>
+
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="tabs-container">
+                                    <div>
+                                        <ul class="tabs">
+                                            <li class="tab active">Título del programa</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="panels">
+                                        <div class="panel active">
+                                            <div class="title-slider">Título del programa</div>
+                                            <div class="desc">
+                                                <p>Desarrollar una compresión de los conceptos Lean básicos, incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción.</p>
+                                                <p>¿Quieres conocer más sobre este entrenamiento?, <br>
+                                                    <strong> contáctanos para agendar tu Demo-Day.</strong>
+                                                </p>
+
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
