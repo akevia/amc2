@@ -50,7 +50,7 @@
   margin: 0 auto;
   min-height: 100vh;
   padding-top: 30px;
-  padding-bottom: 140px;
+  padding-bottom: 30px;
   font-family: "Raleway";
 }
 
@@ -176,8 +176,8 @@
   width: 70%;
   text-align: center;
   letter-spacing: 1px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .post-content .column .post-related .grid-related .item .leer-mas div {
@@ -220,6 +220,37 @@
 }
 
 .post-content .column .post-related .grid-related .item:hover .leer-mas span {
+  color: #4080ff;
+}
+
+.post-footer-author {
+  background-color: #ececec;
+  padding: 20px 85px;
+}
+
+.post-footer-author .post-author-content {
+  margin: 0 auto;
+  max-width: 768px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-footer-author .post-author-content .column {
+  padding: 20px;
+}
+
+.post-footer-author .post-author-content .column .avatar img {
+  width: 200px;
+}
+
+.post-footer-author .post-author-content .column .text {
+  font-family: "Raleway";
+  color: #828282;
+}
+
+.post-footer-author .post-author-content .column .text .email a {
+  text-decoration: none;
   color: #4080ff;
 }
 /*# sourceMappingURL=single-post.css.map */

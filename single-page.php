@@ -244,12 +244,30 @@ get_header();
                         <div class="colmn">
                             <div class="content">
                                 <div class="colection-videos">
-                                    <video class="video active" name="Conciencia Lean" src="<?php echo get_template_directory_uri() . '/img/EMC2-CONCIENCIA LEAN_6seg_v2.mp4' ?>"></video>
-                                    <video class="video" name="Overall Equipment Effectiveness (OEE)" src="<?php echo get_template_directory_uri() . '/img/EMC2-OEE_6Seg.mp4' ?>"></video>
-                                    <video class="video" name="Single Minute Exchange of Die (SMED)" src="<?php echo get_template_directory_uri() . '/img/EMC2-SMED_6Seg.mp4' ?>"></video>
-                                    <video class="video" name="Solución de Problemas Causa Raíz" src="<?php echo get_template_directory_uri() . '/img/EMC2-CAUSA RUIZ_6Seg.mp4' ?>"></video>
-                                    <video class="video" name="Advanced Analytics" src="<?php echo get_template_directory_uri() . '/img/EMC2-ADVANCED ANALYTICS_6Seg.mp4' ?>"></video>
-                                    <video class="video" name="Gestión de Desempeño Digital" src="<?php echo get_template_directory_uri() . '/img/EMC2-GESTION DE DESEMPEÑO DIGITAL_6Seg.mp4' ?>"></video>
+                                    <video class="video active" preload playsinline autobuffer muted controls name="Conciencia Lean">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CONCIENCIA LEAN_6seg_v2.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Overall Equipment Effectiveness (OEE)">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-OEE_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Single Minute Exchange of Die (SMED)">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-SMED_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Solución de Problemas Causa Raíz">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CAUSA RUIZ_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Advanced Analytics">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-ADVANCED ANALYTICS_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
+                                    <video class="video" preload playsinline autobuffer muted controls name="Gestión de Desempeño Digital">
+                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-GESTION DE DESEMPEÑO DIGITAL_6Seg.mp4' ?>" type="video/mp4">
+							            Your browser does not support the video tag.
+                                    </video>
                                 </div>
                             </div>
                         </div>

@@ -10,6 +10,11 @@ footer {
           justify-content: space-between;
 }
 
+footer.footer-single {
+  position: relative;
+  padding: 40px 85px;
+}
+
 footer .column:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,8 +87,8 @@ footer form button[type="submit"] {
   width: 42px;
   color: white;
   border: 1px solid #ff3040;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   outline: none;
   cursor: pointer;
 }

@@ -14,8 +14,6 @@ get_header(); ?>
 $post_month  = get_the_time('F');
 $post_year = get_the_time('Y');
 $author_id = $post->post_author;
-
-
 ?>
 <div class="row-container flexbox vertical-middle post-hero" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
     <div class="overlay"></div>
@@ -131,6 +129,29 @@ $author_id = $post->post_author;
                 <img src="<?php echo get_field('imagen_destacada'); ?>" />
             <?php endif ?>
         </div>
+    </div>
+</div>
+
+<div class="post-footer-author">
+    <div class="post-author-content">
+
+        <div class="column">
+            <div class="avatar">
+                <img src="<?php echo get_avatar_url($author_id); ?>" alt="">
+            </div>
+        </div>
+        <div class="column">
+            <div class="text">
+                <p>Sobre el autor: </p>
+                <p>
+                    <?php echo the_author_meta('description', $author_id); ?>
+                </p>
+                <p class="email">
+                    <a href="mailto:<?php echo the_author_meta('email', $author_id); ?>"><?php echo the_author_meta('email', $author_id); ?></a>
+                </p>
+            </div>
+        </div>
+
     </div>
 </div>
 <?php get_footer(); ?>

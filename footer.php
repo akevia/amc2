@@ -1,4 +1,6 @@
-<footer class="flexbox vertical-middle">
+<footer class="flexbox vertical-middle <?php if (is_single()) {
+                                            echo 'footer-single';
+                                        } ?>">
     <div class="column">
         <div>
             <a href="" class="footer-logo-link size-1"><img src="<?php echo get_template_directory_uri() . '/img/caintra-logo.png' ?>" alt=""></a>
