@@ -50,7 +50,7 @@
     margin: 0 auto;
     min-height: 100vh;
     padding-top: 30px;
-    padding-bottom: 140px;
+    padding-bottom: 30px;
     font-family: "Raleway";
     .column {
         padding: 10px;
@@ -116,8 +116,7 @@
                             font-weight: 800;
                         }
                     }
-                    
-                    .leer-mas{
+                    .leer-mas {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -129,8 +128,7 @@
                         bottom: 0;
                         right: 0;
                         text-decoration: none;
-    
-                        span{
+                        span {
                             color: black;
                             font-size: 10px;
                             font-family: "Raleway";
@@ -138,17 +136,15 @@
                             width: 70%;
                             text-align: center;
                             letter-spacing: 1px;
-                            transition: all .5s;
+                            transition: all 0.5s;
                         }
-    
-                        div{
+                        div {
                             width: 30%;
-                            img{
+                            img {
                                 width: 100%;
                                 max-width: 80px;
                             }
                         }
-    
                     }
                     &:hover {
                         .info {
@@ -157,7 +153,6 @@
                             }
                         }
                     }
-
                     &:before {
                         top: 0;
                         left: 0;
@@ -173,27 +168,47 @@
                         background-image: linear-gradient(transparent 20%, #ff3040);
                         transition: all 0.4s;
                     }
-
-
-                    &:hover{
-                        &:before{
+                    &:hover {
+                        &:before {
                             opacity: 1;
                         }
-    
-                        .info{
+                        .info {
                             background-position-y: 300px;
                         }
-
-                        .leer-mas{
-                            span{
+                        .leer-mas {
+                            span {
                                 color: #4080ff;
                             }
                         }
-    
                     }
+                }
+            }
+        }
+    }
+}
 
-
-
+.post-footer-author {
+    background-color: #ececec;
+    padding: 20px 85px;
+    .post-author-content {
+        margin: 0 auto;
+        max-width: 768px;
+        display: flex;
+        .column {
+            padding: 20px;
+            .avatar {
+                img {
+                    width: 200px;
+                }
+            }
+            .text {
+                font-family: "Raleway";
+                color: #828282;
+                .email {
+                    a {
+                        text-decoration: none;
+                        color: #4080ff;
+                    }
                 }
             }
         }
