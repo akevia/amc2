@@ -22,33 +22,47 @@
                 <?php
                 while ($the_query->have_posts()) {
                     $the_query->the_post();
-                    $img = get_the_post_thumbnail($post->ID, 'post-result-search',  array('class' => 'alignleft'));
 
+                    $img = get_the_post_thumbnail_url($post->ID, 'post-featured-img');
+                    $authors = get_field('autores');
+                    if (!$authors) {
+                        $author_id = $post->post_author;
+                    }
+                    $link_externo = get_field('link_externo');
+                    $link_nota = ($link_externo) ? $link_externo : get_the_permalink();
                     ?>
-                    <div class="card-item">
 
-                        <div class="card-content">
-                            <div class="card-img">
 
-                                <?php if ($img) {
-                                    echo $img;
-                                } else {
-                                    echo "   <img src=" . get_template_directory_uri() . '/img/notfound.png' . " alt='Imagen de post'>";
-                                } ?>
+                    <a class="item" href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> style='background-image: url("<?php echo $img; ?>");'>
+                        <div class="info">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="date">
+                                    <?php
 
-                            </div>
-
-                            <div class="card-info">
-                                <div class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a><br><span class="card-date"><?php the_date() ?></span></div>
-                                <hr>
-
-                                <div class="card-author"> <?php the_author() ?></div>
-                                <p><?php echo get_post_type($post->ID); ?></p>
+                                    $post_month  = get_the_time('F');
+                                    $post_year = get_the_time('Y');
+                                    echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
+                                    ?>
+                                    By:
+                                    <?php
+                                    if ($authors) {
+                                        echo $authors;
+                                    } else {
+                                        the_author_meta('display_name', $author_id);
+                                    }
+                                    ?>
+                                </div>
+                                <div class="related-title">
+                                    <?php the_title(); ?>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
-
+                        <div class="leer-mas">
+                            <span>LEER MÁS</span>
+                            <div><img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt=""></div>
+                        </div>
+                    </a>
                 <?php
                 }
                 ?>
@@ -58,9 +72,9 @@
         } else {
             ?>
             <div class="content">
-                <h2 style='font-weight:bold;color:#000'>Nothing Found</h2>
-                <div class="alert alert-info">
-                    <p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
+                <h2 style='font-weight:bold;color:#000; font-family: "Raleway"'>Sin resultados</h2>
+                <div class="alert alert-info" style="font-family: 'Raleway'">
+                    <p>Lo sentimos, no se encontró ningún resultado con el criterio de búsqueda. <br> Intenta de nuevo con otras palabras.</p>
                 </div>
             </div>
         <?php } ?>
