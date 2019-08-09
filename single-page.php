@@ -227,18 +227,18 @@ get_header();
                 <!-- Slides -->
                 <div class="swiper-slide">
 
-                <span class="small-title-slider">
-                                    Competencias
-                                </span>
-                                <div class="tabs-container active" role="competencias">
-                                    <div>
-                                        <ul class="tabs">
-                                            <li class="tab active">Módulos Análogos</li>
-                                            <li class="tab">Módulos Digitales</li>
-                                            <li class="tab">Programa Empresarial</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                    <span class="small-title-slider">
+                        Competencias
+                    </span>
+                    <div class="tabs-container active" role="competencias">
+                        <div>
+                            <ul class="tabs">
+                                <li class="tab active">Módulos Análogos</li>
+                                <li class="tab">Módulos Digitales</li>
+                                <li class="tab">Programa Empresarial</li>
+                            </ul>
+                        </div>
+                    </div>
 
                     <div class="content flexbox vertical-top">
                         <div class="colmn">
@@ -246,27 +246,27 @@ get_header();
                                 <div class="colection-videos">
                                     <video class="video active" preload playsinline autobuffer muted controls name="Conciencia Lean">
                                         <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CONCIENCIA LEAN_6seg_v2.mp4' ?>" type="video/mp4">
-							            Your browser does not support the video tag.
+                                        Your browser does not support the video tag.
                                     </video>
                                     <video class="video" preload playsinline autobuffer muted controls name="Overall Equipment Effectiveness (OEE)">
                                         <source src="<?php echo get_template_directory_uri() . '/img/EMC2-OEE_6Seg.mp4' ?>" type="video/mp4">
-							            Your browser does not support the video tag.
+                                        Your browser does not support the video tag.
                                     </video>
                                     <video class="video" preload playsinline autobuffer muted controls name="Single Minute Exchange of Die (SMED)">
                                         <source src="<?php echo get_template_directory_uri() . '/img/EMC2-SMED_6Seg.mp4' ?>" type="video/mp4">
-							            Your browser does not support the video tag.
+                                        Your browser does not support the video tag.
                                     </video>
                                     <video class="video" preload playsinline autobuffer muted controls name="Solución de Problemas Causa Raíz">
                                         <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CAUSA RUIZ_6Seg.mp4' ?>" type="video/mp4">
-							            Your browser does not support the video tag.
+                                        Your browser does not support the video tag.
                                     </video>
                                     <video class="video" preload playsinline autobuffer muted controls name="Advanced Analytics">
                                         <source src="<?php echo get_template_directory_uri() . '/img/EMC2-ADVANCED ANALYTICS_6Seg.mp4' ?>" type="video/mp4">
-							            Your browser does not support the video tag.
+                                        Your browser does not support the video tag.
                                     </video>
                                     <video class="video" preload playsinline autobuffer muted controls name="Gestión de Desempeño Digital">
                                         <source src="<?php echo get_template_directory_uri() . '/img/EMC2-GESTION DE DESEMPEÑO DIGITAL_6Seg.mp4' ?>" type="video/mp4">
-							            Your browser does not support the video tag.
+                                        Your browser does not support the video tag.
                                     </video>
                                 </div>
                             </div>
@@ -291,8 +291,8 @@ get_header();
                                             <div class="title-slider">Conciencia Lean</div>
                                             <div class="desc">
                                                 <p>
-                                                    Desarrollar una <strong>compresión de los conceptos Lean básicos,</strong> incluyendo identificación de 8 desperdicios, 
-                                                    estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño 
+                                                    Desarrollar una <strong>compresión de los conceptos Lean básicos,</strong> incluyendo identificación de 8 desperdicios,
+                                                    estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño
                                                     en el piso de producción.
                                                 </p>
 
@@ -305,9 +305,9 @@ get_header();
                                             <div class="title-slider">Overall Equipment Effectiveness (OEE)</div>
                                             <div class="desc">
                                                 <p>
-                                                Entender la <strong>importancia de medición de la eficiencia</strong> en equipos y máquinas de manera vivencial, y  a su vez desarrollará la 
-                                                <strong>habilidad para el cálculo del OEE, </strong>
-                                                través de la recolección de los datos que lo componen.
+                                                    Entender la <strong>importancia de medición de la eficiencia</strong> en equipos y máquinas de manera vivencial, y a su vez desarrollará la
+                                                    <strong>habilidad para el cálculo del OEE, </strong>
+                                                    través de la recolección de los datos que lo componen.
                                                 </p>
 
                                                 <p>
@@ -319,8 +319,8 @@ get_header();
                                             <div class="title-slider">Single Minute Exchange of Die (SMED)</div>
                                             <div class="desc">
                                                 <p>
-                                                Optimizar cambio de modelo, en este módulo se <strong>comprenderá el impacto que tiene el cambio de modelo</strong> en la operación de una línea de producción, 
-                                                y pondrá en práctica el <strong>análisis sistemático</strong> para mejora de dicho proceso
+                                                    Optimizar cambio de modelo, en este módulo se <strong>comprenderá el impacto que tiene el cambio de modelo</strong> en la operación de una línea de producción,
+                                                    y pondrá en práctica el <strong>análisis sistemático</strong> para mejora de dicho proceso
                                                 </p>
 
                                                 <p>
@@ -332,9 +332,9 @@ get_header();
                                             <div class="title-slider">Solución de Problemas Causa Raíz</div>
                                             <div class="desc">
                                                 <p>
-                                                Enfocar los esfuerzos en los <strong>problemas de mayor impacto,</strong> y llevará a cabo la 
-                                                <strong>resolución de problemas causa raíz </strong> de manera 
-                                                <strong>sistemática</strong> incluyendo 5 Por Qués, seguimiento de tareas e indicadores de confiabilidad.
+                                                    Enfocar los esfuerzos en los <strong>problemas de mayor impacto,</strong> y llevará a cabo la
+                                                    <strong>resolución de problemas causa raíz </strong> de manera
+                                                    <strong>sistemática</strong> incluyendo 5 Por Qués, seguimiento de tareas e indicadores de confiabilidad.
                                                 </p>
 
                                                 <p>
@@ -359,8 +359,8 @@ get_header();
                                             <div class="title-slider">Advanced Analytics</div>
                                             <div class="desc">
                                                 <p>
-                                                Entender y <strong>experimentar el uso de analíticos avanzados</strong> en la optimización de procesos productivos, así como comprender 
-                                                una <strong>visón general de la Industria 4.0</strong> y como impacta en el ambiente de negocios de hoy en día
+                                                    Entender y <strong>experimentar el uso de analíticos avanzados</strong> en la optimización de procesos productivos, así como comprender
+                                                    una <strong>visón general de la Industria 4.0</strong> y como impacta en el ambiente de negocios de hoy en día
                                                 </p>
 
                                                 <p>
@@ -372,9 +372,9 @@ get_header();
                                             <div class="title-slider">Gestión de Desempeño Digital</div>
                                             <div class="desc">
                                                 <p>
-                                                Fortalecer el entendimiento de los <strong> elementos clave de un sistema de gestión del desempeño </strong> efectivo, 
-                                                a través de indicadores de desempeño visuales, y <strong>entender los beneficios</strong> de los mismos 
-                                                <strong> de forma digital y en tiempo real. </strong>
+                                                    Fortalecer el entendimiento de los <strong> elementos clave de un sistema de gestión del desempeño </strong> efectivo,
+                                                    a través de indicadores de desempeño visuales, y <strong>entender los beneficios</strong> de los mismos
+                                                    <strong> de forma digital y en tiempo real. </strong>
                                                 </p>
 
                                                 <p>
@@ -398,10 +398,10 @@ get_header();
                                             <div class="title-slider">Título del programa</div>
                                             <div class="desc">
                                                 <p>
-                                                Programa de formación flexible y adaptado a las necesidades de la organización, abarcando 
-                                                <strong> talleres Ejecutivos para Alta Dirección, </strong> y talleres de capacitación para el staff de la empresa. 
-                                                El programa incluye competencias de <strong> Fundamentos Lean, Conciencia Digital, 
-                                                Gestión de Desempeño y Gestión del Cambio.</strong>
+                                                    Programa de formación flexible y adaptado a las necesidades de la organización, abarcando
+                                                    <strong> talleres Ejecutivos para Alta Dirección, </strong> y talleres de capacitación para el staff de la empresa.
+                                                    El programa incluye competencias de <strong> Fundamentos Lean, Conciencia Digital,
+                                                        Gestión de Desempeño y Gestión del Cambio.</strong>
                                                 </p>
 
                                                 <p>
@@ -682,119 +682,198 @@ get_header();
             </div>
 
             <div class="row flexbox horizontal-center contenedor-blog">
-                <div class="column">
-                    <a href="#" class="card" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post1.jpg' ?>') ">
-                        <div class="overlay">
-                            <p class="fecha-autor">
-                                22 abr. 2019 By Héctor García
-                            </p>
-                            <p class="tit">
-                                Las competencias Lean que debe tener nuestra organización rumbo a la transformación digital.
-                            </p>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                                dolore magna aliquam erat volutpat. Ut wisi enim ad minim ...
-                            </p>
-                        </div>
-                        <div class="leer-mas">
-                            <span>LEER MÁS</span>
-                            <div>
-                                <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="column">
-                    <div class="row">
-                        <a href="#" class="card" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post2.jpg' ?>') ">
-                            <div class="overlay">
-                                <p class="fecha-autor">
-                                    05 mar. 2019 By Héctor García
-                                </p>
-                                <p class="tit">
-                                    Empieza con una cultura Lean para capturar todos los beneficios de la
-                                </p>
-                                <p class="desc">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam ...
-                                </p>
-                            </div>
-                            <div class="leer-mas">
-                                <span>LEER MÁS</span>
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card card-especial" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post3.jpg' ?>') ">
-                            <div class="overlay">
-                                <p class="fecha-autor">
-                                    05 mar. 2019 By Héctor García
-                                </p>
-                                <p class="tit">
-                                    ¿A qué se enfrentan las empresas en una transformación Lean y Digital?
-                                </p>
-                            </div>
-                            <div class="leer-mas">
-                                <span>LEER MÁS</span>
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a href="#" class="card card-especial" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post4.jpg' ?>') ">
-                            <div class="overlay">
-                                <p class="fecha-autor">
-                                    17 abr. 2019 By Amy Radermacher, Markus Hammer t
-                                </p>
-                                <p class="tit">
-                                    The Human Factor: The power of the digital capability center
-                                </p>
-                            </div>
-                            <div class="leer-mas">
-                                <span>LEER MÁS</span>
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card card-especial" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post5.jpg' ?>') ">
-                            <div class="overlay">
-                                <p class="fecha-autor">
-                                    10 abr. 2019 By Tanguy Catlin, Laura LaBerge, and Shannon Varney
-                                </p>
-                                <p class="tit">
-                                    Digital strategy: The four fights you have to win
-                                </p>
-                            </div>
-                            <div class="leer-mas">
-                                <span>LEER MÁS</span>
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card card-especial" style="background-image: url('<?php echo get_template_directory_uri() . '/img/post6.jpg' ?>') ">
-                            <div class="overlay">
-                                <p class="fecha-autor">
-                                    03 abr. 2019 By Alejandro Díaz, Kayvaun Rowshankish, and Tamim Saleh
-                                </p>
-                                <p class="tit">
-                                    Why data culture matters
-                                </p>
-                            </div>
-                            <div class="leer-mas">
-                                <span>LEER MÁS</span>
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
 
+                <?php
+                $ind = 1;
+                $args = array('post_status' => 'publish', 'posts_per_page' => 6, 'order' => 'DESC');
+                $loop = new WP_Query($args);
+                while ($loop->have_posts()) : $loop->the_post();
+
+                    //$thumbID = get_post_thumbnail_id($post->ID);
+                    //$imgDestacada = wp_get_attachment_url($thumbID);
+                    $imgDestacada = get_the_post_thumbnail_url($post->ID, 'post-featured-img');
+                    $authors = get_field('autores');
+                    if (!$authors) {
+                        $author_id = $post->post_author;
+                    }
+                    $link_externo = get_field('link_externo');
+                    $link_nota = ($link_externo) ? $link_externo : get_the_permalink();
+                    ?>
+
+                    <?php
+                    if ($ind == 1) {
+                        ?>
+                        <div class="column">
+                            <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                                <div class="overlay">
+                                    <p class="fecha-autor">
+                                        <?php
+                                        $post_month  = get_the_time('F');
+                                        $post_year = get_the_time('Y');
+                                        echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
+                                        ?>
+                                        By:
+                                        <?php
+                                        if ($authors) {
+                                            echo $authors;
+                                        } else {
+                                            the_author_meta('display_name', $author_id);
+                                        }
+                                        ?>
+                                    </p>
+                                    <p class="tit">
+                                        <?php the_title(); ?>
+                                    </p>
+                                    <p class="desc">
+                                        <?php echo (get_the_excerpt()); ?>
+                                    </p>
+                                </div>
+                                <div class="leer-mas">
+                                    <span>LEER MÁS</span>
+                                    <div>
+                                        <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                    <?php
+                    if ($ind == 2) {
+                        ?>
+                        <div class="column">
+                            <div class="row">
+
+                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                                    <div class="overlay">
+                                        <p class="fecha-autor">
+                                            <?php
+                                            $post_month  = get_the_time('F');
+                                            $post_year = get_the_time('Y');
+                                            echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
+                                            ?>
+                                            By:
+                                            <?php
+                                            if ($authors) {
+                                                echo $authors;
+                                            } else {
+                                                the_author_meta('display_name', $author_id);
+                                            }
+                                            ?>
+                                        </p>
+                                        <p class="tit">
+                                            <?php the_title(); ?>
+                                        </p>
+                                        <p class="desc">
+                                            <?php echo (get_the_excerpt()); ?>
+                                        </p>
+                                    </div>
+                                    <div class="leer-mas">
+                                        <span>LEER MÁS</span>
+                                        <div>
+                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+
+                            <?php
+                            }
+                            ?>
+                            <?php
+                            if ($ind == 3) {
+                                ?>
+                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                                    <div class="overlay">
+                                        <p class="fecha-autor">
+                                            <?php
+                                            $post_month  = get_the_time('F');
+                                            $post_year = get_the_time('Y');
+                                            echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
+                                            ?>
+                                            By:
+                                            <?php
+                                            if ($authors) {
+                                                echo $authors;
+                                            } else {
+                                                the_author_meta('display_name', $author_id);
+                                            }
+                                            ?>
+                                        </p>
+                                        <p class="tit">
+                                            <?php the_title(); ?>
+                                        </p>
+                                    </div>
+                                    <div class="leer-mas">
+                                        <span>LEER MÁS</span>
+                                        <div>
+                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        if ($ind == 4 || $ind == 5 || $ind == 6) {
+                            ?>
+                            <?php
+                            if ($ind == 4) {
+                                ?>
+                                <div class="row">
+                                <?php
+                                }
+                                ?>
+                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                                    <div class="overlay">
+                                        <p class="fecha-autor">
+                                            <?php
+                                            $post_month  = get_the_time('F');
+                                            $post_year = get_the_time('Y');
+                                            echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
+                                            ?>
+                                            By:
+                                            <?php
+                                            if ($authors) {
+                                                echo $authors;
+                                            } else {
+                                                the_author_meta('display_name', $author_id);
+                                            }
+                                            ?>
+                                        </p>
+                                        <p class="tit">
+                                            <?php the_title(); ?>
+                                        </p>
+                                    </div>
+                                    <div class="leer-mas">
+                                        <span>LEER MÁS</span>
+                                        <div>
+                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <?php
+                                if ($ind == 6) {
+                                    ?>
+                                </div>
+                            <?php
+                            }
+                            ?>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        if ($ind == 6) {
+                            ?>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                    <?php
+                    $ind++;
+                endwhile;
+                ?>
             </div>
 
 
@@ -1143,3 +1222,4 @@ get_header();
 </script>
 <?php
 get_footer();
+?>
