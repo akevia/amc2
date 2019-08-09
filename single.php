@@ -161,13 +161,13 @@ get_header(); ?>
         </div>
     </div>
 <?php else : ?>
-    <div class="row-container flexbox vertical-middle">
+    <div class="row-container descargable-cont  flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-descargables.jpg'; ?>)">
         <div class="content">
-            <div class="titulo">
+            <div class="small-title">
                 <?php the_title(); ?>
             </div>
-            <div class="descargable">
-                <a href='<?php echo get_field('archivo'); ?>' target="blank">
+            <div class="flexbox horizontal-center descargables">
+                <a class="link-descargable" href='<?php echo get_field('archivo'); ?>' target="blank">
                     <img src=" <?php echo get_field('imagen'); ?>" alt="">
                 </a>
             </div>

@@ -1,6 +1,7 @@
-<footer class="flexbox vertical-middle <?php if (is_single()) {
-                                            echo 'footer-single';
-                                        } ?>">
+<?php if (is_single() && get_post_type() == 'descargable') {
+    echo 'footer-single';
+} ?>
+<footer class="flexbox vertical-middle">
     <div class="column">
         <div>
             <a href="" class="footer-logo-link size-1"><img src="<?php echo get_template_directory_uri() . '/img/caintra-logo.png' ?>" alt=""></a>

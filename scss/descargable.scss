@@ -1,0 +1,22 @@
+.descargable-cont {
+    .small-title {
+        color: #4080ff;
+        border-bottom: 1px solid #4080ff;
+        &:before {
+            background-color: #4080ff;
+        }
+    }
+    .descargables {
+        margin: 20px;
+        .link-descargable {
+            box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            img {
+                margin-bottom: -4px;
+            }
+            &:hover {
+                box-shadow: 0px 0px 20px -10px black;
+            }
+        }
+    }
+}
