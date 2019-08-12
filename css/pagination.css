@@ -1,0 +1,30 @@
+.pagination {
+  margin: 0 auto;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Raleway";
+}
+
+.pagination a,
+.pagination span {
+  text-decoration: none;
+  padding: 5px 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  background-color: #4080ff;
+  border: 2px solid #4080ff;
+}
+
+.pagination a:hover, .pagination a.current,
+.pagination span:hover,
+.pagination span.current {
+  color: #4080ff;
+  background-color: #fff;
+}
+
+.pagination a.prev,
+.pagination span.prev {
+  margin-right: 5px;
+}

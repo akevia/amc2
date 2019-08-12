@@ -29,6 +29,7 @@
 }
 
 #mas {
+  font-family: "Raleway";
   font-size: 14px;
   border-color: #4080ff;
   color: white;
@@ -48,6 +49,7 @@
 }
 
 #menos {
+  font-family: "Raleway";
   font-size: 14px;
   border-color: white;
   color: #4080ff;
@@ -70,7 +72,6 @@ html {
   padding: 0;
   margin: 0 !important;
   scroll-behavior: smooth;
-  font-family: "Raleway";
 }
 
 html {
@@ -116,6 +117,7 @@ body {
 }
 
 .desc {
+  font-family: "Raleway";
   font-weight: normal;
   font-style: normal;
   font-size: 17px;
@@ -127,6 +129,7 @@ body {
   margin-top: 10px;
   min-width: 290px;
   padding: 10px;
+  font-family: "Raleway";
   font-weight: 900;
   background-color: #ff3140;
   display: inline-block;
@@ -138,6 +141,7 @@ body {
   color: white;
   min-width: 290px;
   padding: 30px 0px;
+  font-family: "Raleway";
   font-weight: 900;
   display: inline-block;
   position: relative;
@@ -148,6 +152,7 @@ body {
   color: #838383;
   min-width: 290px;
   padding: 30px 0px;
+  font-family: "Raleway";
   font-weight: 900;
   display: inline-block;
   border-bottom: 1px solid #838383;
@@ -168,6 +173,7 @@ body {
   color: #838383;
   min-width: 290px;
   padding: 10px 0px;
+  font-family: "Raleway";
   font-weight: 900;
   display: inline-block;
   border-bottom: 1px solid #838383;
@@ -188,6 +194,7 @@ body {
   color: white;
   min-width: 290px;
   padding: 10px 0px;
+  font-family: "Raleway";
   font-weight: 900;
   display: inline-block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -290,6 +297,7 @@ body {
 
 .grid .colmn .column-title {
   color: #4080ff;
+  font-family: "Raleway";
   font-weight: 900;
   font-size: 14px;
   margin: 20px 0px;
@@ -299,6 +307,7 @@ body {
 
 .grid .colmn .column-desc {
   color: #b6b5b6;
+  font-family: "Raleway";
   font-size: 12px;
   height: 80px;
   -webkit-transition: all 0.1s;
@@ -329,6 +338,7 @@ body {
 #programas .content p.desc {
   font-size: 16px;
   color: #838383;
+  font-family: "Raleway";
 }
 
 #programas .content p.desc span {
@@ -338,6 +348,7 @@ body {
 #programas .content p.mark {
   font-size: 12px;
   color: #4080ff;
+  font-family: "Raleway";
   width: 50%;
   padding-bottom: 15px;
   border-bottom: 1px solid #b6b5b6;
@@ -374,33 +385,34 @@ body {
 
 #programas .content .columns-container .colmn#antes {
   width: 60%;
-  color: #08225c;
+  color: #08225C;
 }
 
 #programas .content .columns-container .colmn#antes .top-text {
-  border-color: #8eb0f8;
+  border-color: #8EB0F8;
 }
 
 #programas .content .columns-container .colmn#durante {
   width: 20%;
-  color: #8eb0f8;
+  color: #8EB0F8;
 }
 
 #programas .content .columns-container .colmn#durante .top-text {
-  border-color: #a4a4a4;
+  border-color: #A4A4A4;
 }
 
 #programas .content .columns-container .colmn#despues {
   width: 20%;
-  color: #a4a4a4;
+  color: #A4A4A4;
 }
 
 #programas .content .columns-container .colmn#despues .top-text {
-  border-color: #a4a4a4;
+  border-color: #A4A4A4;
 }
 
 #programas .content .columns-container .colmn .top-text {
   text-align: center;
+  font-family: "Raleway";
   font-weight: 800;
   font-size: 16px;
   border-bottom: 1px solid black;
@@ -437,6 +449,7 @@ body {
 
 #programas .content .columns-container .colmn .item .info .cont-items p {
   font-size: 12px;
+  font-family: "Raleway";
   margin: 0;
   margin-top: 5px;
 }
@@ -463,6 +476,7 @@ body {
 }
 
 .form-contact .form-row input {
+  font-family: "Raleway";
   font-weight: normal;
   width: 100%;
   font-size: 14px;
@@ -479,6 +493,7 @@ body {
 .form-contact .form-row input::-webkit-input-placeholder,
 .form-contact .form-row textarea::-webkit-input-placeholder {
   font-size: 14px;
+  font-family: "Raleway";
   font-weight: normal;
   color: rgba(64, 128, 255, 0.7);
 }
@@ -486,6 +501,7 @@ body {
 .form-contact .form-row input:-ms-input-placeholder,
 .form-contact .form-row textarea:-ms-input-placeholder {
   font-size: 14px;
+  font-family: "Raleway";
   font-weight: normal;
   color: rgba(64, 128, 255, 0.7);
 }
@@ -493,6 +509,7 @@ body {
 .form-contact .form-row input::-ms-input-placeholder,
 .form-contact .form-row textarea::-ms-input-placeholder {
   font-size: 14px;
+  font-family: "Raleway";
   font-weight: normal;
   color: rgba(64, 128, 255, 0.7);
 }
@@ -500,6 +517,7 @@ body {
 .form-contact .form-row input::placeholder,
 .form-contact .form-row textarea::placeholder {
   font-size: 14px;
+  font-family: "Raleway";
   font-weight: normal;
   color: rgba(64, 128, 255, 0.7);
 }
@@ -507,6 +525,7 @@ body {
 .form-contact .form-row textarea {
   color: #606060;
   font-size: 14px;
+  font-family: "Raleway";
   font-weight: normal;
   width: 100%;
   border: 2px solid #4080ff;
@@ -514,6 +533,7 @@ body {
 }
 
 .form-contact .form-row input[type="submit"] {
+  font-family: "Raleway";
   font-weight: 900;
   letter-spacing: 3px;
   font-size: 14px;
@@ -544,6 +564,7 @@ body {
 }
 
 .suscribete form label {
+  font-family: "Raleway";
   font-weight: bold;
   color: black;
   font-size: 8px;

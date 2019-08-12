@@ -73,6 +73,7 @@
     text-decoration: none;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
+    font-family: "Raleway";
     font-weight: normal;
     font-size: 18px;
   }
@@ -183,6 +184,7 @@
     text-decoration: none;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
+    font-family: "Raleway";
     font-weight: normal;
     font-size: 14px;
   }
