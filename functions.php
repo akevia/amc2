@@ -44,3 +44,60 @@ function shapeSpace_display_search_form()
     return $search_form;
 }
 add_shortcode('display_search_form', 'shapeSpace_display_search_form');
+
+
+
+
+
+add_action( 'init', 'amc_post_type_competencias' );
+ 
+function amc_post_type_competencias() {
+ 
+  $labels = array(
+    'name'               => __( 'Competencias' ),
+    'singular_name'      => __( 'Competencias' ),
+    'add_new'            => __( 'Agregar Nuevo Competencia' ),
+    'add_new_item'       => __( 'Agregar Nuevo Competencia' ),
+    'edit_item'          => __( 'Editar Competencia' ),
+    'new_item'           => __( 'Nuevo Competencia' ),
+    'all_items'          => __( 'Todos Los Competencias' ),
+    'view_item'          => __( 'Ver Competencia' ),
+    'search_items'       => __( 'Buscar Competencia' ),
+    'not_found' => 'No se han encontrado competencias',
+	'not_found_in_trash' => 'No se han encontrado competencias en la papelera'
+  );
+ 
+  $args = array(
+    'labels'            => $labels,
+    'description'       => 'Información especifica de cada competencia',
+    'public'            => true,
+    'menu_position'     => 5,
+    'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'page-attributes'),
+    'has_archive'       => true,
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+    'query_var'         => 'competencia'
+  );
+
+  register_post_type( 'competencia', $args);
+
+}
+
+
+
+function taxonomias_competencias() {  
+  register_taxonomy(  
+      'modulos_competencias',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces). 
+      'competencia',        //post type name
+      array(  
+          'hierarchical' => true,  
+          'label' => 'Módulos',  //Display name
+          'query_var' => true,
+          'rewrite' => array(
+              'slug' => 'slug_modulos_competencias', // This controls the base slug that will display before each term
+              'with_front' => false // Don't display the category base before 
+          )
+      )  
+  );  
+}  
+add_action( 'init', 'taxonomias_competencias');

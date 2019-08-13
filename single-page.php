@@ -233,9 +233,20 @@ get_header();
                     <div class="tabs-container active" role="competencias">
                         <div>
                             <ul class="tabs">
-                                <li class="tab active">Módulos Análogos</li>
-                                <li class="tab">Módulos Digitales</li>
-                                <li class="tab">Programa Empresarial</li>
+                                <?php
+                                $terms = get_terms(array(
+                                    'taxonomy' => 'modulos_competencias',
+                                    'hide_empty' => false,
+                                ));
+
+                                foreach ($terms as $term) {
+                                    if($term->count > 0){
+                                    ?>
+                                    <li class="tab"><?php echo $term->name; ?></li>
+                                    <?php
+                                    }
+                                }
+                                ?>
                             </ul>
                         </div>
                     </div>
@@ -244,7 +255,50 @@ get_header();
                         <div class="colmn">
                             <div class="content">
                                 <div class="colection-videos">
-                                    <video class="video active" preload playsinline autobuffer muted controls name="Conciencia Lean">
+
+
+
+
+                                    <?php
+
+                                    $custom_terms = get_terms('modulos_competencias');
+                                    foreach ($custom_terms as $custom_term) {
+                                        wp_reset_query();
+                                        $args = array(
+                                            'post_type' => 'competencia', 'orderby' => 'title', 'order' => 'DESC',
+                                            'tax_query' => array(
+                                                array(
+                                                    'taxonomy' => 'modulos_competencias',
+                                                    'field' => 'slug_modulos_competencias',
+                                                    'terms' => $custom_term->slug,
+                                                ),
+                                            ),
+                                        );
+                                        $loop = new WP_Query($args);
+                                        if ($loop->have_posts()) {
+                                            ?>
+                                            <?php
+                                            while ($loop->have_posts()) : $loop->the_post();
+                                                $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
+                                                if ($term_list[0] == $custom_term->name) {
+                                                    ?>
+                                                    <video class="video" preload playsinline autobuffer muted controls name="<?php the_title(); ?>">
+                                                        <source src="<?php the_field("video") ?>" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                <?php
+                                                }
+                                            endwhile;
+                                            ?>
+                                        <?php
+                                        }
+                                    }
+                                    ?>
+
+
+
+                                    <!--
+                                    <video class="video" preload playsinline autobuffer muted controls name="Conciencia Lean">
                                         <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CONCIENCIA LEAN_6seg_v2.mp4' ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
@@ -268,6 +322,7 @@ get_header();
                                         <source src="<?php echo get_template_directory_uri() . '/img/EMC2-GESTION DE DESEMPEÑO DIGITAL_6Seg.mp4' ?>" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
+                                    -->
                                 </div>
                             </div>
                         </div>
@@ -276,6 +331,120 @@ get_header();
                         <div class="colmn">
                             <div class="content">
 
+
+
+                                <?php
+
+                                $custom_terms = get_terms('modulos_competencias');
+
+
+                                foreach ($custom_terms as $custom_term) {
+                                    wp_reset_query();
+                                    $args = array(
+                                        'post_type' => 'competencia', 'orderby' => 'title', 'order' => 'ASC',
+                                        'tax_query' => array(
+                                            array(
+                                                'taxonomy' => 'modulos_competencias',
+                                                'field' => 'slug_modulos_competencias',
+                                                'terms' => $custom_term->slug,
+                                            ),
+                                        ),
+                                    );
+
+                                    $loop = new WP_Query($args);
+                                    if ($loop->have_posts()) {
+                                        $auxG = 0;
+                                        ?>
+
+
+                                        <div class="tabs-container">
+                                            <div>
+                                                <ul class="tabs">
+                                                    <?php
+                                                    while ($loop->have_posts()) : $loop->the_post();
+                                                        $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "all"));
+                                                        foreach ($term_list as $term_single) {
+                                                            if ($term_single->name == $custom_term->name) {
+                                                                ?>
+                                                                <li class="tab"><?php the_title(); ?></li>
+                                                            <?php
+                                                            }
+                                                        }
+                                                        /*
+                                                        $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
+                                                        if ($term_list[0] == $custom_term->name) {
+                                                            ?>
+                                                            <li class="tab <?php if ($aux == 0) {
+                                                                                echo ("active");
+                                                                            } ?>"><?php the_title(); ?></li>
+                                                        <?php
+                                                        }
+                                                        */
+                                                    endwhile;
+                                                    ?>
+                                                </ul>
+                                            </div>
+                                            <div class="panels">
+                                                <?php
+                                                $aux = 0;
+                                                while ($loop->have_posts()) : $loop->the_post();
+                                                    //$term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
+                                                    $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "all"));
+                                                    foreach ($term_list as $term_single) {
+                                                        if ($term_single->name == $custom_term->name) {
+                                                            ?>
+                                                            <div class="panel">
+                                                                <div class="title-slider"><?php the_title(); ?></div>
+                                                                <div class="desc">
+                                                                    <p>
+                                                                        <?php the_field("descripcion"); ?>
+                                                                    </p>
+
+                                                                    <p>
+                                                                        <a href="#" class="button-link">Contáctanos</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        <?php
+                                                        }
+                                                    }
+                                                    /*
+                                                    if ($term_list[0] == $custom_term->name) {
+                                                        ?>
+                                                        <div class="panel <?php if ($aux == 0) {
+                                                                                echo ("active");
+                                                                            } ?>">
+                                                            <div class="title-slider"><?php the_title(); ?></div>
+                                                            <div class="desc">
+                                                                <p>
+                                                                    <?php
+                                                                    echo $aux;
+                                                                    the_field("descripcion");
+                                                                    ?>
+                                                                </p>
+
+                                                                <p>
+                                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    <?php
+                                                    }
+                                                    */
+                                                endwhile;
+                                                ?>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                                ?>
+
+
+
+
+
+                                <!--
                                 <div class="tabs-container active">
                                     <div>
                                         <ul class="tabs">
@@ -411,6 +580,8 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
+
+-->
 
                             </div>
                         </div>

@@ -11,6 +11,7 @@ $(function() {
         $(".content-header").toggleClass("active");
     });
 
+
     var tabs_container = $(".tabs-container");
     tabs_container.find($(".tab")).click(function() {
         var role = $(this).closest(".tabs-container").attr("role");
@@ -24,7 +25,7 @@ $(function() {
                 $(this)
                 //.closest(".colmn").next().find(".tabs-container").removeClass("active").eq(index).addClass("active");
                 .closest(".tabs-container").next().children(".colmn:nth-child(2)").find(".tabs-container").removeClass("active").eq(index).addClass("active");
-
+                $(this).closest(".tabs-container").next().children(".colmn:nth-child(2)").find(".tabs-container").eq(index).find(".tab:nth-child(1)").click();
             }
             else{
                 $(this)
@@ -38,6 +39,8 @@ $(function() {
                     var aux = $(this).attr("name");
                     if(aux == name){
                         $(this).addClass("active");
+                        this.currentTime = 0;
+                        this.play();
                     } 
                     else{
                         $(this).removeClass("active");
@@ -151,5 +154,7 @@ $(function() {
         });
     }
 
-    //
+    $("#competencias").find(".small-title-slider").next().find(".tab:nth-child(1)").addClass("caca").click();
+
 });
+
