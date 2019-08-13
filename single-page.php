@@ -700,177 +700,177 @@ get_header();
                     $link_nota = ($link_externo) ? $link_externo : get_the_permalink();
                     ?>
 
-                    <?php
+                <?php
                     if ($ind == 1) {
                         ?>
-                        <div class="column">
-                            <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                                <div class="overlay">
-                                    <p class="fecha-autor">
-                                        <?php
+                <div class="column">
+                    <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                        <div class="overlay">
+                            <p class="fecha-autor">
+                                <?php
                                         $post_month  = get_the_time('F');
                                         $post_year = get_the_time('Y');
                                         echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
                                         ?>
-                                        By:
-                                        <?php
+                                By:
+                                <?php
                                         if ($authors) {
                                             echo $authors;
                                         } else {
                                             the_author_meta('display_name', $author_id);
                                         }
                                         ?>
-                                    </p>
-                                    <p class="tit">
-                                        <?php the_title(); ?>
-                                    </p>
-                                    <p class="desc">
-                                        <?php echo (get_the_excerpt()); ?>
-                                    </p>
-                                </div>
-                                <div class="leer-mas">
-                                    <span>LEER MÁS</span>
-                                    <div>
-                                        <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                    </div>
-                                </div>
-                            </a>
+                            </p>
+                            <p class="tit">
+                                <?php the_title(); ?>
+                            </p>
+                            <p class="desc">
+                                <?php echo (get_the_excerpt()); ?>
+                            </p>
                         </div>
-                    <?php
+                        <div class="leer-mas">
+                            <span>LEER MÁS</span>
+                            <div>
+                                <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <?php
                     }
                     ?>
-                    <?php
+                <?php
                     if ($ind == 2) {
                         ?>
-                        <div class="column">
-                            <div class="row">
+                <div class="column">
+                    <div class="row">
 
-                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                                    <div class="overlay">
-                                        <p class="fecha-autor">
-                                            <?php
+                        <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                            <div class="overlay">
+                                <p class="fecha-autor">
+                                    <?php
                                             $post_month  = get_the_time('F');
                                             $post_year = get_the_time('Y');
                                             echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
                                             ?>
-                                            By:
-                                            <?php
+                                    By:
+                                    <?php
                                             if ($authors) {
                                                 echo $authors;
                                             } else {
                                                 the_author_meta('display_name', $author_id);
                                             }
                                             ?>
-                                        </p>
-                                        <p class="tit">
-                                            <?php the_title(); ?>
-                                        </p>
-                                        <p class="desc">
-                                            <?php echo (get_the_excerpt()); ?>
-                                        </p>
-                                    </div>
-                                    <div class="leer-mas">
-                                        <span>LEER MÁS</span>
-                                        <div>
-                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                        </div>
-                                    </div>
-                                </a>
+                                </p>
+                                <p class="tit">
+                                    <?php the_title(); ?>
+                                </p>
+                                <p class="desc">
+                                    <?php echo (get_the_excerpt()); ?>
+                                </p>
+                            </div>
+                            <div class="leer-mas">
+                                <span>LEER MÁS</span>
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                </div>
+                            </div>
+                        </a>
 
-                            <?php
+                        <?php
                             }
                             ?>
-                            <?php
+                        <?php
                             if ($ind == 3) {
                                 ?>
-                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                                    <div class="overlay">
-                                        <p class="fecha-autor">
-                                            <?php
+                        <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                            <div class="overlay">
+                                <p class="fecha-autor">
+                                    <?php
                                             $post_month  = get_the_time('F');
                                             $post_year = get_the_time('Y');
                                             echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
                                             ?>
-                                            By:
-                                            <?php
+                                    By:
+                                    <?php
                                             if ($authors) {
                                                 echo $authors;
                                             } else {
                                                 the_author_meta('display_name', $author_id);
                                             }
                                             ?>
-                                        </p>
-                                        <p class="tit">
-                                            <?php the_title(); ?>
-                                        </p>
-                                    </div>
-                                    <div class="leer-mas">
-                                        <span>LEER MÁS</span>
-                                        <div>
-                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                        </div>
-                                    </div>
-                                </a>
+                                </p>
+                                <p class="tit">
+                                    <?php the_title(); ?>
+                                </p>
                             </div>
-                        <?php
+                            <div class="leer-mas">
+                                <span>LEER MÁS</span>
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <?php
                         }
                         ?>
-                        <?php
+                    <?php
                         if ($ind == 4 || $ind == 5 || $ind == 6) {
                             ?>
-                            <?php
+                    <?php
                             if ($ind == 4) {
                                 ?>
-                                <div class="row">
-                                <?php
+                    <div class="row">
+                        <?php
                                 }
                                 ?>
-                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                                    <div class="overlay">
-                                        <p class="fecha-autor">
-                                            <?php
+                        <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                            <div class="overlay">
+                                <p class="fecha-autor">
+                                    <?php
                                             $post_month  = get_the_time('F');
                                             $post_year = get_the_time('Y');
                                             echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
                                             ?>
-                                            By:
-                                            <?php
+                                    By:
+                                    <?php
                                             if ($authors) {
                                                 echo $authors;
                                             } else {
                                                 the_author_meta('display_name', $author_id);
                                             }
                                             ?>
-                                        </p>
-                                        <p class="tit">
-                                            <?php the_title(); ?>
-                                        </p>
-                                    </div>
-                                    <div class="leer-mas">
-                                        <span>LEER MÁS</span>
-                                        <div>
-                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                        </div>
-                                    </div>
-                                </a>
-                                <?php
+                                </p>
+                                <p class="tit">
+                                    <?php the_title(); ?>
+                                </p>
+                            </div>
+                            <div class="leer-mas">
+                                <span>LEER MÁS</span>
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <?php
                                 if ($ind == 6) {
                                     ?>
-                                </div>
-                            <?php
+                    </div>
+                    <?php
                             }
                             ?>
-                        <?php
+                    <?php
                         }
                         ?>
-                        <?php
+                    <?php
                         if ($ind == 6) {
                             ?>
-                        </div>
-                    <?php
+                </div>
+                <?php
                     }
                     ?>
-                    <?php
+                <?php
                     $ind++;
                 endwhile;
                 ?>
@@ -1148,7 +1148,7 @@ get_header();
                         <input type="text" name="" id="" class="i-50" placeholder="Empresa">
                     </div>
                     <div class="form-row">
-                        <input type="text" name="" id="" class="i-50" placeholder="Area(Compras, Etc)">
+                        <input type="text" name="" id="" class="i-50" placeholder="Área (Compras, Etc)">
                         <input type="text" name="" id="" class="i-50" placeholder="Teléfono">
                     </div>
                     <div class="form-row">

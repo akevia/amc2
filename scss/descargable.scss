@@ -11,8 +11,17 @@
         .link-descargable {
             box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.2);
             transition: all 0.3s;
-            img {
-                margin-bottom: -4px;
+            text-decoration: none;
+            color: #4080ff;
+            .descargable-item {
+                img {
+                    margin-bottom: -4px;
+                }
+                .desc-title {
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                }
             }
             &:hover {
                 box-shadow: 0px 0px 20px -10px black;

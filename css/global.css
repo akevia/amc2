@@ -49,7 +49,6 @@
 }
 
 #menos {
-  font-family: "Raleway";
   font-size: 14px;
   border-color: white;
   color: #4080ff;
@@ -80,6 +79,7 @@ html {
 
 body {
   position: relative;
+  font-family: "Raleway";
 }
 
 .flexbox {

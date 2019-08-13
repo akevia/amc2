@@ -16,10 +16,22 @@
           box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  text-decoration: none;
+  color: #4080ff;
 }
 
-.descargable-cont .descargables .link-descargable img {
+.descargable-cont .descargables .link-descargable .descargable-item img {
   margin-bottom: -4px;
+}
+
+.descargable-cont .descargables .link-descargable .descargable-item .desc-title {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .descargable-cont .descargables .link-descargable:hover {

@@ -19,16 +19,25 @@ get_header();
             );
             ?>
 
-            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                <?php
+            <?php while ($the_query->have_posts()) :
+                $the_query->the_post();
                 $file = get_field('archivo');
-                $img = get_field('imagen');
-                ?>
-                <a href="<?php echo $file ?>" class="link-descargable" target="_blank">
-
+                $img = get_field('imagen'); ?>
+            <a href="<?php echo $file ?>" class="link-descargable" target="_blank">
+                <div class="descargable-item">
                     <img src="<?php echo $img; ?>">
-
-                </a>
+                    <div class="desc-title">
+                        <div>
+                            <?php the_title(); ?>
+                        </div>
+                        <div>
+                            <span>
+                                <img src="" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
             <?php
             endwhile;
             wp_reset_postdata();
