@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="row-container search-page flexbox vertical-top">
+<div class="row-container search-page flexbox vertical-top" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-descargables.jpg'; ?>)">
     <div class="container">
 
         <?php
@@ -72,7 +72,7 @@
         } else {
             ?>
             <div class="content">
-                <h2 style='font-weight:bold;color:#000; font-family: "Raleway"'>Sin resultados</h2>
+                <h2 style='font-weight:bold; color: #4080ff;; font-family: "Raleway"'>Sin resultados</h2>
                 <div class="alert alert-info" style="font-family: 'Raleway'">
                     <p>Lo sentimos, no se encontró ningún resultado con el criterio de búsqueda. <br> Intenta de nuevo con otras palabras.</p>
                 </div>

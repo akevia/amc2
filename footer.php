@@ -1,6 +1,9 @@
-<footer class="flexbox vertical-middle <?php if (is_single()) {
-                                            echo 'footer-single';
-                                        } ?>">
+<?php if (!is_front_page()) {
+    $footer_class =  'footer-single';
+} else {
+    $footer_class =  '';
+} ?>
+<footer class="flexbox vertical-middle <?php echo $footer_class; ?>">
     <div class="column">
         <div>
             <a href="" class="footer-logo-link size-1"><img src="<?php echo get_template_directory_uri() . '/img/caintra-logo.png' ?>" alt=""></a>

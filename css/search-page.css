@@ -1,5 +1,6 @@
 .search-title {
   font-family: "Raleway";
+  color: #4080ff;
 }
 
 .search-page {
@@ -23,8 +24,8 @@
 
 .card-container .item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 20%;
-          flex: 1 0 20%;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
   height: 300px;
   margin: 10px;
   position: relative;
