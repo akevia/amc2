@@ -21,6 +21,20 @@
                     padding: 10px;
                     display: flex;
                     align-items: center;
+                    justify-content: space-between;
+                    width: calc(100% - 20px);
+                    .small-title {
+                        width: 75%;
+                        font-size: 18px;
+                        min-width: 0;
+                    }
+                    .icon {
+                        width: 25%;
+                        text-align: center;
+                        img {
+                            width: 50px;
+                        }
+                    }
                 }
             }
             &:hover {

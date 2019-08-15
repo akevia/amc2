@@ -32,6 +32,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 20px);
+}
+
+.descargable-cont .descargables .link-descargable .descargable-item .desc-title .small-title {
+  width: 75%;
+  font-size: 18px;
+  min-width: 0;
+}
+
+.descargable-cont .descargables .link-descargable .descargable-item .desc-title .icon {
+  width: 25%;
+  text-align: center;
+}
+
+.descargable-cont .descargables .link-descargable .descargable-item .desc-title .icon img {
+  width: 50px;
 }
 
 .descargable-cont .descargables .link-descargable:hover {

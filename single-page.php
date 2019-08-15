@@ -240,10 +240,10 @@ get_header();
                                 ));
 
                                 foreach ($terms as $term) {
-                                    if($term->count > 0){
-                                    ?>
-                                    <li class="tab"><?php echo $term->name; ?></li>
-                                    <?php
+                                    if ($term->count > 0) {
+                                        ?>
+                                <li class="tab"><?php echo $term->name; ?></li>
+                                <?php
                                     }
                                 }
                                 ?>
@@ -277,20 +277,20 @@ get_header();
                                         $loop = new WP_Query($args);
                                         if ($loop->have_posts()) {
                                             ?>
-                                            <?php
+                                    <?php
                                             while ($loop->have_posts()) : $loop->the_post();
                                                 $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
                                                 if ($term_list[0] == $custom_term->name) {
                                                     ?>
-                                                    <video class="video" preload playsinline autobuffer muted controls name="<?php the_title(); ?>">
-                                                        <source src="<?php the_field("video") ?>" type="video/mp4">
-                                                        Your browser does not support the video tag.
-                                                    </video>
-                                                <?php
+                                    <video class="video" preload playsinline autobuffer muted controls name="<?php the_title(); ?>">
+                                        <source src="<?php the_field("video") ?>" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <?php
                                                 }
                                             endwhile;
                                             ?>
-                                        <?php
+                                    <?php
                                         }
                                     }
                                     ?>
@@ -357,20 +357,20 @@ get_header();
                                         ?>
 
 
-                                        <div class="tabs-container">
-                                            <div>
-                                                <ul class="tabs">
-                                                    <?php
+                                <div class="tabs-container">
+                                    <div>
+                                        <ul class="tabs">
+                                            <?php
                                                     while ($loop->have_posts()) : $loop->the_post();
                                                         $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "all"));
                                                         foreach ($term_list as $term_single) {
                                                             if ($term_single->name == $custom_term->name) {
                                                                 ?>
-                                                                <li class="tab"><?php the_title(); ?></li>
-                                                            <?php
+                                            <li class="tab"><?php the_title(); ?></li>
+                                            <?php
                                                             }
                                                         }
-                                                        /*
+                                                    /*
                                                         $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
                                                         if ($term_list[0] == $custom_term->name) {
                                                             ?>
@@ -382,10 +382,10 @@ get_header();
                                                         */
                                                     endwhile;
                                                     ?>
-                                                </ul>
-                                            </div>
-                                            <div class="panels">
-                                                <?php
+                                        </ul>
+                                    </div>
+                                    <div class="panels">
+                                        <?php
                                                 $aux = 0;
                                                 while ($loop->have_posts()) : $loop->the_post();
                                                     //$term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
@@ -393,22 +393,22 @@ get_header();
                                                     foreach ($term_list as $term_single) {
                                                         if ($term_single->name == $custom_term->name) {
                                                             ?>
-                                                            <div class="panel">
-                                                                <div class="title-slider"><?php the_title(); ?></div>
-                                                                <div class="desc">
-                                                                    <p>
-                                                                        <?php the_field("descripcion"); ?>
-                                                                    </p>
+                                        <div class="panel">
+                                            <div class="title-slider"><?php the_title(); ?></div>
+                                            <div class="desc">
+                                                <p>
+                                                    <?php the_field("descripcion"); ?>
+                                                </p>
 
-                                                                    <p>
-                                                                        <a href="#" class="button-link">Contáctanos</a>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        <?php
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <?php
                                                         }
                                                     }
-                                                    /*
+                                                /*
                                                     if ($term_list[0] == $custom_term->name) {
                                                         ?>
                                                         <div class="panel <?php if ($aux == 0) {
@@ -433,9 +433,9 @@ get_header();
                                                     */
                                                 endwhile;
                                                 ?>
-                                            </div>
-                                        </div>
-                                        <?php
+                                    </div>
+                                </div>
+                                <?php
                                     }
                                 }
                                 ?>
@@ -809,6 +809,99 @@ get_header();
                                             · Coordinadores de producción
                                             <br>
                                             · Supervisores de producción
+                                            <br><br>
+                                            Despliegue de cursos 11 meses
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Casos de éxito
+                                    </span>
+
+                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
+
+                                    <p class="mas-casos">
+                                        Más casos de exito
+                                    </p>
+
+
+
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>Giro</td>
+                                        <td>Transfromación metal-mécanico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tamaño</td>
+                                        <td>Mediana ( 100 Empleados)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Situación</td>
+                                        <td>
+                                            · Best-practices por solicitud de cliente <br><br>
+
+                                            · Visioón de expansión mercado nacional e internacional <br><br>
+
+                                            · <span>La alta dirección y equipo egerencial desean entender las best practices en la industria</span> <br><br>
+
+                                            · <span>Están diseñandno la estrategia de transformación</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Solución</th>
+                                    </tr>
+
+                                </table>
+
+                                <div class="cont-m">
+                                    <div>
+                                        <p class="tit">Programa de formación</p>
+                                        <img src="<?php echo get_template_directory_uri() . '/img/circulos-cde.png' ?>" alt="">
+                                        <p class="desc">
+                                            · Desarrollo de 6 módulos ajustados a las prácticas propias
+                                            <br><br>
+                                            · Ejecución de cursos con instructores compartidos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="tit">Participantes:</p>
+                                        <p class="desc">
+                                            7 personas del equipo
+                                            <br><br>
+                                            · Director general
+                                            <br>
+                                            · Staff directo
                                             <br><br>
                                             Despliegue de cursos 11 meses
                                         </p>
@@ -1310,7 +1403,7 @@ get_header();
         </div>
         <div class="colmn flexbox vertical-middle horizontal-center">
             <div class="content">
-                <form action="" class="form-contact">
+                <!-- <div class="form-contact">
                     <div class="form-row">
                         <input type="text" name="" id="" placeholder="Nombre">
                     </div>
@@ -1328,7 +1421,8 @@ get_header();
                     <div class="form-row">
                         <input type="submit" value="Enviar">
                     </div>
-                </form>
+                </div> -->
+                <?php echo do_shortcode('[contact-form-7 id="196" title="Contacto"]'); ?>
             </div>
         </div>
     </div>

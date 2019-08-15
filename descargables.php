@@ -27,12 +27,12 @@ get_header();
                 <div class="descargable-item">
                     <img src="<?php echo $img; ?>">
                     <div class="desc-title">
-                        <div>
+                        <div class="small-title">
                             <?php the_title(); ?>
                         </div>
-                        <div>
+                        <div class="icon">
                             <span>
-                                <img src="" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/img/download.png' ?>" alt="">
                             </span>
                         </div>
                     </div>
