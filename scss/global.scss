@@ -139,7 +139,7 @@ body {
     position: relative;
 }
 
-.title {
+div.title {
     font-size: 45px;
     color: #838383;
     min-width: 290px;
@@ -546,7 +546,7 @@ body {
 */
 
 @media screen and (min-width: 1750px) {
-    .title {
+    div.title {
         font-size: 55px;
     }
     .small-title-slider {

@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.has-blue-amc-2-color {
-  color: #4080ff;
-}
-
 #cont-chido {
   position: relative;
   width: 100vw;
@@ -151,7 +147,7 @@ body {
   position: relative;
 }
 
-.title {
+div.title {
   font-size: 45px;
   color: #838383;
   min-width: 290px;
@@ -163,7 +159,7 @@ body {
   position: relative;
 }
 
-.title:before {
+div.title:before {
   content: "";
   bottom: -1px;
   width: 80px;
@@ -389,29 +385,29 @@ body {
 
 #programas .content .columns-container .colmn#antes {
   width: 60%;
-  color: #08225c;
+  color: #08225C;
 }
 
 #programas .content .columns-container .colmn#antes .top-text {
-  border-color: #8eb0f8;
+  border-color: #8EB0F8;
 }
 
 #programas .content .columns-container .colmn#durante {
   width: 20%;
-  color: #8eb0f8;
+  color: #8EB0F8;
 }
 
 #programas .content .columns-container .colmn#durante .top-text {
-  border-color: #a4a4a4;
+  border-color: #A4A4A4;
 }
 
 #programas .content .columns-container .colmn#despues {
   width: 20%;
-  color: #a4a4a4;
+  color: #A4A4A4;
 }
 
 #programas .content .columns-container .colmn#despues .top-text {
-  border-color: #a4a4a4;
+  border-color: #A4A4A4;
 }
 
 #programas .content .columns-container .colmn .top-text {
@@ -618,7 +614,7 @@ body {
 }
 */
 @media screen and (min-width: 1750px) {
-  .title {
+  div.title {
     font-size: 55px;
   }
   .small-title-slider {

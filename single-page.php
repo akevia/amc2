@@ -1171,7 +1171,7 @@ get_header();
                                     <div class="title-slider">José Alfredo Vázquez</div>
                                     <br>
                                     <div class="sub-title">
-                                        Ing. Mejora Continua <br> Xignux
+                                        Ing. Mejora Continua
                                     </div>
                                     <div class="desc">
                                         <blockquote>“La parte práctica, el implementar físicamente lo aprendido y realizar la simulación en la línea es de gran ayuda para transmitir el conocimiento”.
@@ -1197,7 +1197,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1214,7 +1214,7 @@ get_header();
                                     <div class="title-slider">Arturo Montoya Villarello</div>
                                     <br>
                                     <div class="sub-title">
-                                        Gerente Nacional Ventas Mayoreo <br> Ragasa
+                                        Gerente Nacional Ventas Mayoreo
                                     </div>
                                     <div class="desc">
                                         <blockquote>
@@ -1241,7 +1241,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/ragasa.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1259,7 +1259,7 @@ get_header();
                                     <div class="title-slider">Erick Cajero Rodríguez</div>
                                     <br>
                                     <div class="sub-title">
-                                        Jefe turno <br> Reynera
+                                        Jefe turno
                                     </div>
                                     <div class="desc">
                                         <blockquote>
@@ -1286,7 +1286,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/reynera.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1304,7 +1304,7 @@ get_header();
                                     <div class="title-slider">Mario Verdinez</div>
                                     <br>
                                     <div class="sub-title">
-                                        Operational Excellence Manager <br>FRISA
+                                        Operational Excellence Manager
                                     </div>
                                     <div class="desc">
                                         <blockquote>
@@ -1333,7 +1333,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/frisa.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1351,7 +1351,7 @@ get_header();
                                     <div class="title-slider">Alfredo Nuño Toledo</div>
                                     <br>
                                     <div class="sub-title">
-                                        Gerente Mejora continua <br>Ragasa
+                                        Gerente Mejora continua
                                     </div>
                                     <div class="desc">
                                         <blockquote>
@@ -1379,7 +1379,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/ragasa.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1396,7 +1396,7 @@ get_header();
         <div class="colmn flexbox vertical-middle">
             <div class="content">
                 <div>
-                    <span class="title">Contáctanos</span>
+                    <div class="title">Contáctanos</div>
                 </div><br>
                 <p class="desc color-pink">¿Quieres que diseñemos un plan <br /> de formación para tu empresa?</p>
             </div>
