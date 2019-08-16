@@ -10,15 +10,8 @@
             <a href="" class="footer-logo-link size-2"><img src="<?php echo get_template_directory_uri() . '/img/mckinsey.png' ?>" alt=""></a>
         </div>
 
-        <ul class="footer-menu flexbox">
-            <li>Nosotros </li>
-            <li>¿Qué podemos hacer por ti?</li>
-            <li>Servicios</li>
-            <li>Programas</li>
-            <li>Blog</li>
-            <li>Testimoniales</li>
-            <li>Contacto</li>
-        </ul>
+        <?php wp_nav_menu(array('theme_location' => 'footer-menu', 'container_class' => 'footer-menu')); ?>
+
     </div>
     <div class="column">
         <form action="" class="flexbox horizontal-center">

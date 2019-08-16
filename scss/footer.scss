@@ -30,17 +30,23 @@ footer {
         }
     }
     .footer-menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        margin-left: 30px;
-        li {
-            padding: 5px;
-            &,
-            a {
-                font-size: 12px;
-                font-family: "Raleway";
-                font-weight: normal;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-left: 30px;
+            display: flex;
+            justify-content: center;
+            li {
+                padding: 5px;
+                &,
+                a {
+                    font-size: 12px;
+                    font-family: "Raleway";
+                    font-weight: normal;
+                    color: #949a9e;
+                    text-decoration: none;
+                }
             }
         }
     }

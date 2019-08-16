@@ -9,6 +9,15 @@
 
 .descargable-cont .descargables {
   margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .descargable-cont .descargables .link-descargable {
@@ -16,10 +25,49 @@
           box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  text-decoration: none;
+  color: #4080ff;
+  width: 30%;
+  max-width: 300px;
+  margin: 10px;
 }
 
-.descargable-cont .descargables .link-descargable img {
+.descargable-cont .descargables .link-descargable > img {
+  max-width: 400px;
+}
+
+.descargable-cont .descargables .link-descargable .descargable-item img {
   margin-bottom: -4px;
+  width: 100%;
+}
+
+.descargable-cont .descargables .link-descargable .descargable-item .desc-title {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 20px);
+}
+
+.descargable-cont .descargables .link-descargable .descargable-item .desc-title .small-title {
+  width: 75%;
+  font-size: 18px;
+  min-width: 0;
+}
+
+.descargable-cont .descargables .link-descargable .descargable-item .desc-title .icon {
+  width: 25%;
+  text-align: center;
+}
+
+.descargable-cont .descargables .link-descargable .descargable-item .desc-title .icon img {
+  width: 50px;
 }
 
 .descargable-cont .descargables .link-descargable:hover {

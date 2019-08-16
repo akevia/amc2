@@ -24,24 +24,9 @@
 
             </a>
 
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#nosotros">Nosotros</a> </li>
-                    <li><a href="#quepodemos">¿Qué podemos hacer por ti?</a> </li>
-                    <li><a href="#competencias">Competencias</a></li>
-                    <li>
-                        <a href="#programas">Programas</a>
-                        <ul>
-                            <li>
-                                <a href="#casos">Casos de exito</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#testimonios">Testimoniales</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+
+            <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'nav-menu')); ?>
+
 
             <div class="search-container">
                 <?php echo do_shortcode('[display_search_form]') ?>

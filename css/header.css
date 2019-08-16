@@ -55,20 +55,20 @@
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
-  header .content-header nav.nav-menu > ul {
+  header .content-header .nav-menu > ul {
     margin: 0 auto;
     padding: 0;
     list-style: none;
     width: 50%;
     text-align: left;
   }
-  header .content-header nav.nav-menu > ul > li {
+  header .content-header .nav-menu > ul > li {
     padding: 10px 0px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
-  header .content-header nav.nav-menu > ul > li,
-  header .content-header nav.nav-menu > ul > li a {
+  header .content-header .nav-menu > ul > li,
+  header .content-header .nav-menu > ul > li a {
     color: white;
     text-decoration: none;
     -webkit-transition: all 0.1s;
@@ -77,13 +77,13 @@
     font-weight: normal;
     font-size: 18px;
   }
-  header .content-header nav.nav-menu > ul > li ul {
+  header .content-header .nav-menu > ul > li ul {
     list-style: none;
   }
-  header .content-header nav.nav-menu > ul > li ul li {
+  header .content-header .nav-menu > ul > li ul li {
     padding: 5px;
   }
-  header .content-header nav.nav-menu > ul > li ul li a {
+  header .content-header .nav-menu > ul > li ul li a {
     font-size: 16px;
   }
   header .content-header .search-container {
@@ -157,7 +157,7 @@
   header .content-header.min-header a.brand img {
     width: 40px;
   }
-  header .content-header nav.nav-menu > ul {
+  header .content-header .nav-menu > ul {
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -173,14 +173,14 @@
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
-  header .content-header nav.nav-menu > ul li {
+  header .content-header .nav-menu > ul li {
     padding: 10px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
     position: relative;
   }
-  header .content-header nav.nav-menu > ul li,
-  header .content-header nav.nav-menu > ul li a {
+  header .content-header .nav-menu > ul li,
+  header .content-header .nav-menu > ul li a {
     text-decoration: none;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
@@ -188,7 +188,7 @@
     font-weight: normal;
     font-size: 14px;
   }
-  header .content-header nav.nav-menu > ul li ul {
+  header .content-header .nav-menu > ul li ul {
     display: none;
     position: absolute;
     top: calc(100% + 1px);
@@ -200,7 +200,7 @@
     color: white;
     list-style: none;
   }
-  header .content-header nav.nav-menu > ul li:hover > ul {
+  header .content-header .nav-menu > ul li:hover > ul {
     display: block;
   }
   header .content-header .search-container {
@@ -237,23 +237,23 @@
   header.light .content-header .search-container i {
     color: white;
   }
-  header.light .content-header nav.nav-menu > ul {
+  header.light .content-header .nav-menu > ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   }
-  header.light .content-header nav.nav-menu > ul > li {
+  header.light .content-header .nav-menu > ul > li {
     padding: 10px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
-  header.light .content-header nav.nav-menu > ul > li,
-  header.light .content-header nav.nav-menu > ul > li a {
+  header.light .content-header .nav-menu > ul > li,
+  header.light .content-header .nav-menu > ul > li a {
     color: white;
   }
-  header.light .content-header nav.nav-menu > ul > li ul {
+  header.light .content-header .nav-menu > ul > li ul {
     background: white;
   }
-  header.light .content-header nav.nav-menu > ul > li ul li,
-  header.light .content-header nav.nav-menu > ul > li ul li a {
+  header.light .content-header .nav-menu > ul > li ul li,
+  header.light .content-header .nav-menu > ul > li ul li a {
     color: #4080ff;
   }
   header.dark .content-header a.brand img.logo-header {
@@ -265,18 +265,18 @@
   header.dark .content-header.min-header {
     background-color: #fff;
   }
-  header.dark .content-header nav.nav-menu > ul {
+  header.dark .content-header .nav-menu > ul {
     border-bottom: 1px solid #9c9c9c;
   }
-  header.dark .content-header nav.nav-menu > ul > li,
-  header.dark .content-header nav.nav-menu > ul > li a {
+  header.dark .content-header .nav-menu > ul > li,
+  header.dark .content-header .nav-menu > ul > li a {
     color: #4080ff;
   }
-  header.dark .content-header nav.nav-menu > ul > li ul {
+  header.dark .content-header .nav-menu > ul > li ul {
     background: #4080ff;
   }
-  header.dark .content-header nav.nav-menu > ul > li ul li,
-  header.dark .content-header nav.nav-menu > ul > li ul li a {
+  header.dark .content-header .nav-menu > ul > li ul li,
+  header.dark .content-header .nav-menu > ul > li ul li a {
     color: #fff;
   }
   header.dark .content-header .search-container i {

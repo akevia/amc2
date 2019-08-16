@@ -52,6 +52,8 @@
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: "Raleway";
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .post-content .column {
@@ -59,7 +61,8 @@
 }
 
 .post-content .column.info {
-  width: 60%;
+  width: calc(60% - 50px);
+  padding-right: 50px;
 }
 
 .post-content .column.related, .post-content .column.imagen-destacada {
@@ -77,6 +80,7 @@
 .post-content .column .post-related .post-related-title {
   color: #4080ff;
   font-weight: 800;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 

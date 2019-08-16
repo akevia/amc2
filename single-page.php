@@ -240,10 +240,10 @@ get_header();
                                 ));
 
                                 foreach ($terms as $term) {
-                                    if($term->count > 0){
-                                    ?>
-                                    <li class="tab"><?php echo $term->name; ?></li>
-                                    <?php
+                                    if ($term->count > 0) {
+                                        ?>
+                                <li class="tab"><?php echo $term->name; ?></li>
+                                <?php
                                     }
                                 }
                                 ?>
@@ -277,52 +277,26 @@ get_header();
                                         $loop = new WP_Query($args);
                                         if ($loop->have_posts()) {
                                             ?>
-                                            <?php
+                                    <?php
                                             while ($loop->have_posts()) : $loop->the_post();
                                                 $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
                                                 if ($term_list[0] == $custom_term->name) {
                                                     ?>
-                                                    <video class="video" preload playsinline autobuffer muted controls name="<?php the_title(); ?>">
-                                                        <source src="<?php the_field("video") ?>" type="video/mp4">
-                                                        Your browser does not support the video tag.
-                                                    </video>
-                                                <?php
+                                    <video class="video" preload playsinline autobuffer muted controls name="<?php the_title(); ?>">
+                                        <source src="<?php the_field("video") ?>" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <?php
                                                 }
                                             endwhile;
                                             ?>
-                                        <?php
+                                    <?php
                                         }
                                     }
                                     ?>
 
 
 
-                                    <!--
-                                    <video class="video" preload playsinline autobuffer muted controls name="Conciencia Lean">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CONCIENCIA LEAN_6seg_v2.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Overall Equipment Effectiveness (OEE)">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-OEE_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Single Minute Exchange of Die (SMED)">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-SMED_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Solución de Problemas Causa Raíz">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CAUSA RUIZ_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Advanced Analytics">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-ADVANCED ANALYTICS_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Gestión de Desempeño Digital">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-GESTION DE DESEMPEÑO DIGITAL_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    -->
                                 </div>
                             </div>
                         </div>
@@ -357,35 +331,26 @@ get_header();
                                         ?>
 
 
-                                        <div class="tabs-container">
-                                            <div>
-                                                <ul class="tabs">
-                                                    <?php
+                                <div class="tabs-container">
+                                    <div>
+                                        <ul class="tabs">
+                                            <?php
                                                     while ($loop->have_posts()) : $loop->the_post();
                                                         $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "all"));
                                                         foreach ($term_list as $term_single) {
                                                             if ($term_single->name == $custom_term->name) {
                                                                 ?>
-                                                                <li class="tab"><?php the_title(); ?></li>
-                                                            <?php
+                                            <li class="tab"><?php the_title(); ?></li>
+                                            <?php
                                                             }
                                                         }
-                                                        /*
-                                                        $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
-                                                        if ($term_list[0] == $custom_term->name) {
-                                                            ?>
-                                                            <li class="tab <?php if ($aux == 0) {
-                                                                                echo ("active");
-                                                                            } ?>"><?php the_title(); ?></li>
-                                                        <?php
-                                                        }
-                                                        */
+
                                                     endwhile;
                                                     ?>
-                                                </ul>
-                                            </div>
-                                            <div class="panels">
-                                                <?php
+                                        </ul>
+                                    </div>
+                                    <div class="panels">
+                                        <?php
                                                 $aux = 0;
                                                 while ($loop->have_posts()) : $loop->the_post();
                                                     //$term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
@@ -393,195 +358,33 @@ get_header();
                                                     foreach ($term_list as $term_single) {
                                                         if ($term_single->name == $custom_term->name) {
                                                             ?>
-                                                            <div class="panel">
-                                                                <div class="title-slider"><?php the_title(); ?></div>
-                                                                <div class="desc">
-                                                                    <p>
-                                                                        <?php the_field("descripcion"); ?>
-                                                                    </p>
+                                        <div class="panel">
+                                            <div class="title-slider"><?php the_title(); ?></div>
+                                            <div class="desc">
+                                                <p>
+                                                    <?php the_field("descripcion"); ?>
+                                                </p>
 
-                                                                    <p>
-                                                                        <a href="#" class="button-link">Contáctanos</a>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        <?php
-                                                        }
-                                                    }
-                                                    /*
-                                                    if ($term_list[0] == $custom_term->name) {
-                                                        ?>
-                                                        <div class="panel <?php if ($aux == 0) {
-                                                                                echo ("active");
-                                                                            } ?>">
-                                                            <div class="title-slider"><?php the_title(); ?></div>
-                                                            <div class="desc">
-                                                                <p>
-                                                                    <?php
-                                                                    echo $aux;
-                                                                    the_field("descripcion");
-                                                                    ?>
-                                                                </p>
-
-                                                                <p>
-                                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    <?php
-                                                    }
-                                                    */
-                                                endwhile;
-                                                ?>
+                                                <p>
+                                                    <a href="#" class="button-link">Contáctanos</a>
+                                                </p>
                                             </div>
                                         </div>
                                         <?php
+                                                        }
+                                                    }
+
+                                                endwhile;
+                                                ?>
+                                    </div>
+                                </div>
+                                <?php
                                     }
                                 }
                                 ?>
 
 
 
-
-
-                                <!--
-                                <div class="tabs-container active">
-                                    <div>
-                                        <ul class="tabs">
-                                            <li class="tab active">Conciencia Lean</li>
-                                            <li class="tab">Overall Equipment Effectiveness (OEE)</li>
-                                            <li class="tab">Single Minute Exchange of Die (SMED)</li>
-                                            <li class="tab">Solución de Problemas Causa Raíz</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="panels">
-                                        <div class="panel active">
-                                            <div class="title-slider">Conciencia Lean</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Desarrollar una <strong>compresión de los conceptos Lean básicos,</strong> incluyendo identificación de 8 desperdicios,
-                                                    estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño
-                                                    en el piso de producción.
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Overall Equipment Effectiveness (OEE)</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Entender la <strong>importancia de medición de la eficiencia</strong> en equipos y máquinas de manera vivencial, y a su vez desarrollará la
-                                                    <strong>habilidad para el cálculo del OEE, </strong>
-                                                    través de la recolección de los datos que lo componen.
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Single Minute Exchange of Die (SMED)</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Optimizar cambio de modelo, en este módulo se <strong>comprenderá el impacto que tiene el cambio de modelo</strong> en la operación de una línea de producción,
-                                                    y pondrá en práctica el <strong>análisis sistemático</strong> para mejora de dicho proceso
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Solución de Problemas Causa Raíz</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Enfocar los esfuerzos en los <strong>problemas de mayor impacto,</strong> y llevará a cabo la
-                                                    <strong>resolución de problemas causa raíz </strong> de manera
-                                                    <strong>sistemática</strong> incluyendo 5 Por Qués, seguimiento de tareas e indicadores de confiabilidad.
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="tabs-container">
-                                    <div>
-                                        <ul class="tabs">
-                                            <li class="tab active">Advanced Analytics</li>
-                                            <li class="tab">Gestión de Desempeño Digital</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="panels">
-                                        <div class="panel active">
-                                            <div class="title-slider">Advanced Analytics</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Entender y <strong>experimentar el uso de analíticos avanzados</strong> en la optimización de procesos productivos, así como comprender
-                                                    una <strong>visón general de la Industria 4.0</strong> y como impacta en el ambiente de negocios de hoy en día
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Gestión de Desempeño Digital</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Fortalecer el entendimiento de los <strong> elementos clave de un sistema de gestión del desempeño </strong> efectivo,
-                                                    a través de indicadores de desempeño visuales, y <strong>entender los beneficios</strong> de los mismos
-                                                    <strong> de forma digital y en tiempo real. </strong>
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="tabs-container">
-                                    <div>
-                                        <ul class="tabs">
-                                            <li class="tab active">Título del programa</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="panels">
-                                        <div class="panel active">
-                                            <div class="title-slider">Título del programa</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Programa de formación flexible y adaptado a las necesidades de la organización, abarcando
-                                                    <strong> talleres Ejecutivos para Alta Dirección, </strong> y talleres de capacitación para el staff de la empresa.
-                                                    El programa incluye competencias de <strong> Fundamentos Lean, Conciencia Digital,
-                                                        Gestión de Desempeño y Gestión del Cambio.</strong>
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
--->
 
                             </div>
                         </div>
@@ -590,22 +393,6 @@ get_header();
                 </div>
 
             </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-
-            <!-- If we need navigation buttons 
-            <div class="row">
-                <div class="colmn">
-                    <div class="swiper-button-next competencias amc-slider-button">
-                        <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
-                    </div>
-                    <div class="swiper-button-prev competencias amc-slider-button">
-                        <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
-
-                    </div>
-                </div>
-            </div>
-            -->
 
         </div>
 
@@ -718,7 +505,7 @@ get_header();
         </div>
     </div>
 
-    <!-- jdhjdfhjdfhjdfhdfhjdhfjdhjhjdfhjdfhjdfjhdfhjdfdhjf  -->
+    <!-- Casos de éxito  -->
 
 
     <div id="casos-de-exito" class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
@@ -733,7 +520,7 @@ get_header();
                             <div class="content">
                                 <div class="cont-info">
                                     <span class="small-title-slider">
-                                        Casos de éxito
+                                        Programas de formación de talento
                                     </span>
 
                                     <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
@@ -822,6 +609,99 @@ get_header();
 
                 </div>
 
+                <div class="swiper-slide">
+
+                    <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Programas de formación de talento
+                                    </span>
+
+                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
+
+                                    <p class="mas-casos">
+                                        Más casos de exito
+                                    </p>
+
+
+
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>Giro</td>
+                                        <td>Transfromación metal-mécanico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tamaño</td>
+                                        <td>Mediana ( 100 Empleados)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Situación</td>
+                                        <td>
+                                            · Best-practices por solicitud de cliente <br><br>
+
+                                            · Visioón de expansión mercado nacional e internacional <br><br>
+
+                                            · <span>La alta dirección y equipo egerencial desean entender las best practices en la industria</span> <br><br>
+
+                                            · <span>Están diseñandno la estrategia de transformación</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Solución</th>
+                                    </tr>
+
+                                </table>
+
+                                <div class="cont-m">
+                                    <div>
+                                        <p class="tit">Programa de formación</p>
+                                        <img src="<?php echo get_template_directory_uri() . '/img/plomaq-figure.png' ?>" alt="">
+                                        <p class="desc">
+                                            · Desarrollo de 6 módulos ajustados a las prácticas propias
+                                            <br><br>
+                                            · Ejecución de cursos con instructores compartidos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="tit">Participantes:</p>
+                                        <p class="desc">
+                                            7 personas del equipo
+                                            <br><br>
+                                            · Director general
+                                            <br>
+                                            · Staff directo
+                                            <br><br>
+                                            Despliegue de cursos 11 meses
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
             <button id="menos">Ver menos</button>
 
@@ -871,177 +751,177 @@ get_header();
                     $link_nota = ($link_externo) ? $link_externo : get_the_permalink();
                     ?>
 
-                    <?php
+                <?php
                     if ($ind == 1) {
                         ?>
-                        <div class="column">
-                            <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                                <div class="overlay">
-                                    <p class="fecha-autor">
-                                        <?php
+                <div class="column">
+                    <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                        <div class="overlay">
+                            <p class="fecha-autor">
+                                <?php
                                         $post_month  = get_the_time('F');
                                         $post_year = get_the_time('Y');
                                         echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
                                         ?>
-                                        By:
-                                        <?php
+                                By:
+                                <?php
                                         if ($authors) {
                                             echo $authors;
                                         } else {
                                             the_author_meta('display_name', $author_id);
                                         }
                                         ?>
-                                    </p>
-                                    <p class="tit">
-                                        <?php the_title(); ?>
-                                    </p>
-                                    <p class="desc">
-                                        <?php echo (get_the_excerpt()); ?>
-                                    </p>
-                                </div>
-                                <div class="leer-mas">
-                                    <span>LEER MÁS</span>
-                                    <div>
-                                        <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                    </div>
-                                </div>
-                            </a>
+                            </p>
+                            <p class="tit">
+                                <?php the_title(); ?>
+                            </p>
+                            <p class="desc">
+                                <?php echo (get_the_excerpt()); ?>
+                            </p>
                         </div>
-                    <?php
+                        <div class="leer-mas">
+                            <span>LEER MÁS</span>
+                            <div>
+                                <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <?php
                     }
                     ?>
-                    <?php
+                <?php
                     if ($ind == 2) {
                         ?>
-                        <div class="column">
-                            <div class="row">
+                <div class="column">
+                    <div class="row">
 
-                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                                    <div class="overlay">
-                                        <p class="fecha-autor">
-                                            <?php
+                        <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                            <div class="overlay">
+                                <p class="fecha-autor">
+                                    <?php
                                             $post_month  = get_the_time('F');
                                             $post_year = get_the_time('Y');
                                             echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
                                             ?>
-                                            By:
-                                            <?php
+                                    By:
+                                    <?php
                                             if ($authors) {
                                                 echo $authors;
                                             } else {
                                                 the_author_meta('display_name', $author_id);
                                             }
                                             ?>
-                                        </p>
-                                        <p class="tit">
-                                            <?php the_title(); ?>
-                                        </p>
-                                        <p class="desc">
-                                            <?php echo (get_the_excerpt()); ?>
-                                        </p>
-                                    </div>
-                                    <div class="leer-mas">
-                                        <span>LEER MÁS</span>
-                                        <div>
-                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                        </div>
-                                    </div>
-                                </a>
+                                </p>
+                                <p class="tit">
+                                    <?php the_title(); ?>
+                                </p>
+                                <p class="desc">
+                                    <?php echo (get_the_excerpt()); ?>
+                                </p>
+                            </div>
+                            <div class="leer-mas">
+                                <span>LEER MÁS</span>
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                </div>
+                            </div>
+                        </a>
 
-                            <?php
+                        <?php
                             }
                             ?>
-                            <?php
+                        <?php
                             if ($ind == 3) {
                                 ?>
-                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                                    <div class="overlay">
-                                        <p class="fecha-autor">
-                                            <?php
+                        <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                            <div class="overlay">
+                                <p class="fecha-autor">
+                                    <?php
                                             $post_month  = get_the_time('F');
                                             $post_year = get_the_time('Y');
                                             echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
                                             ?>
-                                            By:
-                                            <?php
+                                    By:
+                                    <?php
                                             if ($authors) {
                                                 echo $authors;
                                             } else {
                                                 the_author_meta('display_name', $author_id);
                                             }
                                             ?>
-                                        </p>
-                                        <p class="tit">
-                                            <?php the_title(); ?>
-                                        </p>
-                                    </div>
-                                    <div class="leer-mas">
-                                        <span>LEER MÁS</span>
-                                        <div>
-                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                        </div>
-                                    </div>
-                                </a>
+                                </p>
+                                <p class="tit">
+                                    <?php the_title(); ?>
+                                </p>
                             </div>
-                        <?php
+                            <div class="leer-mas">
+                                <span>LEER MÁS</span>
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <?php
                         }
                         ?>
-                        <?php
+                    <?php
                         if ($ind == 4 || $ind == 5 || $ind == 6) {
                             ?>
-                            <?php
+                    <?php
                             if ($ind == 4) {
                                 ?>
-                                <div class="row">
-                                <?php
+                    <div class="row">
+                        <?php
                                 }
                                 ?>
-                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                                    <div class="overlay">
-                                        <p class="fecha-autor">
-                                            <?php
+                        <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                            <div class="overlay">
+                                <p class="fecha-autor">
+                                    <?php
                                             $post_month  = get_the_time('F');
                                             $post_year = get_the_time('Y');
                                             echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
                                             ?>
-                                            By:
-                                            <?php
+                                    By:
+                                    <?php
                                             if ($authors) {
                                                 echo $authors;
                                             } else {
                                                 the_author_meta('display_name', $author_id);
                                             }
                                             ?>
-                                        </p>
-                                        <p class="tit">
-                                            <?php the_title(); ?>
-                                        </p>
-                                    </div>
-                                    <div class="leer-mas">
-                                        <span>LEER MÁS</span>
-                                        <div>
-                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                        </div>
-                                    </div>
-                                </a>
-                                <?php
+                                </p>
+                                <p class="tit">
+                                    <?php the_title(); ?>
+                                </p>
+                            </div>
+                            <div class="leer-mas">
+                                <span>LEER MÁS</span>
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <?php
                                 if ($ind == 6) {
                                     ?>
-                                </div>
-                            <?php
+                    </div>
+                    <?php
                             }
                             ?>
-                        <?php
+                    <?php
                         }
                         ?>
-                        <?php
+                    <?php
                         if ($ind == 6) {
                             ?>
-                        </div>
-                    <?php
+                </div>
+                <?php
                     }
                     ?>
-                    <?php
+                <?php
                     $ind++;
                 endwhile;
                 ?>
@@ -1078,7 +958,7 @@ get_header();
                                     <div class="title-slider">José Alfredo Vázquez</div>
                                     <br>
                                     <div class="sub-title">
-                                        Ing. Mejora Continua <br> Xignux
+                                        Ing. Mejora Continua
                                     </div>
                                     <div class="desc">
                                         <blockquote>“La parte práctica, el implementar físicamente lo aprendido y realizar la simulación en la línea es de gran ayuda para transmitir el conocimiento”.
@@ -1104,7 +984,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1121,7 +1001,7 @@ get_header();
                                     <div class="title-slider">Arturo Montoya Villarello</div>
                                     <br>
                                     <div class="sub-title">
-                                        Gerente Nacional Ventas Mayoreo <br> Ragasa
+                                        Gerente Nacional Ventas Mayoreo
                                     </div>
                                     <div class="desc">
                                         <blockquote>
@@ -1148,7 +1028,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/ragasa.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1166,7 +1046,7 @@ get_header();
                                     <div class="title-slider">Erick Cajero Rodríguez</div>
                                     <br>
                                     <div class="sub-title">
-                                        Jefe turno <br> Reynera
+                                        Jefe turno
                                     </div>
                                     <div class="desc">
                                         <blockquote>
@@ -1193,7 +1073,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/reynera.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1211,7 +1091,7 @@ get_header();
                                     <div class="title-slider">Mario Verdinez</div>
                                     <br>
                                     <div class="sub-title">
-                                        Operational Excellence Manager <br>FRISA
+                                        Operational Excellence Manager
                                     </div>
                                     <div class="desc">
                                         <blockquote>
@@ -1240,7 +1120,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/frisa.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1258,7 +1138,7 @@ get_header();
                                     <div class="title-slider">Alfredo Nuño Toledo</div>
                                     <br>
                                     <div class="sub-title">
-                                        Gerente Mejora continua <br>Ragasa
+                                        Gerente Mejora continua
                                     </div>
                                     <div class="desc">
                                         <blockquote>
@@ -1286,7 +1166,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/video.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/ragasa.png' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1303,32 +1183,15 @@ get_header();
         <div class="colmn flexbox vertical-middle">
             <div class="content">
                 <div>
-                    <span class="title">Contáctanos</span>
+                    <div class="title">Contáctanos</div>
                 </div><br>
                 <p class="desc color-pink">¿Quieres que diseñemos un plan <br /> de formación para tu empresa?</p>
             </div>
         </div>
         <div class="colmn flexbox vertical-middle horizontal-center">
             <div class="content">
-                <form action="" class="form-contact">
-                    <div class="form-row">
-                        <input type="text" name="" id="" placeholder="Nombre">
-                    </div>
-                    <div class="form-row">
-                        <input type="email" name="" id="" class="i-50" placeholder="E-mail">
-                        <input type="text" name="" id="" class="i-50" placeholder="Empresa">
-                    </div>
-                    <div class="form-row">
-                        <input type="text" name="" id="" class="i-50" placeholder="Area(Compras, Etc)">
-                        <input type="text" name="" id="" class="i-50" placeholder="Teléfono">
-                    </div>
-                    <div class="form-row">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    </div>
-                    <div class="form-row">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
+
+                <?php echo do_shortcode('[contact-form-7 id="196" title="Contacto"]'); ?>
             </div>
         </div>
     </div>
