@@ -50,7 +50,7 @@
                     transition: all 0.1s;
                 }
             }
-            nav.nav-menu {
+            .nav-menu {
                 >ul {
                     margin: 0 auto;
                     padding: 0;
@@ -148,7 +148,7 @@
                     }
                 }
             }
-            nav.nav-menu {
+            .nav-menu {
                 >ul {
                     margin: 0 auto;
                     padding: 0;
@@ -233,7 +233,7 @@
                         color: white;
                     }
                 }
-                nav.nav-menu {
+                .nav-menu {
                     >ul {
                         border-bottom: 1px solid rgba(white, 0.6);
                         >li {
@@ -270,7 +270,7 @@
                 &.min-header {
                     background-color: #fff;
                 }
-                nav.nav-menu {
+                .nav-menu {
                     >ul {
                         border-bottom: 1px solid #9c9c9c;
                         >li {

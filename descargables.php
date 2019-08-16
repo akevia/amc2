@@ -22,7 +22,9 @@ get_header();
             <?php while ($the_query->have_posts()) :
                 $the_query->the_post();
                 $file = get_field('archivo');
-                $img = get_field('imagen'); ?>
+                $img_id = get_field('imagen');
+                $img = wp_get_attachment_image_src($img_id, 'post-featured-img')[0];
+                ?>
             <a href="<?php echo $file ?>" class="link-descargable" target="_blank">
                 <div class="descargable-item">
                     <img src="<?php echo $img; ?>">

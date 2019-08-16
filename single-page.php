@@ -297,32 +297,6 @@ get_header();
 
 
 
-                                    <!--
-                                    <video class="video" preload playsinline autobuffer muted controls name="Conciencia Lean">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CONCIENCIA LEAN_6seg_v2.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Overall Equipment Effectiveness (OEE)">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-OEE_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Single Minute Exchange of Die (SMED)">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-SMED_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Solución de Problemas Causa Raíz">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-CAUSA RUIZ_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Advanced Analytics">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-ADVANCED ANALYTICS_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <video class="video" preload playsinline autobuffer muted controls name="Gestión de Desempeño Digital">
-                                        <source src="<?php echo get_template_directory_uri() . '/img/EMC2-GESTION DE DESEMPEÑO DIGITAL_6Seg.mp4' ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    -->
                                 </div>
                             </div>
                         </div>
@@ -370,16 +344,7 @@ get_header();
                                             <?php
                                                             }
                                                         }
-                                                    /*
-                                                        $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
-                                                        if ($term_list[0] == $custom_term->name) {
-                                                            ?>
-                                                            <li class="tab <?php if ($aux == 0) {
-                                                                                echo ("active");
-                                                                            } ?>"><?php the_title(); ?></li>
-                                                        <?php
-                                                        }
-                                                        */
+
                                                     endwhile;
                                                     ?>
                                         </ul>
@@ -408,29 +373,7 @@ get_header();
                                         <?php
                                                         }
                                                     }
-                                                /*
-                                                    if ($term_list[0] == $custom_term->name) {
-                                                        ?>
-                                                        <div class="panel <?php if ($aux == 0) {
-                                                                                echo ("active");
-                                                                            } ?>">
-                                                            <div class="title-slider"><?php the_title(); ?></div>
-                                                            <div class="desc">
-                                                                <p>
-                                                                    <?php
-                                                                    echo $aux;
-                                                                    the_field("descripcion");
-                                                                    ?>
-                                                                </p>
 
-                                                                <p>
-                                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    <?php
-                                                    }
-                                                    */
                                                 endwhile;
                                                 ?>
                                     </div>
@@ -443,146 +386,6 @@ get_header();
 
 
 
-
-                                <!--
-                                <div class="tabs-container active">
-                                    <div>
-                                        <ul class="tabs">
-                                            <li class="tab active">Conciencia Lean</li>
-                                            <li class="tab">Overall Equipment Effectiveness (OEE)</li>
-                                            <li class="tab">Single Minute Exchange of Die (SMED)</li>
-                                            <li class="tab">Solución de Problemas Causa Raíz</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="panels">
-                                        <div class="panel active">
-                                            <div class="title-slider">Conciencia Lean</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Desarrollar una <strong>compresión de los conceptos Lean básicos,</strong> incluyendo identificación de 8 desperdicios,
-                                                    estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño
-                                                    en el piso de producción.
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Overall Equipment Effectiveness (OEE)</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Entender la <strong>importancia de medición de la eficiencia</strong> en equipos y máquinas de manera vivencial, y a su vez desarrollará la
-                                                    <strong>habilidad para el cálculo del OEE, </strong>
-                                                    través de la recolección de los datos que lo componen.
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Single Minute Exchange of Die (SMED)</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Optimizar cambio de modelo, en este módulo se <strong>comprenderá el impacto que tiene el cambio de modelo</strong> en la operación de una línea de producción,
-                                                    y pondrá en práctica el <strong>análisis sistemático</strong> para mejora de dicho proceso
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Solución de Problemas Causa Raíz</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Enfocar los esfuerzos en los <strong>problemas de mayor impacto,</strong> y llevará a cabo la
-                                                    <strong>resolución de problemas causa raíz </strong> de manera
-                                                    <strong>sistemática</strong> incluyendo 5 Por Qués, seguimiento de tareas e indicadores de confiabilidad.
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="tabs-container">
-                                    <div>
-                                        <ul class="tabs">
-                                            <li class="tab active">Advanced Analytics</li>
-                                            <li class="tab">Gestión de Desempeño Digital</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="panels">
-                                        <div class="panel active">
-                                            <div class="title-slider">Advanced Analytics</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Entender y <strong>experimentar el uso de analíticos avanzados</strong> en la optimización de procesos productivos, así como comprender
-                                                    una <strong>visón general de la Industria 4.0</strong> y como impacta en el ambiente de negocios de hoy en día
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="panel">
-                                            <div class="title-slider">Gestión de Desempeño Digital</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Fortalecer el entendimiento de los <strong> elementos clave de un sistema de gestión del desempeño </strong> efectivo,
-                                                    a través de indicadores de desempeño visuales, y <strong>entender los beneficios</strong> de los mismos
-                                                    <strong> de forma digital y en tiempo real. </strong>
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="tabs-container">
-                                    <div>
-                                        <ul class="tabs">
-                                            <li class="tab active">Título del programa</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="panels">
-                                        <div class="panel active">
-                                            <div class="title-slider">Título del programa</div>
-                                            <div class="desc">
-                                                <p>
-                                                    Programa de formación flexible y adaptado a las necesidades de la organización, abarcando
-                                                    <strong> talleres Ejecutivos para Alta Dirección, </strong> y talleres de capacitación para el staff de la empresa.
-                                                    El programa incluye competencias de <strong> Fundamentos Lean, Conciencia Digital,
-                                                        Gestión de Desempeño y Gestión del Cambio.</strong>
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
--->
-
                             </div>
                         </div>
 
@@ -590,22 +393,6 @@ get_header();
                 </div>
 
             </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-
-            <!-- If we need navigation buttons 
-            <div class="row">
-                <div class="colmn">
-                    <div class="swiper-button-next competencias amc-slider-button">
-                        <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
-                    </div>
-                    <div class="swiper-button-prev competencias amc-slider-button">
-                        <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
-
-                    </div>
-                </div>
-            </div>
-            -->
 
         </div>
 
@@ -718,7 +505,7 @@ get_header();
         </div>
     </div>
 
-    <!-- jdhjdfhjdfhjdfhdfhjdhfjdhjhjdfhjdfhjdfjhdfhjdfdhjf  -->
+    <!-- Casos de éxito  -->
 
 
     <div id="casos-de-exito" class="row-container-fluid flexbox vertical-middle" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-test.jpg'; ?>);">
@@ -733,7 +520,7 @@ get_header();
                             <div class="content">
                                 <div class="cont-info">
                                     <span class="small-title-slider">
-                                        Casos de éxito
+                                        Programas de formación de talento
                                     </span>
 
                                     <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
@@ -829,7 +616,7 @@ get_header();
                             <div class="content">
                                 <div class="cont-info">
                                     <span class="small-title-slider">
-                                        Casos de éxito
+                                        Programas de formación de talento
                                     </span>
 
                                     <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
@@ -887,7 +674,7 @@ get_header();
                                 <div class="cont-m">
                                     <div>
                                         <p class="tit">Programa de formación</p>
-                                        <img src="<?php echo get_template_directory_uri() . '/img/circulos-cde.png' ?>" alt="">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/plomaq-figure.png' ?>" alt="">
                                         <p class="desc">
                                             · Desarrollo de 6 módulos ajustados a las prácticas propias
                                             <br><br>
@@ -1403,25 +1190,7 @@ get_header();
         </div>
         <div class="colmn flexbox vertical-middle horizontal-center">
             <div class="content">
-                <!-- <div class="form-contact">
-                    <div class="form-row">
-                        <input type="text" name="" id="" placeholder="Nombre">
-                    </div>
-                    <div class="form-row">
-                        <input type="email" name="" id="" class="i-50" placeholder="E-mail">
-                        <input type="text" name="" id="" class="i-50" placeholder="Empresa">
-                    </div>
-                    <div class="form-row">
-                        <input type="text" name="" id="" class="i-50" placeholder="Área (Compras, Etc)">
-                        <input type="text" name="" id="" class="i-50" placeholder="Teléfono">
-                    </div>
-                    <div class="form-row">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    </div>
-                    <div class="form-row">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </div> -->
+
                 <?php echo do_shortcode('[contact-form-7 id="196" title="Contacto"]'); ?>
             </div>
         </div>

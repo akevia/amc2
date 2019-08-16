@@ -2,7 +2,19 @@
 add_theme_support('post-thumbnails');
 add_image_size('post-result-search', 240, 640);
 add_image_size('Header-Entrada', 1920, 1080);
-add_image_size('post-featured-img', 600, 800, array('center', 'center'));
+add_image_size('post-featured-img', 300, 360, array('center', 'center'), true);
+
+function register_menus()
+{
+  register_nav_menus(
+    array(
+      'header-menu' => __('Header Menu'),
+      'footer-menu' => __('Footer Menu')
+    )
+  );
+}
+add_action('init', 'register_menus');
+
 function amc_scripts()
 {
   wp_enqueue_script('jquery');
