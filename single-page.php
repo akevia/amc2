@@ -404,6 +404,9 @@ get_header();
 
     <div id="programas" class="row-container flexbox vertical-middle " style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
         <div class="content">
+            <div class="title">
+                Programas de formación de talentos
+            </div>
             <p class="desc"> <span>EL AMC2</span> se enfoca en el desarrollo de competencias por medio de programas adaptadosa las necesidades particulares de cada cliente</p>
             <p class="mark">
                 Modelo de entrega de servicios del AMC2:
@@ -512,7 +515,7 @@ get_header();
 
         <div class="swiper-container casos-de-exito-slider">
             <div class="swiper-wrapper">
-
+                <!-- XIGNUX -->
                 <div class="swiper-slide">
 
                     <div class="content flexbox vertical-top">
@@ -523,7 +526,7 @@ get_header();
                                         Programas de formación de talento
                                     </span>
 
-                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
+                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/caso1.png' ?>" alt="">
 
                                     <p class="mas-casos">
                                         Más casos de exito
@@ -609,6 +612,7 @@ get_header();
 
                 </div>
 
+                <!-- PLOMAQ -->
                 <div class="swiper-slide">
 
                     <div class="content flexbox vertical-top">
@@ -619,7 +623,7 @@ get_header();
                                         Programas de formación de talento
                                     </span>
 
-                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/xignux.png' ?>" alt="">
+                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/caso2.png' ?>" alt="">
 
                                     <p class="mas-casos">
                                         Más casos de exito
@@ -658,7 +662,7 @@ get_header();
                                         <td>
                                             · Best-practices por solicitud de cliente <br><br>
 
-                                            · Visioón de expansión mercado nacional e internacional <br><br>
+                                            · Visión de expansión mercado nacional e internacional <br><br>
 
                                             · <span>La alta dirección y equipo egerencial desean entender las best practices en la industria</span> <br><br>
 
@@ -702,6 +706,193 @@ get_header();
 
                 </div>
 
+                <!-- CRISER -->
+                <div class="swiper-slide">
+
+                    <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Programas de formación de talento
+                                    </span>
+
+                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/caso3.png' ?>" alt="">
+
+                                    <p class="mas-casos">
+                                        Más casos de exito
+                                    </p>
+
+
+
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>Giro</td>
+                                        <td>Injección de plásticos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tamaño</td>
+                                        <td>Mediana ( 120 Empleados)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Situación</td>
+                                        <td>
+                                            · Problemas de nivel de servicio / desperdicios <br><br>
+
+                                            · <span>Están iniciando proceso de transformación Lean y están contemplando digitalizar operaciones.</span> <br><br>
+
+                                            · <span>Desean incrementar cultura Lean en el piso de producción</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Solución</th>
+                                    </tr>
+
+                                </table>
+
+                                <div class="cont-m">
+                                    <div>
+                                        <p class="tit">Programa de formación</p>
+                                        <img src="<?php echo get_template_directory_uri() . '/img/criser-figure.png' ?>" alt="">
+                                        <p class="desc">
+
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="tit">Participantes:</p>
+                                        <p class="desc">
+                                            20 personas de operaciones
+                                            <br><br>
+                                            · Coordinadores de producción
+                                            <br>
+                                            · Supervidsores de producción
+                                            <br>
+                                            · Líderes de producción (personal operativo)
+                                            <br>
+                                            · Staff de soporte: Ingeniería, Logistica
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- RAGASA -->
+                <div class="swiper-slide">
+
+                    <div class="content flexbox vertical-top">
+                        <div class="colmn">
+                            <div class="content">
+                                <div class="cont-info">
+                                    <span class="small-title-slider">
+                                        Programas de formación de talento
+                                    </span>
+
+                                    <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/caso4.png' ?>" alt="">
+
+                                    <p class="mas-casos">
+                                        Más casos de exito
+                                    </p>
+
+
+
+                                </div>
+                                <div class="cont-slide-item">
+                                    <div class="cont-arrows">
+                                        <div class="swiper-button-prev casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+                                        </div>
+                                        <div class="swiper-button-next casos-de-exito amc-slider-button">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colmn">
+                            <div class="content">
+
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>Giro</td>
+                                        <td>Alimentos y derivados</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tamaño</td>
+                                        <td>Grande ( 1000 Empleados)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Situación</td>
+                                        <td>
+                                            · Visión de <span>crecimiento a doble dígito</span><br><br>
+
+                                            · Están iniciando el proceso de <span>transformación I.40</span><br><br>
+
+                                            · Se desea <span>homologar una cultura de Mejora Continua</span> en la organización, así como al crear una conciencia digital en la organización
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Solución</th>
+                                    </tr>
+
+                                </table>
+
+                                <div class="cont-m">
+                                    <div>
+                                        <p class="tit">Programa de formación</p>
+                                        <img src="<?php echo get_template_directory_uri() . '/img/plomaq-figure.png' ?>" alt="">
+                                        <p class="desc">
+
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="tit">Participantes:</p>
+                                        <p class="desc">
+                                            100 personas de operaciones
+                                            <br><br>
+                                            · Gerencias de planta producción
+                                            <br>
+                                            · Estrategia
+                                            <br>
+                                            · Staff de soporte (logística, mantenimiento)
+                                            <br>
+                                            · Supervisores de producción
+                                            <br>
+                                            · Fuerza de ventas
+                                            <br>
+                                            · Equipo de TI
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
             <button id="menos">Ver menos</button>
 
@@ -928,8 +1119,9 @@ get_header();
             </div>
 
 
-            <div class="contenedor-decoracion">
+            <div class="contenedor-decoracion flexbox vertical-middle horizontal-center">
                 <div class="decoracion-roja"></div>
+                <a href="<?php echo get_home_url() . '/blog' ?>" class="blog-ver-mas">Ver más</a>
             </div>
 
 

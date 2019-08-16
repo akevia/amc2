@@ -1,4 +1,23 @@
 @charset "UTF-8";
+.blog-ver-mas {
+  font-family: "Raleway";
+  font-size: 14px;
+  border: 1px solid #ff3140;
+  color: #fff;
+  background-color: #ff3140;
+  padding: 7px 30px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.blog-ver-mas:hover {
+  background-color: white;
+  color: #ff3140;
+}
+
 #cont-chido {
   position: relative;
   width: 100vw;
@@ -385,29 +404,29 @@ div.title:before {
 
 #programas .content .columns-container .colmn#antes {
   width: 60%;
-  color: #08225C;
+  color: #08225c;
 }
 
 #programas .content .columns-container .colmn#antes .top-text {
-  border-color: #8EB0F8;
+  border-color: #8eb0f8;
 }
 
 #programas .content .columns-container .colmn#durante {
   width: 20%;
-  color: #8EB0F8;
+  color: #8eb0f8;
 }
 
 #programas .content .columns-container .colmn#durante .top-text {
-  border-color: #A4A4A4;
+  border-color: #a4a4a4;
 }
 
 #programas .content .columns-container .colmn#despues {
   width: 20%;
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
 
 #programas .content .columns-container .colmn#despues .top-text {
-  border-color: #A4A4A4;
+  border-color: #a4a4a4;
 }
 
 #programas .content .columns-container .colmn .top-text {
