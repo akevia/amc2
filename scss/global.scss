@@ -1,28 +1,45 @@
-#cont-chido{
+.blog-ver-mas {
+    font-family: "Raleway";
+    font-size: 14px;
+    border: 1px solid #ff3140;
+    color: #fff;
+    background-color: #ff3140;
+    padding: 7px 30px;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        background-color: white;
+        color: #ff3140;
+    }
+}
+
+#cont-chido {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    #programas{
+    #programas {
         position: absolute;
         left: 0;
         transition: all 1s;
-        &.move{
+        &.move {
             left: -100% !important;
         }
     }
-
-    #casos-de-exito{
+    #casos-de-exito {
         position: absolute;
         left: 100%;
         transition: all 1s;
-        &.move{
+        &.move {
             left: 0 !important;
         }
     }
 }
 
-#mas{
+#mas {
     font-family: "Raleway";
     font-size: 14px;
     border-color: #4080ff;
@@ -33,15 +50,14 @@
     outline: none;
     cursor: pointer;
     margin-top: 30px;
-    &:hover{
+    &:hover {
         border-color: #4080ff;
         background-color: white;
-        color: #4080ff
+        color: #4080ff;
     }
 }
 
-#menos{
-  
+#menos {
     font-size: 14px;
     border-color: white;
     color: #4080ff;
@@ -50,13 +66,12 @@
     transition: all 0.1s;
     outline: none;
     cursor: pointer;
-    &:hover{
+    &:hover {
         border-color: white;
         background-color: #4080ff;
         color: white;
     }
 }
-
 
 body,
 html {
@@ -305,19 +320,20 @@ div.title {
     }
 }
 
+
 /* Programas */
 
-#programas{
-    .content{
-        p.desc{
+#programas {
+    .content {
+        p.desc {
             font-size: 16px;
             color: #838383;
             font-family: "Raleway";
-            span{
+            span {
                 font-weight: 900;
             }
         }
-        p.mark{
+        p.mark {
             font-size: 12px;
             color: #4080ff;
             font-family: "Raleway";
@@ -325,7 +341,7 @@ div.title {
             padding-bottom: 15px;
             border-bottom: 1px solid #b6b5b6;
         }
-        .dec{
+        .dec {
             width: 65px;
             height: 2px;
             background: #838383;
@@ -341,24 +357,23 @@ div.title {
                 padding: 10px;
                 &#antes {
                     width: 60%;
-                    color: #08225C;
-                    .top-text{
-                        border-color: #8EB0F8;
+                    color: #08225c;
+                    .top-text {
+                        border-color: #8eb0f8;
                     }
                 }
-                &#durante{
+                &#durante {
                     width: 20%;
-                    color: #8EB0F8;
-                    .top-text{
-                        border-color: #A4A4A4;
+                    color: #8eb0f8;
+                    .top-text {
+                        border-color: #a4a4a4;
                     }
                 }
-
                 &#despues {
                     width: 20%;
-                    color: #A4A4A4;
-                    .top-text{
-                        border-color: #A4A4A4;
+                    color: #a4a4a4;
+                    .top-text {
+                        border-color: #a4a4a4;
                     }
                 }
                 .top-text {
@@ -377,7 +392,7 @@ div.title {
                         img {
                             width: 100%;
                         }
-                        .cont-items{
+                        .cont-items {
                             position: absolute;
                             width: 50%;
                             height: min-content;
@@ -386,11 +401,11 @@ div.title {
                             top: 0;
                             bottom: 0;
                             margin: auto;
-                            img{
+                            img {
                                 height: 50px;
                                 width: auto;
                             }
-                            p{
+                            p {
                                 font-size: 12px;
                                 font-family: "Raleway";
                                 margin: 0;
@@ -564,27 +579,25 @@ div.title {
     .title-no-border {
         font-size: 55px;
     }
-
-
     /* Programas */
-
-#programas{
-    .content{
-        p.mark{
-            font-size: 14px;
-        }
-        .columns-container {
-            .colmn {
-                .item {
-                    .info {
-                        .cont-items{
-                            width: 45%;
-                            img{
-                                height: 75px;
-                                width: auto;
-                            }
-                            p{
-                                font-size: 15px;
+    #programas {
+        .content {
+            p.mark {
+                font-size: 14px;
+            }
+            .columns-container {
+                .colmn {
+                    .item {
+                        .info {
+                            .cont-items {
+                                width: 45%;
+                                img {
+                                    height: 75px;
+                                    width: auto;
+                                }
+                                p {
+                                    font-size: 15px;
+                                }
                             }
                         }
                     }
@@ -592,9 +605,6 @@ div.title {
             }
         }
     }
-}
-
-
     /* ¿Que podemos hacer por ti */
     .grid {
         .colmn {
@@ -624,28 +634,25 @@ div.title {
             }
         }
     }
-
     /* Programas */
-
-    #programas{
-        .content{
-            > .columns-container {
+    #programas {
+        .content {
+            >.columns-container {
                 flex-wrap: wrap;
                 justify-content: center;
                 .colmn {
                     &#antes {
                         width: calc(100% - 20px);
-                        .columns-container{
+                        .columns-container {
                             flex-wrap: nowrap;
-                            .column{
+                            .column {
                                 width: 25%;
                             }
                         }
                     }
-                    &#durante{
+                    &#durante {
                         width: calc(25% - 10px);
                     }
-    
                     &#despues {
                         width: calc(25% - 10px);
                     }
@@ -701,39 +708,31 @@ div.title {
             }
         }
     }
-
-
-
-        /* Programas */
-
-        #programas{
-            .content{
-                > .columns-container {
-                    flex-direction: column;
-                    .colmn {
-                        &#antes {
-                            width: calc(100% - 20px);
-                            .columns-container{
-                                flex-wrap: wrap;
-                                .column{
-                                    width: 100%;
-                                }
+    /* Programas */
+    #programas {
+        .content {
+            >.columns-container {
+                flex-direction: column;
+                .colmn {
+                    &#antes {
+                        width: calc(100% - 20px);
+                        .columns-container {
+                            flex-wrap: wrap;
+                            .column {
+                                width: 100%;
                             }
                         }
-                        &#durante{
-                            width: calc(100% - 20px);
-                        }
-        
-                        &#despues {
-                            width: calc(100% - 20px);
-                        }
+                    }
+                    &#durante {
+                        width: calc(100% - 20px);
+                    }
+                    &#despues {
+                        width: calc(100% - 20px);
                     }
                 }
             }
         }
-
-
-
+    }
     /* ¿Que podemos hacer por ti */
     .grid {
         flex-direction: column;

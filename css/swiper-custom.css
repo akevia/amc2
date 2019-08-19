@@ -231,6 +231,8 @@
 
 .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(2) .content .video {
   width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
 }
 
 .testimonio-slider .swiper-button-prev {

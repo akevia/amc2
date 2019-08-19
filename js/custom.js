@@ -1,5 +1,7 @@
 $ = jQuery;
 $(function() {
+    $(".form-row input").unwrap();
+    $(".form-row textarea").unwrap();
     changingMenuClass();
     $('a[href*="#"]').click(function() {
         if ($(window).width() <= 991 && $(".content-header").hasClass("active")) {
@@ -25,8 +27,8 @@ $(function() {
         $(this)
             .siblings(".tab")
             .removeClass("active");
-            if(role){
-                $(this)
+        if (role) {
+            $(this)
                 //.closest(".colmn").next().find(".tabs-container").removeClass("active").eq(index).addClass("active");
                 .closest(".tabs-container").next().children(".colmn:nth-child(2)").find(".tabs-container").removeClass("active").eq(index).addClass("active");
 
@@ -126,17 +128,17 @@ $(function() {
 
         /* Productos */
         /*
-        if ($(window).width() > 767 && $(window).width() < 1750) {
-            $(".programas-slider .swiper-slide").each(function(index) {
-                var anchoContTab = $(this)
-                    .find("ul.tabs")
-                    .width();
-                $(this)
-                    .find(".colmn:nth-child(2) .content")
-                    .css("max-width", anchoContTab + 3);
-            });
-        }
-        */
+            if ($(window).width() > 767 && $(window).width() < 1750) {
+                $(".programas-slider .swiper-slide").each(function(index) {
+                    var anchoContTab = $(this)
+                        .find("ul.tabs")
+                        .width();
+                    $(this)
+                        .find(".colmn:nth-child(2) .content")
+                        .css("max-width", anchoContTab + 3);
+                });
+            }
+            */
     }
 
     blogconfig();
@@ -208,7 +210,10 @@ $(function() {
         });
     }
 
-    $("#competencias").find(".small-title-slider").next().find(".tab:nth-child(1)").addClass("caca").click();
-
+    $("#competencias")
+        .find(".small-title-slider")
+        .next()
+        .find(".tab:nth-child(1)")
+        .addClass("caca")
+        .click();
 });
-
