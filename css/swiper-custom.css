@@ -74,6 +74,10 @@
 }
 
 .competencias-slider .swiper-slide .content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -116,7 +120,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 50px;
+  /*padding: 10px 50px;*/
+  padding-left: 0;
+  padding-right: 100px;
 }
 
 .competencias-slider .swiper-slide .content .colmn:nth-child(2) .content .small-title-slider {
@@ -849,3 +855,4 @@
     font-size: 10px;
   }
 }
+/*# sourceMappingURL=swiper-custom.css.map */

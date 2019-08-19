@@ -222,176 +222,117 @@ get_header();
     <div id="competencias" class="row-container-fluid flexbox vertical-middle contenedor-general-competencias" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-competencias.png'; ?>);">
 
         <div class="swiper-container competencias-slider">
+
+            <span class="small-title-slider">
+                Competencias
+            </span>
+            <div class="tabs-container active" role="competencias">
+                <div>
+                    <ul class="tabs">
+                        <?php
+                        $terms = get_terms(array(
+                            'taxonomy' => 'modulos_competencias',
+                            'hide_empty' => false,
+                        ));
+
+                        foreach ($terms as $term) {
+                            if ($term->count > 0) {
+                                ?>
+                        <li class="tab"><?php echo $term->name; ?></li>
+                        <?php
+                            }
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">
 
-                    <span class="small-title-slider">
-                        Competencias
-                    </span>
-                    <div class="tabs-container active" role="competencias">
-                        <div>
-                            <ul class="tabs">
-                                <?php
-                                $terms = get_terms(array(
-                                    'taxonomy' => 'modulos_competencias',
-                                    'hide_empty' => false,
-                                ));
+                <?php
 
-                                foreach ($terms as $term) {
-                                    if ($term->count > 0) {
-                                        ?>
-                                <li class="tab"><?php echo $term->name; ?></li>
-                                <?php
-                                    }
-                                }
-                                ?>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="content flexbox vertical-top">
-                        <div class="colmn">
-                            <div class="content">
-                                <div class="colection-videos">
-
-
-
-
-                                    <?php
-
-                                    $custom_terms = get_terms('modulos_competencias');
-                                    foreach ($custom_terms as $custom_term) {
-                                        wp_reset_query();
-                                        $args = array(
-                                            'post_type' => 'competencia', 'orderby' => 'title', 'order' => 'DESC',
-                                            'tax_query' => array(
-                                                array(
-                                                    'taxonomy' => 'modulos_competencias',
-                                                    'field' => 'slug_modulos_competencias',
-                                                    'terms' => $custom_term->slug,
-                                                ),
-                                            ),
-                                        );
-                                        $loop = new WP_Query($args);
-                                        if ($loop->have_posts()) {
-                                            ?>
-                                    <?php
-                                            while ($loop->have_posts()) : $loop->the_post();
-                                                $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
-                                                if ($term_list[0] == $custom_term->name) {
-                                                    ?>
-                                    <video class="video" preload playsinline autobuffer muted controls name="<?php the_title(); ?>">
-                                        <source src="<?php the_field("video") ?>" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <?php
-                                                }
-                                            endwhile;
-                                            ?>
-                                    <?php
-                                        }
-                                    }
+                $custom_terms = get_terms('modulos_competencias');
+                foreach ($custom_terms as $custom_term) {
+                    wp_reset_query();
+                    $args = array(
+                        'post_type' => 'competencia', 'orderby' => 'title', 'order' => 'ASC',
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'modulos_competencias',
+                                'field' => 'slug_modulos_competencias',
+                                'terms' => $custom_term->slug,
+                            ),
+                        ),
+                    );
+                    $loop = new WP_Query($args);
+                    if ($loop->have_posts()) {
+                        ?>
+                <?php
+                        while ($loop->have_posts()) : $loop->the_post();
+                            //$term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
+                            $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "all"));
+                            $ind = 0;
+                            foreach ($term_list as $term_single) {
+                                if ($term_single->name == $custom_term->name) {
                                     ?>
 
+                <div class="swiper-slide" modulo="<?php echo $term_single->name; ?>">
 
-
-                                </div>
+                    <div class="content flexbox vertical-top">
+                    <div class="colmn">
+                            <div class="content">
+                                <video class="video active" preload playsinline autobuffer muted controls>
+                                    <source src="<?php the_field("video") ?>" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
-
-
                         <div class="colmn">
                             <div class="content">
-
-
-
-                                <?php
-
-                                $custom_terms = get_terms('modulos_competencias');
-
-
-                                foreach ($custom_terms as $custom_term) {
-                                    wp_reset_query();
-                                    $args = array(
-                                        'post_type' => 'competencia', 'orderby' => 'title', 'order' => 'ASC',
-                                        'tax_query' => array(
-                                            array(
-                                                'taxonomy' => 'modulos_competencias',
-                                                'field' => 'slug_modulos_competencias',
-                                                'terms' => $custom_term->slug,
-                                            ),
-                                        ),
-                                    );
-
-                                    $loop = new WP_Query($args);
-                                    if ($loop->have_posts()) {
-                                        $auxG = 0;
-                                        ?>
-
-
-                                <div class="tabs-container">
-                                    <div>
-                                        <ul class="tabs">
-                                            <?php
-                                                    while ($loop->have_posts()) : $loop->the_post();
-                                                        $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "all"));
-                                                        foreach ($term_list as $term_single) {
-                                                            if ($term_single->name == $custom_term->name) {
-                                                                ?>
-                                            <li class="tab"><?php the_title(); ?></li>
-                                            <?php
-                                                            }
-                                                        }
-
-                                                    endwhile;
-                                                    ?>
-                                        </ul>
-                                    </div>
+                                <div class="tabs-container active">
                                     <div class="panels">
-                                        <?php
-                                                $aux = 0;
-                                                while ($loop->have_posts()) : $loop->the_post();
-                                                    //$term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
-                                                    $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "all"));
-                                                    foreach ($term_list as $term_single) {
-                                                        if ($term_single->name == $custom_term->name) {
-                                                            ?>
-                                        <div class="panel">
+                                        <div class="panel active">
                                             <div class="title-slider"><?php the_title(); ?></div>
                                             <div class="desc">
                                                 <p>
-                                                    <?php the_field("descripcion"); ?>
-                                                </p>
+                                                    Desarrollar una <strong>compresión de los conceptos Lean básicos,</strong> incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción. </p>
 
                                                 <p>
                                                     <a href="#" class="button-link">Contáctanos</a>
                                                 </p>
                                             </div>
                                         </div>
-                                        <?php
-                                                        }
-                                                    }
-
-                                                endwhile;
-                                                ?>
                                     </div>
                                 </div>
-                                <?php
-                                    }
-                                }
-                                ?>
-
-
-
-
                             </div>
                         </div>
-
                     </div>
+
                 </div>
 
+                <?php
+                                }
+                                $ind++;
+                            }
+                        endwhile;
+                        ?>
+                <?php
+                    }
+                }
+                ?>
+
+            </div>
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev competencias amc-slider-button">
+                <img src="<?php echo get_template_directory_uri() . '/img/arrow-left.png' ?>" alt="" />
+
+            </div>
+            <div class="swiper-button-next competencias amc-slider-button">
+                <img src="<?php echo get_template_directory_uri() . '/img/arrow-right.png' ?>" alt="" />
             </div>
 
         </div>
@@ -1218,7 +1159,7 @@ get_header();
             prevEl: '.swiper-button-prev.podemos',
         },
     });
-
+/*
     var competencias = new Swiper('.competencias-slider', {
         spaceBetween: 100,
         simulateTouch: false,
@@ -1227,6 +1168,7 @@ get_header();
             prevEl: '.swiper-button-prev.competencias',
         },
     });
+    */
     var programas = new Swiper('.programas-slider', {
         spaceBetween: 100,
         simulateTouch: false,

@@ -12,8 +12,12 @@ $(function() {
     });
 
 
+    var indexSlide;
+    var modulo;
+
     var tabs_container = $(".tabs-container");
     tabs_container.find($(".tab")).click(function() {
+        modulo = $(this).text();
         var role = $(this).closest(".tabs-container").attr("role");
         var name = $(this).text();
         var index = $(this).index();
@@ -25,32 +29,82 @@ $(function() {
                 $(this)
                 //.closest(".colmn").next().find(".tabs-container").removeClass("active").eq(index).addClass("active");
                 .closest(".tabs-container").next().children(".colmn:nth-child(2)").find(".tabs-container").removeClass("active").eq(index).addClass("active");
-                $(this).closest(".tabs-container").next().children(".colmn:nth-child(2)").find(".tabs-container").eq(index).find(".tab:nth-child(1)").click();
+
+
+                var a = 0;
+                $("#competencias .swiper-slide").each(function(){
+                    var sumodulo = $(this).attr("modulo");
+                    if(sumodulo == modulo){
+                        $(this).show();
+                        if(a == 0){
+                            $(this).find("video").each(function(){
+                                this.currentTime = 0;
+                                this.play();
+                            });
+                        }
+                        a++;
+                    }
+                    else{
+                        $(this).hide();
+                    }
+                });
+
+                // $(this).closest(".tabs-container").next().children(".colmn:nth-child(2)").find(".tabs-container").eq(index).find(".tab:nth-child(1)").click();
+                var competencias = new Swiper('.competencias-slider', {
+                    spaceBetween: 100,
+                    simulateTouch: false,
+                    noSwipingClass: 'swiper-no-swiping',
+                    navigation: {
+                        nextEl: '.swiper-button-next.competencias',
+                        prevEl: '.swiper-button-prev.competencias',
+                    },
+                });
+
+                
+
+                indexSlide = 0;
+
+
+
             }
             else{
+                /*
                 $(this)
                 .closest(".tabs-container")
                 .find(".panel")
                 .removeClass("active")
                 .eq(index)
                 .addClass("active");
-
-                $(".colection-videos .video").each(function(){
-                    var aux = $(this).attr("name");
-                    if(aux == name){
-                        $(this).addClass("active");
-                        this.currentTime = 0;
-                        this.play();
-                    } 
-                    else{
-                        $(this).removeClass("active");
-                    }
-                });
+*/
                 
 
 
             }
     });
+
+
+    function reproducirVideoCompetencia(){
+        $("#competencias .swiper-slide[modulo='"+modulo+"']").each(function(index){
+            if(index == indexSlide){
+                $(this).find("video").each(function(){
+                    this.currentTime = 0;
+                    this.play();
+                });
+            }
+        });
+    }
+
+
+    $(".swiper-button-next.competencias").click(function(){
+        indexSlide++;
+        reproducirVideoCompetencia();
+    });
+
+    $(".swiper-button-prev.competencias").click(function(){
+        indexSlide--;
+        reproducirVideoCompetencia();
+    });
+    
 
     function blogconfig() {
         /* Blog */
