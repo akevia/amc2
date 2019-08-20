@@ -219,7 +219,7 @@ get_header();
 <!-- competencias -->
 <div class="light-menu">
 
-    <div id="competencias" class="row-container-fluid flexbox vertical-middle contenedor-general-competencias" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-competencias.png'; ?>);">
+    <div id="competencias" class="row-container-fluid flexbox vertical-middle contenedor-general-competencias" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-competencias.jpg'; ?>);">
 
         <div class="swiper-container competencias-slider">
 
