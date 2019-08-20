@@ -151,15 +151,20 @@ $(function() {
     $("#mas").click(function(e) {
         $("#programas").addClass("move");
         $("#casos-de-exito").addClass("move");
-        $("header").addClass("light");
-        $("header").removeClass("dark");
+        $("header").addClass("dark");
+        $("header").removeClass("light");
+        $("#cont-chido").removeClass("light-menu");
+        $("#cont-chido").addClass("dark-menu");
+
     });
 
     $("#menos").click(function(e) {
         $("#programas").removeClass("move");
         $("#casos-de-exito").removeClass("move");
-        $("header").removeClass("light");
-        $("header").addClass("dark");
+        $("header").removeClass("dark");
+        $("header").addClass("light");
+        $("#cont-chido").removeClass("dark-menu");
+        $("#cont-chido").addClass("light-menu");
     });
 
     function changingMenuClass() {

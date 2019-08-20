@@ -21,7 +21,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    #programas {
+    #casos-de-exito {
         position: absolute;
         left: 0;
         transition: all 1s;
@@ -29,7 +29,7 @@
             left: -100% !important;
         }
     }
-    #casos-de-exito {
+    #programas {
         position: absolute;
         left: 100%;
         transition: all 1s;
@@ -39,7 +39,7 @@
     }
 }
 
-#mas {
+#menos {
     font-family: "Raleway";
     font-size: 14px;
     border-color: #4080ff;
@@ -57,7 +57,7 @@
     }
 }
 
-#menos {
+#mas {
     font-size: 14px;
     border-color: white;
     color: #4080ff;

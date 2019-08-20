@@ -341,113 +341,7 @@ get_header();
 </div><!-- competencias -->
 
 <!-- programas -->
-<div class="dark-menu" id="cont-chido">
-
-    <div id="programas" class="row-container flexbox vertical-middle " style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
-        <div class="content">
-            <div class="title">
-                Programas de formación de talentos
-            </div>
-            <p class="desc"> <span>EL AMC2</span> se enfoca en el desarrollo de competencias por medio de programas adaptadosa las necesidades particulares de cada cliente</p>
-            <p class="mark">
-                Modelo de entrega de servicios del AMC2:
-            </p>
-            <div class="dec"></div>
-
-            <div class="columns-container">
-                <div class="colmn" id="antes">
-                    <div class="content">
-                        <div class="top-text">
-                            Antes
-                        </div>
-
-                        <div class="columns-container">
-                            <div class="column">
-                                <div class="item">
-                                    <div class="info">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/figure-azul.png' ?>" alt="">
-                                        <div class="cont-items">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/figure-icon1.png' ?>" alt="">
-                                            <p>Diagnóstico
-                                                de Competencias
-                                                (Opcional)
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="item">
-                                    <div class="info">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/figure-azul.png' ?>" alt="">
-                                        <div class="cont-items">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/figure-icon2.png' ?>" alt="">
-                                            <p>Alineación
-                                                con aspiraciones
-                                                de la empresa
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="item">
-                                    <div class="info">
-                                        <img src="<?php echo get_template_directory_uri() . '/img/figure-azul.png' ?>" alt="">
-                                        <div class="cont-items">
-                                            <img src="<?php echo get_template_directory_uri() . '/img/figure-icon3.png' ?>" alt="">
-                                            <p>Diseño del programa de formación
-                                                de talento
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="colmn" id="durante">
-                    <div class="content">
-                        <div class="top-text">
-                            Durante
-                        </div>
-                        <div class="item">
-                            <div class="info">
-                                <img src="<?php echo get_template_directory_uri() . '/img/figure-celeste.png' ?>" alt="">
-                                <div class="cont-items">
-                                    <img src="<?php echo get_template_directory_uri() . '/img/figure-icon4.png' ?>" alt="">
-                                    <p>Ejecución
-                                        de talleres
-                                        de formación
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="colmn" id="despues">
-                    <div class="content">
-                        <div class="top-text">
-                            Después
-                        </div>
-                        <div class="item">
-                            <div class="info">
-                                <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
-                                <div class="cont-items">
-                                    <img src="<?php echo get_template_directory_uri() . '/img/figure-icon5.png' ?>" alt="">
-                                    <p>Retroalimentación
-                                        de aprendizajes
-                                        a la empresa
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button id="mas">Ver más</button>
-        </div>
-    </div>
+<div class="light-menu" id="cont-chido">
 
     <!-- Casos de éxito  -->
 
@@ -835,8 +729,117 @@ get_header();
 
                 </div>
             </div>
-            <button id="menos">Ver menos</button>
+            <button id="mas">Ver más</button>
 
+        </div>
+    </div>
+
+
+
+
+    <div id="programas" class="row-container flexbox vertical-middle " style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
+        <div class="content">
+            <div class="title">
+                Programas de formación de talentos
+            </div>
+            <p class="desc"> <span>EL AMC2</span> se enfoca en el desarrollo de competencias por medio de programas adaptadosa las necesidades particulares de cada cliente</p>
+            <p class="mark">
+                Modelo de entrega de servicios del AMC2:
+            </p>
+            <div class="dec"></div>
+
+            <div class="columns-container">
+                <div class="colmn" id="antes">
+                    <div class="content">
+                        <div class="top-text">
+                            Antes
+                        </div>
+
+                        <div class="columns-container">
+                            <div class="column">
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure-azul.png' ?>" alt="">
+                                        <div class="cont-items">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/figure-icon1.png' ?>" alt="">
+                                            <p>Diagnóstico
+                                                de Competencias
+                                                (Opcional)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure-azul.png' ?>" alt="">
+                                        <div class="cont-items">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/figure-icon2.png' ?>" alt="">
+                                            <p>Alineación
+                                                con aspiraciones
+                                                de la empresa
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="<?php echo get_template_directory_uri() . '/img/figure-azul.png' ?>" alt="">
+                                        <div class="cont-items">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/figure-icon3.png' ?>" alt="">
+                                            <p>Diseño del programa de formación
+                                                de talento
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmn" id="durante">
+                    <div class="content">
+                        <div class="top-text">
+                            Durante
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <img src="<?php echo get_template_directory_uri() . '/img/figure-celeste.png' ?>" alt="">
+                                <div class="cont-items">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/figure-icon4.png' ?>" alt="">
+                                    <p>Ejecución
+                                        de talleres
+                                        de formación
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmn" id="despues">
+                    <div class="content">
+                        <div class="top-text">
+                            Después
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <img src="<?php echo get_template_directory_uri() . '/img/figure.png' ?>" alt="">
+                                <div class="cont-items">
+                                    <img src="<?php echo get_template_directory_uri() . '/img/figure-icon5.png' ?>" alt="">
+                                    <p>Retroalimentación
+                                        de aprendizajes
+                                        a la empresa
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="menos">Ver menos</button>
         </div>
     </div>
 
