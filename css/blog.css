@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
+  min-height: 800px;
 }
 
 .contenedor-general-blog .small-title {
@@ -288,6 +289,9 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .contenedor-general-blog {
+    min-height: 800px;
+  }
   .contenedor-general-blog .horizontal-space {
     margin-right: 5%;
   }
@@ -300,8 +304,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor-general-blog {
+    min-height: 800px;
+  }
   .contenedor-general-blog .horizontal-space {
     margin-right: 0;
+    margin-top: 0;
   }
   .contenedor-general-blog .contenedor-blog {
     width: 100%;
@@ -405,6 +413,13 @@
   }
   .contenedor-general-blog .contenedor-decoracion {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor-general-blog .contenedor-decoracion .decoracion-roja {
+    margin-bottom: 25px;
   }
 }
 /*# sourceMappingURL=blog.css.map */

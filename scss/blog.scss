@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
+    min-height: 800px;
     .small-title {
         text-transform: uppercase;
     }
@@ -254,6 +255,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .contenedor-general-blog {
+        min-height: 800px;
         .horizontal-space {
             margin-right: 5%;
         }
@@ -268,8 +270,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .contenedor-general-blog {
+        min-height: 800px;
         .horizontal-space {
             margin-right: 0;
+            margin-top: 0;
         }
         .contenedor-blog {
             width: 100%;
@@ -371,6 +375,10 @@
         }
         .contenedor-decoracion {
             width: 100%;
+            flex-direction: column;
+            .decoracion-roja{
+                margin-bottom: 25px;
+            }
         }
     }
 }

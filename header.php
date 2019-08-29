@@ -25,7 +25,15 @@
             </a>
 
 
-            <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'nav-menu')); ?>
+            <?php
+
+            if (is_front_page()) {
+                wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'nav-menu'));
+            } else {
+                wp_nav_menu(array('theme_location' => 'header-menu-singlePage', 'container_class' => 'nav-menu'));
+            }
+
+            ?>
 
 
             <div class="search-container">

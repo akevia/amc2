@@ -22,8 +22,8 @@ get_header();
 
                     <div class="row-container flexbox vertical-middle">
                         <div class="title-no-border">
-                            Capacitando a la industria <br>
-                            en el desarrollo de competencias
+                            Desarrollando competencias rumbo <br> 
+                            a la Transformación Industria 4.0
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@ get_header();
                         </div>
                         <div class="column-desc">
                             <p>
-                                Plan de estudios completo, que incluye manufactura lean y herramientas digitales avanzadas, como mantenimiento predictivo y análisis de rendimientos.
+                                Plan de desarrollo de competencias necesarias para la Transformación Industria 4.0, incluyendo Operaciones Lean, Operaciones Digitales, Gestión de Desempeño y Mentalidad & Comportamiento.
                             </p>
                         </div>
                     </div>
@@ -170,7 +170,7 @@ get_header();
                     </div>
                     <div>
                         <div class="column-title">
-                            Ritmo de aprendizaje vivencia
+                            Ritmo de aprendizaje vivencial
                         </div>
                         <div class="column-desc">
                             <p>
@@ -190,7 +190,7 @@ get_header();
                         </div>
                         <div class="column-desc">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                Asesoramiento en el desarrollo de planes de formación de talento, alineado a la aspiración y visión de la organización.
                             </p>
                         </div>
                     </div>
@@ -206,7 +206,7 @@ get_header();
                         </div>
                         <div class="column-desc">
                             <p>
-                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.
+                                Programas de capacitación personalizado desde la Alta Dirección, Gerencias, Staff, Supervisores de Producción y Personal Operativo
                             </p>
                         </div>
                     </div>
@@ -219,7 +219,7 @@ get_header();
 <!-- competencias -->
 <div class="light-menu">
 
-    <div id="competencias" class="row-container-fluid flexbox vertical-middle contenedor-general-competencias" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-competencias.jpg'; ?>);">
+    <div id="competencias" class="row-container-fluid flexbox vertical-middle contenedor-general-competencias" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-competenciass.jpg'; ?>);">
 
         <div class="swiper-container competencias-slider">
 
@@ -232,6 +232,8 @@ get_header();
                         <?php
                         $terms = get_terms(array(
                             'taxonomy' => 'modulos_competencias',
+                            'orderby' => 'slug',
+                            'order' => 'ASC',
                             'hide_empty' => false,
                         ));
 
@@ -281,9 +283,9 @@ get_header();
                 <div class="swiper-slide" modulo="<?php echo $term_single->name; ?>">
 
                     <div class="content flexbox vertical-top">
-                    <div class="colmn">
+                        <div class="colmn">
                             <div class="content">
-                                <video class="video active" preload playsinline autobuffer muted controls>
+                                <video class="video active" preload playsinline autobuffer muted loop>
                                     <source src="<?php the_field("video") ?>" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
@@ -297,7 +299,12 @@ get_header();
                                             <div class="title-slider"><?php the_title(); ?></div>
                                             <div class="desc">
                                                 <p>
-                                                    Desarrollar una <strong>compresión de los conceptos Lean básicos,</strong> incluyendo identificación de 8 desperdicios, estandarización de procesos, desarrollo de un tablero de planeación de producción y gestión de desempeño en el piso de producción. </p>
+                                                    <?php the_field("descripcion") ?>
+                                                </p>
+
+                                                <p>
+                                                    ¿Quieres conocer más sobre este entrenamiento?, <br> <strong> contáctanos para agendar tu Demo-Day. </strong>
+                                                </p>
 
                                                 <p>
                                                     <a href="#" class="button-link">Contáctanos</a>
@@ -341,7 +348,7 @@ get_header();
 </div><!-- competencias -->
 
 <!-- programas -->
-<div class="light-menu" id="cont-chido">
+<div class="light-menu" id="programa">
 
     <!-- Casos de éxito  -->
 
@@ -358,7 +365,7 @@ get_header();
                             <div class="content">
                                 <div class="cont-info">
                                     <span class="small-title-slider">
-                                        Programas de formación de talento
+                                        Nuestra experiencia en programas de formación de talento
                                     </span>
 
                                     <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/caso1.png' ?>" alt="">
@@ -389,7 +396,7 @@ get_header();
                                 <table style="width:100%">
                                     <tr>
                                         <td>Giro</td>
-                                        <td>Grupo en insdustrias Energía y Alimentos</td>
+                                        <td>Grupo en industrias Energía y Alimentos</td>
                                     </tr>
                                     <tr>
                                         <td>Tamaño</td>
@@ -455,7 +462,7 @@ get_header();
                             <div class="content">
                                 <div class="cont-info">
                                     <span class="small-title-slider">
-                                        Programas de formación de talento
+                                        Nuestra experiencia en programas de formación de talento
                                     </span>
 
                                     <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/caso2.png' ?>" alt="">
@@ -549,7 +556,7 @@ get_header();
                             <div class="content">
                                 <div class="cont-info">
                                     <span class="small-title-slider">
-                                        Programas de formación de talento
+                                        Nuestra experiencia en programas de formación de talento
                                     </span>
 
                                     <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/caso3.png' ?>" alt="">
@@ -606,9 +613,6 @@ get_header();
                                     <div>
                                         <p class="tit">Programa de formación</p>
                                         <img src="<?php echo get_template_directory_uri() . '/img/criser-figure.png' ?>" alt="">
-                                        <p class="desc">
-
-                                        </p>
                                     </div>
                                     <div>
                                         <p class="tit">Participantes:</p>
@@ -641,7 +645,7 @@ get_header();
                             <div class="content">
                                 <div class="cont-info">
                                     <span class="small-title-slider">
-                                        Programas de formación de talento
+                                        Nuestra experiencia en programas de formación de talento
                                     </span>
 
                                     <img class="img-principal" src="<?php echo get_template_directory_uri() . '/img/caso4.png' ?>" alt="">
@@ -698,9 +702,6 @@ get_header();
                                     <div>
                                         <p class="tit">Programa de formación</p>
                                         <img src="<?php echo get_template_directory_uri() . '/img/plomaq-figure.png' ?>" alt="">
-                                        <p class="desc">
-
-                                        </p>
                                     </div>
                                     <div>
                                         <p class="tit">Participantes:</p>
@@ -729,9 +730,11 @@ get_header();
 
                 </div>
             </div>
-            <button id="mas">Ver más</button>
 
         </div>
+
+        <button id="mas">Conoce nuestro modelo de entrega de servicios</button>
+
     </div>
 
 
@@ -739,14 +742,13 @@ get_header();
 
     <div id="programas" class="row-container flexbox vertical-middle " style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-programas.png'; ?>);">
         <div class="content">
-            <div class="title">
-                Programas de formación de talentos
-            </div>
+            <span class="small-title">
+                Nuestra experiencia en programas de formación de talento
+            </span>
             <p class="desc"> <span>EL AMC2</span> se enfoca en el desarrollo de competencias por medio de programas adaptadosa las necesidades particulares de cada cliente</p>
             <p class="mark">
                 Modelo de entrega de servicios del AMC2:
             </p>
-            <div class="dec"></div>
 
             <div class="columns-container">
                 <div class="colmn" id="antes">
@@ -839,8 +841,8 @@ get_header();
                     </div>
                 </div>
             </div>
-            <button id="menos">Ver menos</button>
         </div>
+        <button id="menos">Ver menos</button>
     </div>
 
 
@@ -857,6 +859,7 @@ get_header();
                 <div class="small-title">Blog</div>
 
                 <div class="suscribete">
+                    <!--
                     <form action="" class="vertical-middle flexbox">
                         <label for="">suscribete</label>
                         <input type="email" name="" id="" placeholder="E-mail">
@@ -864,6 +867,52 @@ get_header();
                             <img src="<?php echo get_template_directory_uri() . '/img/arrow.png' ?>" alt="">
                         </button>
                     </form>
+                    -->
+
+                    <style>
+                        form p {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .wpcf7-response-output {
+                            font-family: "Raleway";
+                            font-size: 12px;
+                            margin: 0 !important;
+                            border: 0 !important;
+                            padding: 0 !important;
+                        }
+
+                        div.wpcf7-validation-errors,
+                        div.wpcf7-acceptance-missing {
+                            display: none !important;
+                        }
+
+                        span.wpcf7-not-valid-tip {
+                            position: absolute;
+                            font-family: "Raleway";
+                            font-size: 10px;
+                        }
+
+
+                        @media screen and (max-width: 768px) {
+                            form p {
+                                flex-wrap: wrap;
+                            }
+
+                           form p span input{
+                               width: 95% !important;
+                           }
+
+                            form p span{
+                                width: 77%;
+                                margin-right: 22px;
+                            }
+                        }
+                    </style>
+
+                    <?php echo do_shortcode('[contact-form-7 id="263" title="Newsletter"]'); ?>
                 </div>
             </div>
 
@@ -1164,7 +1213,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/ragasa.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/ragasa.jpg' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1302,7 +1351,7 @@ get_header();
 
                         <div class="colmn">
                             <div class="content">
-                                <img src="<?php echo get_template_directory_uri() . '/img/ragasa.png' ?>" alt="" class="video">
+                                <img src="<?php echo get_template_directory_uri() . '/img/ragasa.jpg' ?>" alt="" class="video">
                             </div>
                         </div>
                     </div>
@@ -1345,25 +1394,27 @@ get_header();
     var podemos = new Swiper('.podemos-slider', {
         loop: true,
         spaceBetween: 100,
+        /*
         autoplay: {
             delay: 9500,
             disableOnInteraction: false,
         },
+        */
         navigation: {
             nextEl: '.swiper-button-next.podemos',
             prevEl: '.swiper-button-prev.podemos',
         },
     });
-/*
-    var competencias = new Swiper('.competencias-slider', {
-        spaceBetween: 100,
-        simulateTouch: false,
-        navigation: {
-            nextEl: '.swiper-button-next.competencias',
-            prevEl: '.swiper-button-prev.competencias',
-        },
-    });
-    */
+    /*
+        var competencias = new Swiper('.competencias-slider', {
+            spaceBetween: 100,
+            simulateTouch: false,
+            navigation: {
+                nextEl: '.swiper-button-next.competencias',
+                prevEl: '.swiper-button-prev.competencias',
+            },
+        });
+        */
     var programas = new Swiper('.programas-slider', {
         spaceBetween: 100,
         simulateTouch: false,

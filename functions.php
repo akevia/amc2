@@ -9,7 +9,9 @@ function register_menus()
   register_nav_menus(
     array(
       'header-menu' => __('Header Menu'),
-      'footer-menu' => __('Footer Menu')
+      'header-menu-singlePage' => __('Header Menu SinglePage'),
+      'footer-menu' => __('Footer Menu'),
+      'footer-menu-singlePage' => __('Footer Menu SinglePage')
     )
   );
 }

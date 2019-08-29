@@ -39,6 +39,9 @@
 
 .podemos-slider .swiper-slide .content .title-slider {
   padding: 5px 13px;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .podemos-slider .swiper-slide .content .title-slider:before {
@@ -67,6 +70,10 @@
 
 .competencias-slider {
   width: 100%;
+}
+
+.competencias-slider .swiper-slide {
+  overflow: visible !important;
 }
 
 .competencias-slider .swiper-slide .small-title-slider {
@@ -121,7 +128,7 @@
   display: -ms-flexbox;
   display: flex;
   /*padding: 10px 50px;*/
-  padding-left: 0;
+  padding-left: 10px;
   padding-right: 100px;
 }
 
@@ -194,6 +201,9 @@
   padding: 0 10px;
   min-width: unset;
   left: -10px;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .testimonio-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .sub-title {
@@ -295,7 +305,6 @@
 
 .casos-de-exito-slider {
   width: 100%;
-  margin-top: 70px;
 }
 
 .casos-de-exito-slider .swiper-wrapper {
@@ -524,16 +533,16 @@
 .panels .panel .title-slider {
   font-size: 45px;
   color: white;
-  margin-top: 20px;
-  margin-bottom: 30px;
   min-width: 290px;
   padding: 0px 10px;
   font-family: "Raleway";
   font-weight: 900;
-  background-color: #ff3140;
-  display: inline-block;
   position: relative;
   left: -10px;
+  background-color: #ff3140;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .panels .panel .title-slider:before {
@@ -548,6 +557,7 @@
 
 .panels .panel .desc {
   color: white;
+  margin-top: 30px;
 }
 
 .panels .panel .desc p {
@@ -599,6 +609,9 @@
   .testimonio-slider .cont-medalla p {
     margin-top: 40px;
     font-size: 30px;
+  }
+  #programa {
+    min-height: 720px;
   }
   /* Casos de exito */
   .casos-de-exito-slider .swiper-wrapper .swiper-slide .content .colmn:nth-child(1) .content .mas-casos {

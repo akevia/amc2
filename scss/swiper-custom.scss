@@ -31,6 +31,9 @@
         .content {
             .title-slider {
                 padding: 5px 13px;
+                display: inline;
+                box-decoration-break: clone;
+                -webkit-box-decoration-break: clone;
                 &:before {
                     position: absolute;
                     content: "";
@@ -60,6 +63,7 @@
 .competencias-slider {
     width: 100%;
     .swiper-slide {
+        overflow: visible !important;
         .small-title-slider{
             margin-bottom: 20px;
         }
@@ -88,7 +92,7 @@
                     .content {
                         display: flex;
                         /*padding: 10px 50px;*/
-                        padding-left: 0;
+                        padding-left: 10px;
                         padding-right: 100px;
                         .small-title-slider{
                             width: 100%;
@@ -152,6 +156,9 @@
                                 padding: 0 10px;
                                 min-width: unset;
                                 left: -10px;
+                                display: inline;
+                                box-decoration-break: clone;
+                                -webkit-box-decoration-break: clone;
                             }
                             .sub-title {
                                 font-family: "Raleway";
@@ -249,7 +256,6 @@
 }
 .casos-de-exito-slider {
     width: 100%;
-    margin-top: 70px;
     .swiper-wrapper{
         align-items: center;
         .swiper-slide {
@@ -458,16 +464,16 @@
         .title-slider {
             font-size: 45px;
             color: white;
-            margin-top: 20px;
-            margin-bottom: 30px;
             min-width: 290px;
             padding: 0px 10px;
             font-family: "Raleway";
             font-weight: 900;
-            background-color: #ff3140;
-            display: inline-block;
             position: relative;
             left: -10px;
+            background-color: #ff3140;
+            display: inline;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
             &:before {
                 position: absolute;
                 content: "";
@@ -480,6 +486,7 @@
         }
         .desc {
             color: white;
+            margin-top: 30px;
             p{
                 margin: 0;
                 margin-bottom: 20px;
@@ -519,6 +526,7 @@
         }
     }
 
+
     /* Testimonios */
 
     .testimonio-slider {
@@ -552,6 +560,9 @@
         }
     }
 
+    #programa{
+        min-height: 720px;
+    }
 
     /* Casos de exito */
 

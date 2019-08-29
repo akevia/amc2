@@ -18,38 +18,44 @@
   color: #ff3140;
 }
 
-#cont-chido {
+#programa {
   position: relative;
+  min-height: 700px;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-#cont-chido #casos-de-exito {
+#programa #casos-de-exito {
+  height: 100%;
   position: absolute;
   left: 0;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-#cont-chido #casos-de-exito.move {
+#programa #casos-de-exito.move {
   left: -100% !important;
 }
 
-#cont-chido #programas {
+#programa #programas {
+  height: 100%;
   position: absolute;
   left: 100%;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-#cont-chido #programas.move {
+#programa #programas.move {
   left: 0 !important;
 }
 
 #menos {
+  position: absolute;
+  bottom: 50px;
+  z-index: 999;
   font-family: "Raleway";
-  font-size: 14px;
+  font-size: 12px;
   border-color: #4080ff;
   color: white;
   background-color: #4080ff;
@@ -68,7 +74,11 @@
 }
 
 #mas {
-  font-size: 14px;
+  position: absolute;
+  bottom: 50px;
+  z-index: 999;
+  font-family: "Raleway";
+  font-size: 12px;
   border-color: white;
   color: #4080ff;
   background-color: white;
@@ -358,6 +368,7 @@ div.title:before {
   font-size: 16px;
   color: #838383;
   font-family: "Raleway";
+  margin-top: 25px;
 }
 
 #programas .content p.desc span {
@@ -365,12 +376,14 @@ div.title:before {
 }
 
 #programas .content p.mark {
-  font-size: 12px;
-  color: #4080ff;
+  font-size: 22px;
+  color: #838383;
   font-family: "Raleway";
+  font-weight: 900;
   width: 50%;
   padding-bottom: 15px;
   border-bottom: 1px solid #b6b5b6;
+  margin-bottom: 10px;
 }
 
 #programas .content .dec {
@@ -435,7 +448,6 @@ div.title:before {
   font-weight: 800;
   font-size: 16px;
   border-bottom: 1px solid black;
-  margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
