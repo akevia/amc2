@@ -690,6 +690,9 @@ div.title {
     .title-no-border {
         font-size: 35px;
         min-width: unset;
+        br{
+            display: none;
+        }
     }
     /* Contact */
     .contenedor-general-contacto {
@@ -721,27 +724,61 @@ div.title {
         }
     }
     /* Programas */
+
+    #mas{
+        width: calc(100% - 40px);
+    }
+
+    #programa {
+        min-height: 1475px;
+        #casos-de-exito {
+            height: calc(100% - 120px);
+        }
+        #programas {
+            height: calc(100% - 120px);
+        }
+    }
+
+
+
     #programas {
         .content {
+            p.desc{
+                font-size: 15px;
+            }
             >.columns-container {
                 flex-direction: column;
+                align-items: center;
+                max-width: 280px;
+                margin: 0 auto;
                 .colmn {
                     &#antes {
                         width: calc(100% - 20px);
                         .columns-container {
                             flex-wrap: wrap;
                             .column {
-                                width: 100%;
+                                width: 65%;
                             }
                         }
                     }
                     &#durante {
                         width: calc(100% - 20px);
+                        .item{
+                            max-width: 170px;
+                            margin: 0 auto;
+                        }
                     }
                     &#despues {
                         width: calc(100% - 20px);
+                        .item{
+                            max-width: 170px;
+                            margin: 0 auto;
+                        }
                     }
                 }
+            }
+            .mark{
+                width: 100% !important;
             }
         }
     }

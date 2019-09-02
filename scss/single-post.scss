@@ -219,3 +219,56 @@
         }
     }
 }
+
+@media screen and (max-width: 767px){
+
+    .post-content{
+        flex-direction: column;
+        .column {
+            &.info {
+                width: calc(100% - 20px);
+                padding-right: 10px;
+            }
+            &.related,
+            &.imagen-destacada {
+                width: calc(100% - 20px);
+                .post-img-destacada {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .post-footer-author {
+        .post-author-content {
+            flex-direction: column;
+            .column {
+                padding: 0;
+                .avatar {
+                    img {
+                        width: 200px;
+                    }
+                }
+                .text {
+                    font-family: "Raleway";
+                    color: #828282;
+                    .email {
+                        a {
+                            text-decoration: none;
+                            color: #4080ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}

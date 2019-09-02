@@ -257,4 +257,46 @@
   text-decoration: none;
   color: #4080ff;
 }
+
+@media screen and (max-width: 767px) {
+  .post-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post-content .column.info {
+    width: calc(100% - 20px);
+    padding-right: 10px;
+  }
+  .post-content .column.related, .post-content .column.imagen-destacada {
+    width: calc(100% - 20px);
+  }
+  .post-content .column.related .post-img-destacada, .post-content .column.imagen-destacada .post-img-destacada {
+    width: 100%;
+  }
+  .post-content .column.related .post-img-destacada img, .post-content .column.imagen-destacada .post-img-destacada img {
+    width: 100%;
+  }
+  .post-footer-author .post-author-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post-footer-author .post-author-content .column {
+    padding: 0;
+  }
+  .post-footer-author .post-author-content .column .avatar img {
+    width: 200px;
+  }
+  .post-footer-author .post-author-content .column .text {
+    font-family: "Raleway";
+    color: #828282;
+  }
+  .post-footer-author .post-author-content .column .text .email a {
+    text-decoration: none;
+    color: #4080ff;
+  }
+}
 /*# sourceMappingURL=single-post.css.map */

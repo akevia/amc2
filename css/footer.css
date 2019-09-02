@@ -12,8 +12,6 @@ footer {
 
 footer.footer-single {
   position: relative;
-  padding: 40px 85px;
-  width: calc(100% - 170px);
 }
 
 footer .column:nth-child(1) {
@@ -30,7 +28,7 @@ footer .column:nth-child(1) {
 
 footer a.footer-logo-link.size-1 img {
   height: 45px;
-  margin-right: 27px;
+  margin-right: 10px;
 }
 
 footer a.footer-logo-link.size-2 img {
@@ -118,9 +116,24 @@ footer form button[type="submit"]:hover {
     padding: 20px 25px;
     width: calc(100% - 50px);
   }
+  footer .column:nth-child(1) > div:nth-child(1) {
+    min-width: 160px;
+  }
+  footer .column:nth-child(1) > div:nth-child(1) a img {
+    margin-right: 0;
+  }
   footer form input[type="text"],
   footer form input[type="email"] {
-    width: auto;
+    width: 157px;
+  }
+  footer .footer-menu ul {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -129,11 +142,20 @@ footer form button[type="submit"]:hover {
     padding: 20px 15px;
     width: calc(100% - 30px);
   }
+  footer .column:nth-child(1) > div:nth-child(1) {
+    min-width: 160px;
+  }
+  footer .column:nth-child(1) > div:nth-child(1) a img {
+    margin-right: 0;
+  }
   footer form {
     display: none !important;
   }
-  footer .footer-menu li,
-  footer .footer-menu li a {
+  footer .footer-menu ul {
+    margin-left: 0px;
+  }
+  footer .footer-menu ul li,
+  footer .footer-menu ul li a {
     font-size: 11px;
   }
 }

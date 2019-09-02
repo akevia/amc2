@@ -15,6 +15,9 @@
         <div class="button-mobile">
             <i class="fa fa-bars"></i>
         </div>
+        <div class="dec-logo">
+            <img src="<?php echo get_template_directory_uri() . '/img/logo-dec-amc.png' ?>" alt="">
+        </div>
         <div class="content-header">
 
 

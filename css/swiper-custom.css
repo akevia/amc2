@@ -267,7 +267,7 @@
 
 .testimonio-slider .cont-medalla img {
   width: 100px;
-  height: auto;
+  height: 136px;
 }
 
 .testimonio-slider .cont-medalla p {
@@ -605,6 +605,7 @@
   }
   .testimonio-slider .cont-medalla img {
     width: 130px;
+    height: 177px;
   }
   .testimonio-slider .cont-medalla p {
     margin-top: 40px;
@@ -792,6 +793,7 @@
   }
   .testimonio-slider .cont-medalla img {
     width: 70px;
+    height: 95px;
   }
   .testimonio-slider .cont-medalla p {
     font-size: 18px;

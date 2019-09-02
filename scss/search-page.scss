@@ -13,6 +13,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     font-family: "Raleway";
+
     .item {
         width: 30%;
         height: 300px;
@@ -23,6 +24,7 @@
         background-position: center;
         box-shadow: 0px 0px 10px -5px black;
         text-decoration: none;
+
         .info {
             width: calc(100% - 20px);
             height: calc(250px - 20px);
@@ -35,18 +37,21 @@
             background-repeat: no-repeat;
             background-image: linear-gradient(transparent 20%, #4080ff);
             transition: all 0.3s;
+
             .overlay {
                 position: absolute;
                 top: 0;
                 left: 0;
                 background-image: linear-gradient(transparent 20%, #4080ff);
             }
+
             .date {
                 text-transform: capitalize;
                 font-size: 12px;
                 color: white;
                 margin-bottom: 5px;
             }
+
             .related-title {
                 color: white;
                 font-size: 16px;
@@ -54,6 +59,7 @@
                 margin-bottom: 10px;
             }
         }
+
         .leer-mas {
             display: flex;
             justify-content: flex-end;
@@ -66,6 +72,7 @@
             bottom: 0;
             right: 0;
             text-decoration: none;
+
             span {
                 color: black;
                 font-size: 10px;
@@ -76,6 +83,7 @@
                 transition: all 0.5s;
                 margin-right: 15px;
             }
+
             div {
                 img {
                     width: 100%;
@@ -83,6 +91,7 @@
                 }
             }
         }
+
         &:hover {
             .info {
                 &:before {
@@ -90,6 +99,7 @@
                 }
             }
         }
+
         &:before {
             top: 0;
             left: 0;
@@ -105,13 +115,16 @@
             background-image: linear-gradient(transparent 20%, #ff3040);
             transition: all 0.4s;
         }
+
         &:hover {
             &:before {
                 opacity: 1;
             }
+
             .info {
                 background-position-y: 300px;
             }
+
             .leer-mas {
                 span {
                     color: #4080ff;
@@ -119,4 +132,19 @@
             }
         }
     }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+
+    .card-container {
+        .item {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+
+
 }

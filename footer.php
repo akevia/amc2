@@ -13,9 +13,9 @@
         <?php
 
         if (is_front_page()) {
-            wp_nav_menu(array('theme_location' => 'footer-menu', 'container_class' => 'footer-menu'));
+            wp_nav_menu(array('theme_location' => 'footer-menu', 'container_class' => 'footer-menu', 'menu_class' => 'footer-menu'));
         } else {
-            wp_nav_menu(array('theme_location' => 'footer-menu-singlePage', 'container_class' => 'footer-menu'));
+            wp_nav_menu(array('theme_location' => 'footer-menu-singlePage', 'container_class' => 'footer-menu', 'menu_class' => 'footer-menu'));
         }
 
         ?>
@@ -60,7 +60,7 @@
             }
 
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 form p {
                     flex-wrap: wrap;
                 }

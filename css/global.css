@@ -743,6 +743,9 @@ div.title:before {
     font-size: 35px;
     min-width: unset;
   }
+  .title-no-border br {
+    display: none;
+  }
   /* Contact */
   .contenedor-general-contacto {
     -webkit-box-orient: vertical;
@@ -779,11 +782,31 @@ div.title:before {
     width: auto;
   }
   /* Programas */
+  #mas {
+    width: calc(100% - 40px);
+  }
+  #programa {
+    min-height: 1475px;
+  }
+  #programa #casos-de-exito {
+    height: calc(100% - 120px);
+  }
+  #programa #programas {
+    height: calc(100% - 120px);
+  }
+  #programas .content p.desc {
+    font-size: 15px;
+  }
   #programas .content > .columns-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 280px;
+    margin: 0 auto;
   }
   #programas .content > .columns-container .colmn#antes {
     width: calc(100% - 20px);
@@ -793,13 +816,24 @@ div.title:before {
         flex-wrap: wrap;
   }
   #programas .content > .columns-container .colmn#antes .columns-container .column {
-    width: 100%;
+    width: 65%;
   }
   #programas .content > .columns-container .colmn#durante {
     width: calc(100% - 20px);
   }
+  #programas .content > .columns-container .colmn#durante .item {
+    max-width: 170px;
+    margin: 0 auto;
+  }
   #programas .content > .columns-container .colmn#despues {
     width: calc(100% - 20px);
+  }
+  #programas .content > .columns-container .colmn#despues .item {
+    max-width: 170px;
+    margin: 0 auto;
+  }
+  #programas .content .mark {
+    width: 100% !important;
   }
   /* ¿Que podemos hacer por ti */
   .grid {

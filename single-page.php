@@ -17,7 +17,7 @@ get_header();
                 <div class="swiper-slide">
                     <div class="media">
                         <!-- <img src="<?php echo get_template_directory_uri() . '/media/slide-bg.png' ?>"> -->
-                        <video src="<?php echo get_template_directory_uri() . '/img/video.mp4' ?>" muted autoplay loop></video>
+                        <video src="<?php echo get_template_directory_uri() . '/img/EMC2-WEBCLIP_10Seg.mp4' ?>" muted autoplay loop></video>
                     </div>
 
                     <div class="row-container flexbox vertical-middle">
@@ -896,7 +896,7 @@ get_header();
                         }
 
 
-                        @media screen and (max-width: 768px) {
+                        @media screen and (max-width: 767px) {
                             form p {
                                 flex-wrap: wrap;
                             }
@@ -1424,8 +1424,10 @@ get_header();
         },
     });
 
+
     var testimonio = new Swiper('.testimonio-slider', {
         spaceBetween: 100,
+        loop: true,
         simulateTouch: false,
         navigation: {
             nextEl: '.swiper-button-next.testimonios',
@@ -1433,7 +1435,11 @@ get_header();
         },
     });
 
-    var testimonio = new Swiper('.casos-de-exito-slider', {
+    if ($(window).width() < 767) {
+        testimonio.slideTo(5,0,false);
+    }
+
+    var casos = new Swiper('.casos-de-exito-slider', {
         spaceBetween: 100,
         simulateTouch: false,
         navigation: {
@@ -1441,6 +1447,9 @@ get_header();
             prevEl: '.swiper-button-prev.casos-de-exito',
         },
     });
+
+
+
 </script>
 <?php
 get_footer();

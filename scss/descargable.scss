@@ -53,3 +53,23 @@
         }
     }
 }
+
+
+
+
+
+@media screen and (max-width: 767px){
+
+
+    .descargable-cont {
+        .descargables {
+            flex-direction: column;
+            .link-descargable {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+
+
+}
