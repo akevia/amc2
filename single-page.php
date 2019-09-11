@@ -5,6 +5,7 @@
  */
 
 get_header();
+$ID = get_the_ID();
 ?>
 
 <!-- Hero Banner -->
@@ -22,7 +23,7 @@ get_header();
 
                     <div class="row-container flexbox vertical-middle">
                         <div class="title-no-border">
-                            Desarrollando competencias rumbo <br> 
+                            Desarrollando competencias rumbo <br>
                             a la Transformación Industria 4.0
                         </div>
                     </div>
@@ -130,7 +131,38 @@ get_header();
                 </span>
             </div>
 
+
+
+
+
             <div class="grid">
+
+                <?php
+                while (have_rows('item', $ID)) : the_row();
+                    ?>
+
+                    <div class="colmn">
+                        <div class="div-img">
+                            <img src="<?php the_sub_field('icono'); ?>" class="column-img">
+                            <img src="<?php the_sub_field('icono'); ?>" class="column-img-hover">
+                        </div>
+                        <div>
+                            <div class="column-title">
+                                <?php the_sub_field('titulo'); ?>
+                            </div>
+                            <div class="column-desc">
+                                <p>
+                                    <?php the_sub_field('descripcion'); ?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php
+                endwhile;
+                ?>
+
+                <!--
                 <div class="colmn">
                     <div class="div-img">
                         <img src="<?php echo get_template_directory_uri() . '/img/file-grey.png' ?>" class="column-img">
@@ -147,6 +179,7 @@ get_header();
                         </div>
                     </div>
                 </div>
+
                 <div class="colmn">
                     <div class="div-img">
                         <img src="<?php echo get_template_directory_uri() . '/img/people-grey.png' ?>" class="column-img">
@@ -211,7 +244,12 @@ get_header();
                         </div>
                     </div>
                 </div>
+
+-->
             </div>
+
+
+
         </div>
     </div>
 </div><!-- Que podemos hacer por ti  -->
@@ -240,7 +278,7 @@ get_header();
                         foreach ($terms as $term) {
                             if ($term->count > 0) {
                                 ?>
-                        <li class="tab"><?php echo $term->name; ?></li>
+                                <li class="tab"><?php echo $term->name; ?></li>
                         <?php
                             }
                         }
@@ -271,60 +309,60 @@ get_header();
                     $loop = new WP_Query($args);
                     if ($loop->have_posts()) {
                         ?>
-                <?php
-                        while ($loop->have_posts()) : $loop->the_post();
-                            //$term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
-                            $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "all"));
-                            $ind = 0;
-                            foreach ($term_list as $term_single) {
-                                if ($term_single->name == $custom_term->name) {
-                                    ?>
+                        <?php
+                                while ($loop->have_posts()) : $loop->the_post();
+                                    //$term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "names"));
+                                    $term_list = wp_get_post_terms($post->ID, 'modulos_competencias', array("fields" => "all"));
+                                    $ind = 0;
+                                    foreach ($term_list as $term_single) {
+                                        if ($term_single->name == $custom_term->name) {
+                                            ?>
 
-                <div class="swiper-slide" modulo="<?php echo $term_single->name; ?>">
+                                    <div class="swiper-slide" modulo="<?php echo $term_single->name; ?>">
 
-                    <div class="content flexbox vertical-top">
-                        <div class="colmn">
-                            <div class="content">
-                                <video class="video active" preload playsinline autobuffer muted loop>
-                                    <source src="<?php the_field("video") ?>" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                        <div class="colmn">
-                            <div class="content">
-                                <div class="tabs-container active">
-                                    <div class="panels">
-                                        <div class="panel active">
-                                            <div class="title-slider"><?php the_title(); ?></div>
-                                            <div class="desc">
-                                                <p>
-                                                    <?php the_field("descripcion") ?>
-                                                </p>
+                                        <div class="content flexbox vertical-top">
+                                            <div class="colmn">
+                                                <div class="content">
+                                                    <video class="video active" preload playsinline autobuffer muted loop>
+                                                        <source src="<?php the_field("video") ?>" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                            </div>
+                                            <div class="colmn">
+                                                <div class="content">
+                                                    <div class="tabs-container active">
+                                                        <div class="panels">
+                                                            <div class="panel active">
+                                                                <div class="title-slider"><?php the_title(); ?></div>
+                                                                <div class="desc">
+                                                                    <p>
+                                                                        <?php the_field("descripcion") ?>
+                                                                    </p>
 
-                                                <p>
-                                                    ¿Quieres conocer más sobre este entrenamiento?, <br> <strong> contáctanos para agendar tu Demo-Day. </strong>
-                                                </p>
+                                                                    <p>
+                                                                        ¿Quieres conocer más sobre este entrenamiento?, <br> <strong> contáctanos para agendar tu Demo-Day. </strong>
+                                                                    </p>
 
-                                                <p>
-                                                    <a href="#" class="button-link">Contáctanos</a>
-                                                </p>
+                                                                    <p>
+                                                                        <a href="#" class="button-link">Contáctanos</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-
-                <?php
-                                }
-                                $ind++;
-                            }
-                        endwhile;
-                        ?>
+                        <?php
+                                        }
+                                        $ind++;
+                                    }
+                                endwhile;
+                                ?>
                 <?php
                     }
                 }
@@ -901,11 +939,11 @@ get_header();
                                 flex-wrap: wrap;
                             }
 
-                           form p span input{
-                               width: 95% !important;
-                           }
+                            form p span input {
+                                width: 95% !important;
+                            }
 
-                            form p span{
+                            form p span {
                                 width: 77%;
                                 margin-right: 22px;
                             }
@@ -935,176 +973,176 @@ get_header();
                     $link_nota = ($link_externo) ? $link_externo : get_the_permalink();
                     ?>
 
-                <?php
-                    if ($ind == 1) {
-                        ?>
-                <div class="column">
-                    <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                        <div class="overlay">
-                            <p class="fecha-autor">
-                                <?php
-                                        $post_month  = get_the_time('F');
-                                        $post_year = get_the_time('Y');
-                                        echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
-                                        ?>
-                                By:
-                                <?php
-                                        if ($authors) {
-                                            echo $authors;
-                                        } else {
-                                            the_author_meta('display_name', $author_id);
-                                        }
-                                        ?>
-                            </p>
-                            <p class="tit">
-                                <?php the_title(); ?>
-                            </p>
-                            <p class="desc">
-                                <?php echo (get_the_excerpt()); ?>
-                            </p>
-                        </div>
-                        <div class="leer-mas">
-                            <span>LEER MÁS</span>
-                            <div>
-                                <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <?php
-                    }
-                    ?>
-                <?php
-                    if ($ind == 2) {
-                        ?>
-                <div class="column">
-                    <div class="row">
-
-                        <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                            <div class="overlay">
-                                <p class="fecha-autor">
-                                    <?php
-                                            $post_month  = get_the_time('F');
-                                            $post_year = get_the_time('Y');
-                                            echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
-                                            ?>
-                                    By:
-                                    <?php
-                                            if ($authors) {
-                                                echo $authors;
-                                            } else {
-                                                the_author_meta('display_name', $author_id);
-                                            }
-                                            ?>
-                                </p>
-                                <p class="tit">
-                                    <?php the_title(); ?>
-                                </p>
-                                <p class="desc">
-                                    <?php echo (get_the_excerpt()); ?>
-                                </p>
-                            </div>
-                            <div class="leer-mas">
-                                <span>LEER MÁS</span>
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                </div>
-                            </div>
-                        </a>
-
-                        <?php
-                            }
+                    <?php
+                        if ($ind == 1) {
                             ?>
-                        <?php
-                            if ($ind == 3) {
-                                ?>
-                        <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                            <div class="overlay">
-                                <p class="fecha-autor">
-                                    <?php
-                                            $post_month  = get_the_time('F');
-                                            $post_year = get_the_time('Y');
-                                            echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
-                                            ?>
-                                    By:
-                                    <?php
-                                            if ($authors) {
-                                                echo $authors;
-                                            } else {
-                                                the_author_meta('display_name', $author_id);
-                                            }
-                                            ?>
-                                </p>
-                                <p class="tit">
-                                    <?php the_title(); ?>
-                                </p>
-                            </div>
-                            <div class="leer-mas">
-                                <span>LEER MÁS</span>
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                        <div class="column">
+                            <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                                <div class="overlay">
+                                    <p class="fecha-autor">
+                                        <?php
+                                                $post_month  = get_the_time('F');
+                                                $post_year = get_the_time('Y');
+                                                echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
+                                                ?>
+                                        By:
+                                        <?php
+                                                if ($authors) {
+                                                    echo $authors;
+                                                } else {
+                                                    the_author_meta('display_name', $author_id);
+                                                }
+                                                ?>
+                                    </p>
+                                    <p class="tit">
+                                        <?php the_title(); ?>
+                                    </p>
+                                    <p class="desc">
+                                        <?php echo (get_the_excerpt()); ?>
+                                    </p>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                                <div class="leer-mas">
+                                    <span>LEER MÁS</span>
+                                    <div>
+                                        <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     <?php
                         }
                         ?>
                     <?php
-                        if ($ind == 4 || $ind == 5 || $ind == 6) {
+                        if ($ind == 2) {
                             ?>
-                    <?php
-                            if ($ind == 4) {
-                                ?>
-                    <div class="row">
-                        <?php
+                        <div class="column">
+                            <div class="row">
+
+                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                                    <div class="overlay">
+                                        <p class="fecha-autor">
+                                            <?php
+                                                    $post_month  = get_the_time('F');
+                                                    $post_year = get_the_time('Y');
+                                                    echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
+                                                    ?>
+                                            By:
+                                            <?php
+                                                    if ($authors) {
+                                                        echo $authors;
+                                                    } else {
+                                                        the_author_meta('display_name', $author_id);
+                                                    }
+                                                    ?>
+                                        </p>
+                                        <p class="tit">
+                                            <?php the_title(); ?>
+                                        </p>
+                                        <p class="desc">
+                                            <?php echo (get_the_excerpt()); ?>
+                                        </p>
+                                    </div>
+                                    <div class="leer-mas">
+                                        <span>LEER MÁS</span>
+                                        <div>
+                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+
+                            <?php
                                 }
                                 ?>
-                        <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
-                            <div class="overlay">
-                                <p class="fecha-autor">
-                                    <?php
-                                            $post_month  = get_the_time('F');
-                                            $post_year = get_the_time('Y');
-                                            echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
-                                            ?>
-                                    By:
-                                    <?php
-                                            if ($authors) {
-                                                echo $authors;
-                                            } else {
-                                                the_author_meta('display_name', $author_id);
-                                            }
-                                            ?>
-                                </p>
-                                <p class="tit">
-                                    <?php the_title(); ?>
-                                </p>
-                            </div>
-                            <div class="leer-mas">
-                                <span>LEER MÁS</span>
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <?php
-                                if ($ind == 6) {
+                            <?php
+                                if ($ind == 3) {
                                     ?>
-                    </div>
-                    <?php
+                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                                    <div class="overlay">
+                                        <p class="fecha-autor">
+                                            <?php
+                                                    $post_month  = get_the_time('F');
+                                                    $post_year = get_the_time('Y');
+                                                    echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
+                                                    ?>
+                                            By:
+                                            <?php
+                                                    if ($authors) {
+                                                        echo $authors;
+                                                    } else {
+                                                        the_author_meta('display_name', $author_id);
+                                                    }
+                                                    ?>
+                                        </p>
+                                        <p class="tit">
+                                            <?php the_title(); ?>
+                                        </p>
+                                    </div>
+                                    <div class="leer-mas">
+                                        <span>LEER MÁS</span>
+                                        <div>
+                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php
                             }
                             ?>
+                        <?php
+                            if ($ind == 4 || $ind == 5 || $ind == 6) {
+                                ?>
+                            <?php
+                                    if ($ind == 4) {
+                                        ?>
+                                <div class="row">
+                                <?php
+                                        }
+                                        ?>
+                                <a href="<?php echo $link_nota; ?>" <?php if ($link_externo) echo "target='_blank'" ?> class="card card-especial" style="background-image: url('<?php echo $imgDestacada; ?>') ">
+                                    <div class="overlay">
+                                        <p class="fecha-autor">
+                                            <?php
+                                                    $post_month  = get_the_time('F');
+                                                    $post_year = get_the_time('Y');
+                                                    echo '<time>' . $post_month . ' ' . $post_year . ',' . '</time>';
+                                                    ?>
+                                            By:
+                                            <?php
+                                                    if ($authors) {
+                                                        echo $authors;
+                                                    } else {
+                                                        the_author_meta('display_name', $author_id);
+                                                    }
+                                                    ?>
+                                        </p>
+                                        <p class="tit">
+                                            <?php the_title(); ?>
+                                        </p>
+                                    </div>
+                                    <div class="leer-mas">
+                                        <span>LEER MÁS</span>
+                                        <div>
+                                            <img src="<?php echo get_template_directory_uri() . '/img/flecha-blog.png' ?>" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <?php
+                                        if ($ind == 6) {
+                                            ?>
+                                </div>
+                            <?php
+                                    }
+                                    ?>
+                        <?php
+                            }
+                            ?>
+                        <?php
+                            if ($ind == 6) {
+                                ?>
+                        </div>
                     <?php
                         }
                         ?>
-                    <?php
-                        if ($ind == 6) {
-                            ?>
-                </div>
-                <?php
-                    }
-                    ?>
                 <?php
                     $ind++;
                 endwhile;
@@ -1131,6 +1169,64 @@ get_header();
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
+
+                <?php
+                while (have_rows('testimonio', $ID)) : the_row();
+                    ?>
+
+                    <div class="swiper-slide">
+
+                        <div class="content flexbox vertical-top">
+                            <div class="colmn">
+                                <div class="content">
+                                    <div class="cont-info">
+                                        <span class="small-title-slider">
+                                            Testimonios
+                                        </span>
+                                        <div class="title-slider">
+                                            <?php the_sub_field('nombre'); ?>
+                                        </div>
+                                        <br>
+                                        <div class="sub-title">
+                                            <?php the_sub_field('puesto'); ?>
+                                        </div>
+                                        <div class="desc">
+                                            <blockquote>
+                                            <?php the_sub_field('testim'); ?>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="cont-slide-item">
+                                        <div class="cont-arrows">
+                                            <div class="swiper-button-prev testimonios amc-slider-button">
+                                                <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-left.png' ?>" alt="" />
+                                            </div>
+                                            <div class="swiper-button-next testimonios amc-slider-button">
+                                                <img src="<?php echo get_template_directory_uri() . '/img/blue-arrow-right.png' ?>" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cont-medalla">
+                                            <img src="<?php echo get_template_directory_uri() . '/img/medalla.png' ?>" alt="">
+                                            <p>Net promoter Score</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="colmn">
+                                <div class="content">
+                                    <img src="<?php the_sub_field('logo_empresa'); ?>" alt="" class="video">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php
+                endwhile;
+                ?>
+
+
+<!--
                 <div class="swiper-slide">
 
                     <div class="content flexbox vertical-top">
@@ -1174,6 +1270,7 @@ get_header();
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-slide">
 
                     <div class="content flexbox vertical-top">
@@ -1356,6 +1453,9 @@ get_header();
                         </div>
                     </div>
                 </div>
+
+
+            -->
             </div>
         </div>
 
@@ -1436,7 +1536,7 @@ get_header();
     });
 
     if ($(window).width() < 767) {
-        testimonio.slideTo(5,0,false);
+        testimonio.slideTo(5, 0, false);
     }
 
     var casos = new Swiper('.casos-de-exito-slider', {
@@ -1447,9 +1547,6 @@ get_header();
             prevEl: '.swiper-button-prev.casos-de-exito',
         },
     });
-
-
-
 </script>
 <?php
 get_footer();

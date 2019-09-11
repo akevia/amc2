@@ -280,6 +280,7 @@ div.title {
         align-items: flex-start;
         .column-img {
             height: 70px;
+            filter: contrast(0.6);
             width: auto;
         }
         .column-img-hover {

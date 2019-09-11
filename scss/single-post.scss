@@ -245,18 +245,25 @@
 
 
     .post-footer-author {
+        padding: 20px 50px;
         .post-author-content {
             flex-direction: column;
             .column {
                 padding: 0;
+                text-align: center;
                 .avatar {
                     img {
-                        width: 200px;
+                        width: 100px;
+                        margin: 0 auto;
+                        display: block;
                     }
                 }
                 .text {
                     font-family: "Raleway";
                     color: #828282;
+                    p{
+                        margin: 5px 0;
+                    }
                     .email {
                         a {
                             text-decoration: none;

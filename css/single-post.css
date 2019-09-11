@@ -278,6 +278,9 @@
   .post-content .column.related .post-img-destacada img, .post-content .column.imagen-destacada .post-img-destacada img {
     width: 100%;
   }
+  .post-footer-author {
+    padding: 20px 50px;
+  }
   .post-footer-author .post-author-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -286,13 +289,19 @@
   }
   .post-footer-author .post-author-content .column {
     padding: 0;
+    text-align: center;
   }
   .post-footer-author .post-author-content .column .avatar img {
-    width: 200px;
+    width: 100px;
+    margin: 0 auto;
+    display: block;
   }
   .post-footer-author .post-author-content .column .text {
     font-family: "Raleway";
     color: #828282;
+  }
+  .post-footer-author .post-author-content .column .text p {
+    margin: 5px 0;
   }
   .post-footer-author .post-author-content .column .text .email a {
     text-decoration: none;

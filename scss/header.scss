@@ -4,7 +4,7 @@
         background-color: #4080ff;
         padding: 15px 10px;
         width: calc(100% - 20px);
-        z-index: 10;
+        z-index: 1000;
         .button-mobile {
             display: inline-block;
             text-align: right;
@@ -120,6 +120,8 @@
 
 @media screen and (min-width: 991px) {
     header {
+        position: relative;
+        z-index: 1000;
         .button-mobile {
             display: none;
         }
