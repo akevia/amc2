@@ -1,9 +1,9 @@
 .blog-ver-mas {
     font-family: "Raleway";
     font-size: 14px;
-    border: 1px solid #ff3140;
+    border: 1px solid #f16418;
     color: #fff;
-    background-color: #ff3140;
+    background-color: #f16418;
     padding: 7px 30px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
@@ -12,7 +12,7 @@
     text-decoration: none;
     &:hover {
         background-color: white;
-        color: #ff3140;
+        color: #f16418;
     }
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 .color-pink {
-    color: #ff3140;
+    color: #f16418;
 }
 
 .desc {
@@ -148,7 +148,7 @@ body {
     padding: 10px;
     font-family: "Raleway";
     font-weight: 900;
-    background-color: #ff3140;
+    background-color: #f16418;
     display: inline-block;
     position: relative;
 }
@@ -314,8 +314,8 @@ div.title {
             transition: all 0.1s;
         }
         &:hover {
-            border: 1px solid #ff3140;
-            background-color: #ff3140;
+            border: 1px solid #f16418;
+            background-color: #f16418;
             .column-img {
                 opacity: 0;
             }
@@ -505,16 +505,16 @@ div.title {
             font-size: 14px;
             text-transform: uppercase;
             width: auto;
-            border-color: #ff3040;
+            border-color: #f16418;
             color: white;
             -ms-flex-item-align: start;
             align-self: flex-start;
-            background-color: #ff3040;
+            background-color: #f16418;
             padding: 0px 30px;
             -webkit-transition: all 0.1s;
             transition: all 0.1s;
             &:hover {
-                color: #ff3040;
+                color: #f16418;
                 background-color: #fff;
             }
         }
@@ -545,11 +545,11 @@ div.title {
         }
         input[type="submit"],
         button[type="submit"] {
-            background-color: #ff3040;
+            background-color: #f16418;
             height: 42px;
             width: 42px;
             color: white;
-            border: 2px solid #ff3040;
+            border: 2px solid #f16418;
             transition: all 0.3s;
             cursor: pointer;
             outline: none;

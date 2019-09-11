@@ -89,11 +89,11 @@ footer form input[type="email"] {
 
 footer form input[type="submit"],
 footer form button[type="submit"] {
-  background-color: #ff3040;
+  background-color: #f16418;
   height: 42px;
   width: 42px;
   color: white;
-  border: 1px solid #ff3040;
+  border: 1px solid #f16418;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: none;

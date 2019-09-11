@@ -131,8 +131,8 @@
   opacity: 0;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#ff3040));
-  background-image: linear-gradient(transparent 20%, #ff3040);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#f16418));
+  background-image: linear-gradient(transparent 20%, #f16418);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }

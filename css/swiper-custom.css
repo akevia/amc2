@@ -539,7 +539,7 @@
   font-weight: 900;
   position: relative;
   left: -10px;
-  background-color: #ff3140;
+  background-color: #f16418;
   display: inline;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
@@ -572,7 +572,7 @@
 
 .panels .panel .desc a.button-link {
   background-color: #fff;
-  color: #ff3140;
+  color: #f16418;
   padding: 7px 10px;
   text-decoration: none;
   font-size: 11px;
@@ -584,7 +584,7 @@
 }
 
 .panels .panel .desc a.button-link:hover {
-  background-color: #ff3140;
+  background-color: #f16418;
   color: #fff;
 }
 
