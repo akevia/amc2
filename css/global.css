@@ -631,6 +631,8 @@ div.title:before {
 .suscribete form input[type="submit"] img,
 .suscribete form button[type="submit"] img {
   width: 10px;
+  position: relative;
+  top: -5px;
 }
 
 .suscribete form input[type="submit"]:hover,

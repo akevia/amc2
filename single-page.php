@@ -41,6 +41,37 @@ $ID = get_the_ID();
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
+
+                    <?php
+                    while (have_rows('item_nosotros', $ID)) : the_row();
+                        ?>
+
+                        <div class="swiper-slide">
+                            <div class="flexbox vertical-middle">
+                                <div class="content">
+                                    <div>
+                                        <span class="small-title-slider">
+                                            Nosotros
+                                        </span>
+                                    </div>
+                                    <div class="title-slider">
+                                        <?php the_sub_field('titulo'); ?>
+                                    </div>
+
+                                    <div class="desc">
+                                        <p style="color: white;">
+                                            <?php the_sub_field('descripcion'); ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php
+                    endwhile;
+                    ?>
+
+                    <!--
                     <div class="swiper-slide">
                         <div class="flexbox vertical-middle">
                             <div class="content">
@@ -102,6 +133,8 @@ $ID = get_the_ID();
                             </div>
                         </div>
                     </div>
+
+                -->
 
                 </div>
                 <!-- If we need pagination -->
@@ -1192,7 +1225,7 @@ $ID = get_the_ID();
                                         </div>
                                         <div class="desc">
                                             <blockquote>
-                                            <?php the_sub_field('testim'); ?>
+                                                <?php the_sub_field('testim'); ?>
                                             </blockquote>
                                         </div>
                                     </div>
@@ -1226,7 +1259,7 @@ $ID = get_the_ID();
                 ?>
 
 
-<!--
+                <!--
                 <div class="swiper-slide">
 
                     <div class="content flexbox vertical-top">

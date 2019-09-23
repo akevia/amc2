@@ -6,14 +6,17 @@ footer {
     padding: 20px 85px;
     color: #949a9e;
     justify-content: space-between;
+
     &.footer-single {
         position: relative;
     }
+
     .column:nth-child(1) {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     a.footer-logo-link {
         &.size-1 {
             img {
@@ -21,12 +24,14 @@ footer {
                 margin-right: 10px;
             }
         }
+
         &.size-2 {
             img {
                 height: 33px;
             }
         }
     }
+
     .footer-menu {
         ul {
             list-style: none;
@@ -35,8 +40,10 @@ footer {
             margin-left: 30px;
             display: flex;
             justify-content: center;
+
             li {
                 padding: 5px;
+
                 &,
                 a {
                     font-size: 12px;
@@ -48,8 +55,10 @@ footer {
             }
         }
     }
+
     form {
         position: relative;
+
         label {
             left: 0;
             padding-left: 10px;
@@ -62,6 +71,7 @@ footer {
             letter-spacing: 2px;
             text-transform: uppercase;
         }
+
         input[type="text"],
         input[type="email"] {
             height: 40px;
@@ -70,6 +80,7 @@ footer {
             padding: 0px 10px;
             margin: 0px 5px;
         }
+
         input[type="submit"],
         button[type="submit"] {
             background-color: #f16418;
@@ -80,9 +91,13 @@ footer {
             transition: all 0.3s;
             outline: none;
             cursor: pointer;
+
             img {
                 width: 10px;
+                position: relative;
+                top: -5px;
             }
+
             &:hover {
                 background: #4080ff;
                 border-color: #4080ff;
@@ -95,24 +110,29 @@ footer {
     footer {
         padding: 20px 25px;
         width: calc(100% - 50px);
-        .column:nth-child(1){
-            > div:nth-child(1){
+
+        .column:nth-child(1) {
+            >div:nth-child(1) {
                 min-width: 160px;
-                a{
-                    img{
+
+                a {
+                    img {
                         margin-right: 0;
                     }
                 }
             }
         }
+
         form {
+
             input[type="text"],
             input[type="email"] {
                 width: 157px;
             }
         }
-        .footer-menu{
-            ul{
+
+        .footer-menu {
+            ul {
                 margin-left: 0px;
                 display: flex;
                 align-items: center;
@@ -125,23 +145,29 @@ footer {
     footer {
         padding: 20px 15px;
         width: calc(100% - 30px);
-        .column:nth-child(1){
-            > div:nth-child(1){
+
+        .column:nth-child(1) {
+            >div:nth-child(1) {
                 min-width: 160px;
-                a{
-                    img{
+
+                a {
+                    img {
                         margin-right: 0;
                     }
                 }
             }
         }
+
         form {
             display: none !important;
         }
+
         .footer-menu {
-            ul{
+            ul {
                 margin-left: 0px;
+
                 li {
+
                     &,
                     a {
                         font-size: 11px;
@@ -158,21 +184,27 @@ footer {
         width: calc(100% - 40px);
         position: inherit;
         flex-direction: column;
+
         form {
+
             input[type="text"],
             input[type="email"] {
                 width: 100%;
             }
         }
+
         .column {
             width: auto;
         }
+
         .column:nth-child(1) {
             flex-direction: column;
         }
+
         .footer-menu {
             flex-direction: column;
             margin: 10px 0 30px 0;
+
             li {
                 padding: 2px;
                 text-align: center;

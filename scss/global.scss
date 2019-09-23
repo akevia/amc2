@@ -10,6 +10,7 @@
     outline: none;
     cursor: pointer;
     text-decoration: none;
+
     &:hover {
         background-color: white;
         color: #f16418;
@@ -22,20 +23,24 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+
     #casos-de-exito {
         height: 100%;
         position: absolute;
         left: 0;
         transition: all 1s;
+
         &.move {
             left: -100% !important;
         }
     }
+
     #programas {
         height: 100%;
         position: absolute;
         left: 100%;
         transition: all 1s;
+
         &.move {
             left: 0 !important;
         }
@@ -56,6 +61,7 @@
     outline: none;
     cursor: pointer;
     margin-top: 30px;
+
     &:hover {
         border-color: #4080ff;
         background-color: white;
@@ -76,6 +82,7 @@
     transition: all 0.1s;
     outline: none;
     cursor: pointer;
+
     &:hover {
         border-color: white;
         background-color: #4080ff;
@@ -174,6 +181,7 @@ div.title {
     display: inline-block;
     border-bottom: 1px solid #838383;
     position: relative;
+
     &:before {
         content: "";
         bottom: -1px;
@@ -194,6 +202,7 @@ div.title {
     display: inline-block;
     border-bottom: 1px solid #838383;
     position: relative;
+
     &:before {
         content: "";
         bottom: -1px;
@@ -214,6 +223,7 @@ div.title {
     display: inline-block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
+
     &:before {
         content: "";
         bottom: -1px;
@@ -231,12 +241,15 @@ div.title {
     background-size: cover;
     background-position: center;
     width: calc(100% - 170px);
+
     .colmn {
         width: 50%;
     }
+
     .content {
         width: 100%;
     }
+
     &.search-page {
         padding-top: 130px;
     }
@@ -265,6 +278,7 @@ div.title {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
     .colmn {
         background-color: rgba(white, 0.5);
         height: 300px;
@@ -278,11 +292,13 @@ div.title {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
         .column-img {
             height: 70px;
             filter: contrast(0.6);
             width: auto;
         }
+
         .column-img-hover {
             height: 70px;
             width: auto;
@@ -293,9 +309,11 @@ div.title {
             -webkit-transition: all 0.1s;
             transition: all 0.1s;
         }
+
         .div-img {
             position: relative;
         }
+
         .column-title {
             color: #4080ff;
             font-family: "Raleway";
@@ -305,6 +323,7 @@ div.title {
             -webkit-transition: all 0.1s;
             transition: all 0.1s;
         }
+
         .column-desc {
             color: #b6b5b6;
             font-family: "Raleway";
@@ -313,16 +332,20 @@ div.title {
             -webkit-transition: all 0.1s;
             transition: all 0.1s;
         }
+
         &:hover {
             border: 1px solid #f16418;
             background-color: #f16418;
+
             .column-img {
                 opacity: 0;
             }
+
             .column-img-hover {
                 opacity: 1;
                 transform: scale(1.1);
             }
+
             .column-title,
             .column-desc {
                 color: white;
@@ -341,10 +364,12 @@ div.title {
             color: #838383;
             font-family: "Raleway";
             margin-top: 25px;
+
             span {
                 font-weight: 900;
             }
         }
+
         p.mark {
             font-size: 22px;
             color: #838383;
@@ -355,41 +380,51 @@ div.title {
             border-bottom: 1px solid #b6b5b6;
             margin-bottom: 10px;
         }
+
         .dec {
             width: 65px;
             height: 2px;
             background: #838383;
             margin-top: 25px;
         }
+
         .columns-container {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
+
             .colmn {
                 display: flex;
                 align-items: flex-start;
                 padding: 10px;
+
                 &#antes {
                     width: 60%;
                     color: #08225c;
+
                     .top-text {
                         border-color: #8eb0f8;
                     }
                 }
+
                 &#durante {
                     width: 20%;
                     color: #8eb0f8;
+
                     .top-text {
                         border-color: #a4a4a4;
                     }
                 }
+
                 &#despues {
                     width: 20%;
                     color: #a4a4a4;
+
                     .top-text {
                         border-color: #a4a4a4;
                     }
                 }
+
                 .top-text {
                     text-align: center;
                     font-family: "Raleway";
@@ -399,12 +434,15 @@ div.title {
                     margin-bottom: 20px;
                     padding-bottom: 10px;
                 }
+
                 .item {
                     .info {
                         position: relative;
+
                         img {
                             width: 100%;
                         }
+
                         .cont-items {
                             position: absolute;
                             width: 50%;
@@ -414,10 +452,12 @@ div.title {
                             top: 0;
                             bottom: 0;
                             margin: auto;
+
                             img {
                                 height: 50px;
                                 width: auto;
                             }
+
                             p {
                                 font-size: 12px;
                                 font-family: "Raleway";
@@ -435,6 +475,7 @@ div.title {
 .form-contact {
     max-width: 600px;
     width: 90%;
+
     .form-row {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -443,11 +484,13 @@ div.title {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+
         &:last-child {
             -webkit-box-pack: start;
             -ms-flex-pack: start;
             justify-content: flex-start;
         }
+
         input {
             font-family: "Raleway";
             font-weight: normal;
@@ -457,10 +500,12 @@ div.title {
             padding: 0px 15px;
             color: #606060;
             border: 2px solid #4080ff;
+
             &.i-50 {
                 width: calc(48% - 30px);
             }
         }
+
         input::-webkit-input-placeholder,
         textarea::-webkit-input-placeholder {
             font-size: 14px;
@@ -468,6 +513,7 @@ div.title {
             font-weight: normal;
             color: rgba(#4080ff, 0.7);
         }
+
         input:-ms-input-placeholder,
         textarea:-ms-input-placeholder {
             font-size: 14px;
@@ -475,6 +521,7 @@ div.title {
             font-weight: normal;
             color: rgba(#4080ff, 0.7);
         }
+
         input::-ms-input-placeholder,
         textarea::-ms-input-placeholder {
             font-size: 14px;
@@ -482,6 +529,7 @@ div.title {
             font-weight: normal;
             color: rgba(#4080ff, 0.7);
         }
+
         input::placeholder,
         textarea::placeholder {
             font-size: 14px;
@@ -489,6 +537,7 @@ div.title {
             font-weight: normal;
             color: rgba(#4080ff, 0.7);
         }
+
         textarea {
             color: #606060;
             font-size: 14px;
@@ -498,6 +547,7 @@ div.title {
             border: 2px solid #4080ff;
             padding: 15px;
         }
+
         input[type="submit"] {
             font-family: "Raleway";
             font-weight: 900;
@@ -513,6 +563,7 @@ div.title {
             padding: 0px 30px;
             -webkit-transition: all 0.1s;
             transition: all 0.1s;
+
             &:hover {
                 color: #f16418;
                 background-color: #fff;
@@ -524,8 +575,10 @@ div.title {
 .suscribete {
     position: relative;
     top: 10px;
+
     form {
         position: relative;
+
         label {
             font-family: "Raleway";
             font-weight: bold;
@@ -535,6 +588,7 @@ div.title {
             text-transform: uppercase;
             margin-right: 20px;
         }
+
         input[type="text"],
         input[type="email"] {
             height: 40px;
@@ -543,6 +597,7 @@ div.title {
             margin: 0px 5px;
             width: 185px;
         }
+
         input[type="submit"],
         button[type="submit"] {
             background-color: #f16418;
@@ -553,9 +608,13 @@ div.title {
             transition: all 0.3s;
             cursor: pointer;
             outline: none;
+
             img {
                 width: 10px;
+                position: relative;
+                top: -5px;
             }
+
             &:hover {
                 background: #4080ff;
                 border-color: #4080ff;
@@ -577,37 +636,46 @@ div.title {
     div.title {
         font-size: 55px;
     }
+
     .small-title-slider {
         font-size: 22px;
     }
+
     .small-title {
         font-size: 22px;
     }
+
     .desc {
         font-size: 24px;
     }
+
     .title-slider {
         font-size: 55px;
     }
+
     .title-no-border {
         font-size: 55px;
     }
+
     /* Programas */
     #programas {
         .content {
             p.mark {
                 font-size: 14px;
             }
+
             .columns-container {
                 .colmn {
                     .item {
                         .info {
                             .cont-items {
                                 width: 45%;
+
                                 img {
                                     height: 75px;
                                     width: auto;
                                 }
+
                                 p {
                                     font-size: 15px;
                                 }
@@ -618,6 +686,7 @@ div.title {
             }
         }
     }
+
     /* ¿Que podemos hacer por ti */
     .grid {
         .colmn {
@@ -639,6 +708,7 @@ div.title {
         padding: 0px 15px;
         width: calc(100% - 30px);
     }
+
     /* Contact */
     .form-contact {
         .form-row {
@@ -647,25 +717,31 @@ div.title {
             }
         }
     }
+
     /* Programas */
     #programas {
         .content {
             >.columns-container {
                 flex-wrap: wrap;
                 justify-content: center;
+
                 .colmn {
                     &#antes {
                         width: calc(100% - 20px);
+
                         .columns-container {
                             flex-wrap: nowrap;
+
                             .column {
                                 width: 25%;
                             }
                         }
                     }
+
                     &#durante {
                         width: calc(25% - 10px);
                     }
+
                     &#despues {
                         width: calc(25% - 10px);
                     }
@@ -681,60 +757,76 @@ div.title {
         width: calc(100% - 40px);
         height: auto;
     }
+
     .row-container-fluid {
         height: auto;
     }
+
     .title-slider {
         font-size: 35px !important;
         min-width: unset !important;
     }
+
     .title-no-border {
         font-size: 35px;
         min-width: unset;
-        br{
+
+        br {
             display: none;
         }
     }
+
     /* Contact */
     .contenedor-general-contacto {
         flex-direction: column;
+
         .colmn {
             width: 100%;
         }
+
         p.desc {
             text-align: center;
         }
     }
+
     .form-contact {
         width: 100%;
+
         .form-row {
             flex-direction: column;
+
             input {
                 height: 40px;
                 width: auto;
+
                 &.i-50 {
                     width: auto;
                 }
+
                 &.i-50:nth-child(2) {
                     margin-top: 15px;
                 }
             }
+
             textarea {
                 width: auto;
             }
         }
     }
+
     /* Programas */
 
-    #mas{
+    #mas {
         width: calc(100% - 40px);
     }
 
     #programa {
         min-height: 1475px;
+
         #casos-de-exito {
             height: calc(100% - 120px);
         }
+
         #programas {
             height: calc(100% - 120px);
         }
@@ -744,48 +836,59 @@ div.title {
 
     #programas {
         .content {
-            p.desc{
+            p.desc {
                 font-size: 15px;
             }
+
             >.columns-container {
                 flex-direction: column;
                 align-items: center;
                 max-width: 280px;
                 margin: 0 auto;
+
                 .colmn {
                     &#antes {
                         width: calc(100% - 20px);
+
                         .columns-container {
                             flex-wrap: wrap;
+
                             .column {
                                 width: 65%;
                             }
                         }
                     }
+
                     &#durante {
                         width: calc(100% - 20px);
-                        .item{
+
+                        .item {
                             max-width: 170px;
                             margin: 0 auto;
                         }
                     }
+
                     &#despues {
                         width: calc(100% - 20px);
-                        .item{
+
+                        .item {
                             max-width: 170px;
                             margin: 0 auto;
                         }
                     }
                 }
             }
-            .mark{
+
+            .mark {
                 width: 100% !important;
             }
         }
     }
+
     /* ¿Que podemos hacer por ti */
     .grid {
         flex-direction: column;
+
         .colmn {
             height: 300px;
             width: calc(100% - 20px);
