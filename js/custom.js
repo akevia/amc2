@@ -2,7 +2,7 @@ $ = jQuery;
 $(function() {
     $(".form-row input").unwrap();
     $(".form-row textarea").unwrap();
-    changingMenuClass();
+    //changingMenuClass();
     $('a[href*="#"]').click(function() {
         if ($(window).width() <= 991 && $(".content-header").hasClass("active")) {
             $(".content-header").toggleClass("active");
@@ -141,11 +141,11 @@ $(function() {
             */
     }
 
-    blogconfig();
+    //blogconfig();
 
     $(window).resize(function() {
         blogconfig();
-        changingMenuClass();
+        //changingMenuClass();
     });
 
     $("#mas").click(function(e) {
@@ -221,4 +221,32 @@ $(function() {
         .find(".tab:nth-child(1)")
         .addClass("caca")
         .click();
+
+
+    /*  Quienes Somos Page */
+
+    function diviguales(){
+        var anchoPantalla = $(window).width();
+        if(anchoPantalla >= 768){
+            var alturaTarjeta = $(".contenedor-general-casos .contenedor-casos .cont-caso:nth-child(2) .info").height();
+            $(".contenedor-general-casos .contenedor-casos .cont-caso:nth-child(1) .info").height(alturaTarjeta);
+        }
+    }
+
+/*
+    diviguales();
+    
+    $(window).resize(function(){
+        diviguales();
+    });
+*/
+        /* Popup*/
+        $('.btn-video').click(function(e){
+            e.preventDefault();
+            $('.contenedor-general-modal').show();
+        });
+    
+        $('#cerrar-modal').click(function(){
+            $('.contenedor-general-modal').hide();
+        })
 });

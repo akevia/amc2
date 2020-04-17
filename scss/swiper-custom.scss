@@ -249,6 +249,46 @@
     }
 }
 
+.casosexito-slider {
+    width: 100%;
+    padding-bottom: 45px;
+    .swiper-slide{
+        display: flex;
+        justify-content: space-between;
+    }
+    .swiper-button-prev {
+        bottom: 5px;
+        top: inherit;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        img{
+            width: 8px;
+        }
+    }
+    .swiper-button-next {
+        bottom: 5px;
+        top: inherit;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        img{
+            width: 8px;
+        }
+    }
+}
 
 #casos-de-exito{
     padding: 0 55px 0 85px;
@@ -517,6 +557,25 @@
 
 
 @media screen and (min-width: 1750px){
+
+    .casosexito-slider {
+        width: 100%;
+        padding-bottom: 60px;
+        .swiper-button-prev {
+            width: 40px;
+            height: 40px;
+            img{
+                width: 10px;
+            }
+        }
+        .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            img{
+                width: 10px;
+            }
+        }
+    }
 
     .amc-slider-button {
         width: 40px;

@@ -298,6 +298,68 @@
   margin-top: -35px;
 }
 
+.casosexito-slider {
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+.casosexito-slider .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.casosexito-slider .swiper-button-prev {
+  bottom: 5px;
+  top: inherit;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+}
+
+.casosexito-slider .swiper-button-prev img {
+  width: 8px;
+}
+
+.casosexito-slider .swiper-button-next {
+  bottom: 5px;
+  top: inherit;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+}
+
+.casosexito-slider .swiper-button-next img {
+  width: 8px;
+}
+
 #casos-de-exito {
   padding: 0 55px 0 85px;
   width: calc(100% - 140px);
@@ -589,6 +651,24 @@
 }
 
 @media screen and (min-width: 1750px) {
+  .casosexito-slider {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  .casosexito-slider .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .casosexito-slider .swiper-button-prev img {
+    width: 10px;
+  }
+  .casosexito-slider .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+  .casosexito-slider .swiper-button-next img {
+    width: 10px;
+  }
   .amc-slider-button {
     width: 40px;
     height: 40px;
@@ -872,4 +952,3 @@
     font-size: 10px;
   }
 }
-/*# sourceMappingURL=swiper-custom.css.map */

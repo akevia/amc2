@@ -1,5 +1,6 @@
 .blog-ver-mas {
-    font-family: "Raleway";
+    //font-family: "Raleway";
+    font-family: "Georgia";
     font-size: 14px;
     border: 1px solid #f16418;
     color: #fff;
@@ -103,7 +104,8 @@ html {
 
 body {
     position: relative;
-    font-family: "Raleway";
+    //font-family: "Raleway";
+    font-family: Arial;
 }
 
 .flexbox {
@@ -137,11 +139,11 @@ body {
 }
 
 .color-pink {
-    color: #f16418;
+    color: #EF6418;
 }
 
 .desc {
-    font-family: "Raleway";
+    font-family: "Arial";
     font-weight: normal;
     font-style: normal;
     font-size: 17px;
@@ -153,7 +155,8 @@ body {
     margin-top: 10px;
     min-width: 290px;
     padding: 10px;
-    font-family: "Raleway";
+    //font-family: "Raleway";
+    font-family: "Georgia";
     font-weight: 900;
     background-color: #f16418;
     display: inline-block;
@@ -161,14 +164,69 @@ body {
 }
 
 .title-no-border {
-    font-size: 45px;
+    font-size: 26px;
     color: white;
-    min-width: 290px;
+    width: 67%;
+    margin: 0 auto;
     padding: 30px 0px;
-    font-family: "Raleway";
-    font-weight: 900;
+    //font-family: "Raleway";
+    font-family: "Georgia";
+    text-align: center;
     display: inline-block;
     position: relative;
+    .subtitulo{
+        font-size: 19px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        //text-shadow: 1px 2px 3px #666;
+        text-shadow: 0px 0px 7px #666;
+    }
+    span{
+        text-shadow: 0px 0px 7px #666;
+    }
+    a.btn-video{
+        z-index: 9;     
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        letter-spacing: 1px;
+        transition: all 0.1s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Arial";
+        text-shadow: 0px 0px 7px #666;
+        img{
+            width: 58px;
+            height: auto;
+            margin-right: 15px;
+        }
+        &:hover{
+            opacity: .7;
+        }
+    }
+    a.btn-link{
+        z-index: 9;     
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 1px;
+        transition: all 0.1s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Arial";
+        background: #EF6418;
+        padding: 15px 40px;
+        border-radius: 0 0 25px 25px;
+        margin-top: 20px;
+        &:hover{
+            color: #EF6418;
+            background: white;
+        }
+    }
 }
 
 div.title {
@@ -176,7 +234,8 @@ div.title {
     color: #838383;
     min-width: 290px;
     padding: 30px 0px;
-    font-family: "Raleway";
+    //font-family: "Raleway";
+    font-family: "Georgia";
     font-weight: 900;
     display: inline-block;
     border-bottom: 1px solid #838383;
@@ -193,23 +252,30 @@ div.title {
 }
 
 .small-title {
-    font-size: 16px;
-    color: #838383;
+    //font-size: 16px;
+    font-size: 24px;
+    color: #597FF8;
     min-width: 290px;
     padding: 10px 0px;
-    font-family: "Raleway";
-    font-weight: 900;
+    //font-family: "Raleway";
+    font-family: Georgia;
     display: inline-block;
-    border-bottom: 1px solid #838383;
+    //border-bottom: 1px solid #838383;
     position: relative;
 
+    &.white{
+        color: white;
+    }
+
     &:before {
+        /*
         content: "";
         bottom: -1px;
         width: 80px;
         height: 2px;
         position: absolute;
         background-color: #838383;
+        */
     }
 }
 
@@ -218,12 +284,13 @@ div.title {
     color: white;
     min-width: 290px;
     padding: 10px 0px;
-    font-family: "Raleway";
+    //font-family: "Raleway"
+    font-family: "Georgia";
     font-weight: 900;
     display: inline-block;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    //border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
-
+    /*
     &:before {
         content: "";
         bottom: -1px;
@@ -232,6 +299,7 @@ div.title {
         position: absolute;
         background-color: white;
     }
+    */
 }
 
 .row-container {
@@ -248,6 +316,7 @@ div.title {
 
     .content {
         width: 100%;
+        padding: 50px 0;
     }
 
     &.search-page {
@@ -265,72 +334,83 @@ div.title {
 #quepodemos {
     .content {
         >div:nth-child(1) {
-            margin-top: 70px;
+            display: flex;
+            justify-content: center;
         }
     }
 }
 
 .grid {
-    margin: 40px 0px;
+    margin: 10px 0px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .colmn {
         background-color: rgba(white, 0.5);
-        height: 300px;
-        width: calc(19% - 20px);
-        border: 1px solid #4080ff;
-        -webkit-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out;
+        margin-top: 20px;        
+        width: calc(46% - 20px);
+        border: 1px solid #597FF8;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         padding: 30px 10px;
         position: relative;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        align-items: center;
 
         .column-img {
-            height: 70px;
-            filter: contrast(0.6);
+            height: 65px;
+            filter: contrast(0.1);
             width: auto;
         }
 
         .column-img-hover {
-            height: 70px;
+            height: 65px;
             width: auto;
             position: absolute;
             left: 0;
             top: 0;
             opacity: 0;
-            -webkit-transition: all 0.1s;
-            transition: all 0.1s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
         }
 
         .div-img {
-            position: relative;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .cont-imgs{
+                position: relative;
+            }
+        }
+        .div-desc {
+            width: 70%;
         }
 
         .column-title {
-            color: #4080ff;
-            font-family: "Raleway";
+            color: #06326B;
+            //font-family: "Raleway";
+            font-family: Georgia;
             font-weight: 900;
-            font-size: 14px;
-            margin: 20px 0px;
-            -webkit-transition: all 0.1s;
-            transition: all 0.1s;
+            font-size: 12px;
+            margin: 0;
+            margin-bottom: 20px;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
         }
 
         .column-desc {
-            color: #b6b5b6;
-            font-family: "Raleway";
-            font-size: 12px;
-            height: 80px;
-            -webkit-transition: all 0.1s;
-            transition: all 0.1s;
+            color: #597FF8;
+            padding: 0 10px;
+            //font-family: "Raleway";
+            font-family: Arial;
+            font-size: 13px;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
         }
 
         &:hover {
@@ -467,6 +547,35 @@ div.title {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+#contacto{
+    .redes{
+        a{
+            text-decoration: none;
+            img{
+                height: 27px;
+                width: auto;
+                margin-right: 2px;
+                transition: all .3s;
+
+                &:hover{
+                    opacity: .7;
+                }
+            }
+        }
+    }
+
+    .content{
+        .hbspt-form{
+            width: 100%;
+            height: auto;
+            iframe{
+                width: 100% !important;
             }
         }
     }
@@ -623,6 +732,181 @@ div.title {
     }
 }
 
+// Banner
+.contenedor-general-banner{
+    background-image: url(../img/amc-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px 0;
+    .cont-banner{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+        .info{
+            width: 70%;
+            p{
+                color: white;
+                font-family: Arial;
+                font-size: 19px;
+                line-height: 28px;
+                margin-top: 0;
+            }
+            a{
+                color: white;
+                font-family: Arial;
+                font-size: 14px;
+                text-transform: uppercase;
+                border: 2px solid white;
+                padding: 15px 40px;
+                background: transparent;
+                text-decoration: none;
+                display: inline-block;
+                transition: all .3s;
+                &:hover{
+                    background: white;
+                    color: #06326B;
+                }
+            }
+        }
+        .img{
+            width: 30%;
+            img{
+                width: 160px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+.cont-tit{
+    width: 59%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+//Testimonios
+    .contenedor-general-testimonios{
+        margin-top: 60px;
+        .contenedor-testimonios{
+            display: flex;
+            justify-content: space-evenly;
+            .cont-testimonio{
+                width: 27%;
+                .img{
+                    width: 190px;
+                    height: 190px;
+                    border-radius: 50%;
+                    border: 2px solid #597FF8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    img{
+                        width: 60%;
+                    }
+                }
+                .testimonio{
+                    p{
+                        color: #B0B0B0;
+                        font-family: Arial;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+// Beneficios
+    .contenedor-general-beneficios{
+        margin-top: 60px;
+        .contenedor-beneficios{
+            width: 80%;
+            margin: 0 auto;
+            p{
+                color: #808080;
+                font-family: Georgia;
+                font-size: 17px;
+                font-weight: bold;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                list-style: none;
+                padding-left: 0;
+                li{
+                    color: #808080;
+                    font-family: Georgia;
+                    font-size: 17px;
+                    font-weight: bold;
+                    width: 40%;
+                    padding: 20px 0;
+                    padding-left: 35px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    &::before{
+                        content: '';
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        background-image: url(../img/dot-list.png);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Casos de exito
+    .contenedor-general-casos{
+        margin-top: 20px;
+        .contenedor-casos{
+            display: flex;
+            justify-content: space-between;
+            width: 97%;
+            margin: 0 auto;
+            .cont-caso{
+                //width: 46%;
+                width: 100%;
+                .img{
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                    img{
+                        width: 100%;
+                        display: block;
+                        visibility: hidden;
+                    }
+                }
+                .info{
+                    padding: 20px;
+                    background: white;
+                    height: 230px;
+                    p{
+                        color: #808080;
+                        font-family: Arial;
+                        font-size: 14px;
+                        strong{
+                            color: #597FF8;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 /*
 @media screen and (min-width: 991px) {
@@ -642,7 +926,7 @@ div.title {
     }
 
     .small-title {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .desc {
@@ -654,7 +938,19 @@ div.title {
     }
 
     .title-no-border {
-        font-size: 55px;
+        font-size: 30px;
+        .subtitulo{
+            font-size: 22px;
+            margin-top: 50px;
+            margin-bottom: 90px;
+        }
+        a.btn-video{
+            font-size: 21px;
+        }
+        a.btn-link{
+            font-size: 17px;
+            margin-top: 40px;
+        }
     }
 
     /* Programas */
@@ -688,12 +984,105 @@ div.title {
     }
 
     /* ¿Que podemos hacer por ti */
+    
     .grid {
-        .colmn {
-            width: calc(16% - 60px);
-            padding: 30px;
+        max-width: 1750px;
+        margin: 0 auto;
+        .colmn{
+            .column-title{
+                font-size: 15px;
+            }
+
+            .column-img{
+                height: 85px;
+            }
+
+            .column-img-hover{
+                height: 85px;
+            }
+
+            .column-desc{
+                font-size: 16px;
+            }
         }
     }
+
+
+    //Banner
+    .contenedor-general-banner{
+        .cont-banner{ 
+            .info{ 
+                p{
+                    font-size: 22px;
+                    line-height: 31px;
+                }
+                a{
+                    font-size: 17px;
+                }
+            }
+            .img{
+                img{
+                    width: 225px;
+                }
+            }
+            
+        }
+    }
+
+    //Testimonios
+    .contenedor-general-testimonios{ 
+        .contenedor-testimonios{
+            .cont-testimonio{
+                .testimonio{ 
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Beneficios
+    .contenedor-general-beneficios{ 
+        .contenedor-beneficios{
+            p{
+                font-size: 20px;
+            }
+            ul{
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+
+    //Casos de Exito
+    .contenedor-general-casos{ 
+        .contenedor-casos {
+            .cont-caso{ 
+                .info{
+                    height: 282px;
+                    padding: 30px;
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Redes Contacto
+    #contacto{
+        .redes {
+            a{
+                img{
+                    height: 37px;
+                }
+            }
+        }
+    }
+    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -709,7 +1098,38 @@ div.title {
         width: calc(100% - 30px);
     }
 
+    .grid{
+        .colmn{
+            min-width: 200px;
+            margin: 20px 10px;
+        }
+    }
+
     /* Contact */
+
+    .contenedor-general-contacto {
+        flex-direction: column;
+        .content{
+            .title{
+                margin: 0 auto;
+                display: table;
+            }
+        }
+        .colmn {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        p.desc {
+            text-align: center;
+        }
+        .redes{
+            text-align: center;
+        }
+    }
+
+
+
     .form-contact {
         .form-row {
             input {
@@ -749,6 +1169,26 @@ div.title {
             }
         }
     }
+
+    //Beneficios
+    .contenedor-general-beneficios{
+        .contenedor-beneficios{
+            width: 90%;
+        }
+    }
+    
+        //Casos de Exito
+        .contenedor-general-casos{ 
+            .contenedor-casos {
+                .cont-caso{ 
+                    .info{
+                        height: 324px;
+                    }
+                }
+            }
+        }
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -768,11 +1208,21 @@ div.title {
     }
 
     .title-no-border {
-        font-size: 35px;
-        min-width: unset;
-
-        br {
-            display: none;
+        font-size: 22px;
+        width: 100%;
+        .subtitulo{
+            font-size: 17px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        a.btn-video{
+            font-size: 15px;
+            img{
+                width: 45px;
+            }
+        }
+        a.btn-link{
+            font-size: 12px;
         }
     }
 
@@ -784,9 +1234,6 @@ div.title {
             width: 100%;
         }
 
-        p.desc {
-            text-align: center;
-        }
     }
 
     .form-contact {
@@ -885,14 +1332,106 @@ div.title {
         }
     }
 
+    #quepodemos{
+        .content{
+            > div{
+                &:nth-child(1){
+                    text-align: center;
+                }
+            }
+        }
+    }
+
     /* ¿Que podemos hacer por ti */
     .grid {
         flex-direction: column;
+        align-items: center;
 
         .colmn {
-            height: 300px;
-            width: calc(100% - 20px);
+            padding: 30px;
+            width: calc(100% - 60px);
             margin: 20px 0;
+            flex-direction: column;
+            .div-img{
+                width: 100%;
+            }
+            .div-desc{
+                width: 100%;
+            }
         }
     }
+
+
+    // Banner
+    .contenedor-general-banner{
+        padding: 40px 0;
+        .cont-banner{
+            flex-direction: column;
+            .info{
+                width: 100%;
+                p{
+                    font-size: 17px;
+                    line-height: 24px;
+                }
+                a{
+                    font-size: 12px;
+                }
+            }
+            .img{
+                width: 100%;
+                margin-top: 30px;
+                img{
+                    width: 220px;
+                }
+            }
+        }
+    }
+
+    .cont-tit{
+        width: 100%;
+    }
+
+
+    // Testimonios
+    .contenedor-general-testimonios{
+        margin-top: 0;
+        padding-bottom: 0 !important;
+        .contenedor-testimonios{
+            flex-direction: column;
+            .cont-testimonio{
+                width: 100%;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    // Beneficios
+    .contenedor-general-beneficios{
+        .contenedor-beneficios{
+            width: 100%;
+            ul{
+                li{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+        // Casos de exito
+        .contenedor-general-casos{
+            margin-top: 0;
+            .contenedor-casos{
+                flex-direction: column;
+                width: 100%;
+                .cont-caso{
+                    width: 100%;
+                    margin-top: 40px;
+                    .info{
+                        height: 356px;
+                    }
+                }
+            }
+        }
+    
 }
