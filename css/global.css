@@ -953,6 +953,10 @@ div.title:before {
   margin: 0 auto;
 }
 
+.contenedor-general-casos .contenedor-casos .swiper-wrapper {
+  height: auto !important;
+}
+
 .contenedor-general-casos .contenedor-casos .cont-caso {
   width: 100%;
 }

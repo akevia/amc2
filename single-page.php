@@ -99,8 +99,6 @@ $ID = get_the_ID();
 
 </style>
 
-<link id="caca" rel="stylesheet" href="http://localhost:8888/amc2/wp-content/themes/amc2/css/test.css">
-
 <div class="contenedor-general-modal">
 			<div class="cont-modal">
                 <div>
@@ -110,7 +108,7 @@ $ID = get_the_ID();
                     <div class="contenedor-iframe">
                         <div id="muteYouTubeVideoPlayer"></div>
 
-                            <script async src="http://www.youtube.com/iframe_api"></script>
+                            <script async src="https://www.youtube.com/iframe_api"></script>
                             <script>
                             function onYouTubeIframeAPIReady() {
                             var player;
@@ -167,7 +165,7 @@ $ID = get_the_ID();
                                 <?php the_field('subtitulo', $ID);  ?>
                             </p>
 
-                            <a href="<?php the_field('link_video', $ID);  ?>" class="btn-video">
+                            <a href="#" class="btn-video">
                                 <img src="<?php echo get_template_directory_uri() . '/img/icon-play.png' ?>" alt="">    Ver vídeo completo
                             </a>
 <br>
@@ -388,15 +386,18 @@ $ID = get_the_ID();
                         <?php
                         while (have_rows('casos_de_exito', $ID)) : the_row();
                         ?>
+
                         <div class="swiper-slide">
+
                             <div class="cont-caso">
-                                <div class="img" style="background-image: url(<?php the_sub_field('imagen'); ?>)">
-                                    <img src="<?php echo get_template_directory_uri() . '/img/casodeexito.jpg'; ?>" alt="">
+                                <div class="img" style="background-image: url(<?php the_sub_field('imagen'); ?>); max-height: 200px; overflow: hidden;">
+                                    <img style="width: 100%;" src="<?php echo get_template_directory_uri() . '/img/casodeexito.jpg'; ?>" alt="">
                                 </div>
                                 <div class="info">
                                     <?php the_sub_field('descripcion'); ?>
                                 </div>
                             </div>
+                        
                         </div>
                         <?php
                         endwhile;
@@ -1033,6 +1034,7 @@ $ID = get_the_ID();
             nextEl: '.swiper-button-next.cde-button',
             prevEl: '.swiper-button-prev.cde-button',
         },
+        
         breakpoints: {
             767: {
             slidesPerView: 1,
@@ -1040,6 +1042,7 @@ $ID = get_the_ID();
             spaceBetween: 0,
             }
         }
+        
     });
 
 </script>

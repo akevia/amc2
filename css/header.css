@@ -21,10 +21,24 @@
     float: right;
     position: relative;
     top: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .dec-logo img {
     width: 25px;
-    height: 25px;
+  }
+  header .dec-logo img:nth-of-type(2) {
+    margin: 0 10px;
+  }
+  header .dec-logo img:nth-of-type(3) {
+    width: 65px;
   }
   header .content-header {
     position: absolute;

@@ -30,6 +30,9 @@
         </div>
         <div class="dec-logo">
             <img src="<?php echo get_template_directory_uri() . '/img/logo-dec-amc2.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/img/caintra.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/img/mc-kinsey.png' ?>" alt="">
+
         </div>
         <div class="content-header min-header">
 
